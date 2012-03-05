@@ -36,10 +36,8 @@ static WesternMusicalPool *pool;
     if (pool) 
         return pool;
     else {
-        
-    
         if((self = [super init])){
-            elements = [[NSArray alloc] initWithObjects:
+            NSArray *tempElements = [[NSArray alloc] initWithObjects:
                         [[WesternMusicalNote alloc] initWithRoot:nil accidental:nil atOctave:0 withMidiValue:118 andCpspch:12.1 atFrequency:7458.62 forShortName:@"A#8"],
                         [[WesternMusicalNote alloc] initWithRoot:nil accidental:nil atOctave:0 withMidiValue:77 andCpspch:9.05 atFrequency:698.456 forShortName:@"F5"],
                         [[WesternMusicalNote alloc] initWithRoot:nil accidental:nil atOctave:0 withMidiValue:96 andCpspch:11.0 atFrequency:2093.005 forShortName:@"C7"],
@@ -169,10 +167,13 @@ static WesternMusicalPool *pool;
                         [[WesternMusicalNote alloc] initWithRoot:nil accidental:nil atOctave:0 withMidiValue:84 andCpspch:10.0 atFrequency:1046.502 forShortName:@"C6"],
                         [[WesternMusicalNote alloc] initWithRoot:nil accidental:nil atOctave:0 withMidiValue:106 andCpspch:11.1 atFrequency:3729.31 forShortName:@"A#7"],
                         nil ];
+            // Sort the array by midiNoteNumber wich is the same as the array index
+            NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"midiValue" ascending:YES];
+            elements = [tempElements sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+
         }
     }
-//    NSSortDescriptor *sortDescriptor = [NSSortDescriptor alloc] ini
-    NSLog(@"%@", elements);
+       NSLog(@"%@", elements);
     return self;
 }
 

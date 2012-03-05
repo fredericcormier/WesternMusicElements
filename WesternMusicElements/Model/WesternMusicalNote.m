@@ -54,4 +54,12 @@
             
     
 }
+
+- (BOOL)compareWith:(WesternMusicalNote *)otherNote {
+    
+}
+- (WesternMusicalNote *)noteAtInterval:(WMInterval)semitones {
+    
+}
+
 @end

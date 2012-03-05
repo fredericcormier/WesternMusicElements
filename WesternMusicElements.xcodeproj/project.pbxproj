@@ -21,6 +21,8 @@
 		6A0B6DAB1504AC1900C865AE /* WesternMusicalNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6DAA1504AC1900C865AE /* WesternMusicalNote.m */; };
 		6A61BB7C1504B38E003CE524 /* WesternMusicalPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61BB7B1504B38E003CE524 /* WesternMusicalPool.m */; };
 		6A61BB7F1504B624003CE524 /* NotesArrayScripts.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */; };
+		6A86F9911504E83B008EA537 /* WesternMusicalScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WesternMusicalScale.m */; };
+		6A86F9921504E83B008EA537 /* WesternMusicalScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WesternMusicalScale.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		6A61BB7A1504B38E003CE524 /* WesternMusicalPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WesternMusicalPool.h; path = Model/WesternMusicalPool.h; sourceTree = "<group>"; };
 		6A61BB7B1504B38E003CE524 /* WesternMusicalPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WesternMusicalPool.m; path = Model/WesternMusicalPool.m; sourceTree = "<group>"; };
 		6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = NotesArrayScripts.rb; sourceTree = "<group>"; };
+		6A86F98F1504E83B008EA537 /* WesternMusicalScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WesternMusicalScale.h; path = Model/WesternMusicalScale.h; sourceTree = "<group>"; };
+		6A86F9901504E83B008EA537 /* WesternMusicalScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WesternMusicalScale.m; path = Model/WesternMusicalScale.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 				6A0B6DAA1504AC1900C865AE /* WesternMusicalNote.m */,
 				6A61BB7A1504B38E003CE524 /* WesternMusicalPool.h */,
 				6A61BB7B1504B38E003CE524 /* WesternMusicalPool.m */,
+				6A86F98F1504E83B008EA537 /* WesternMusicalScale.h */,
+				6A86F9901504E83B008EA537 /* WesternMusicalScale.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				6A0B6D8A1504A88100C865AE /* AppDelegate.m in Sources */,
 				6A0B6DAB1504AC1900C865AE /* WesternMusicalNote.m in Sources */,
 				6A61BB7C1504B38E003CE524 /* WesternMusicalPool.m in Sources */,
+				6A86F9911504E83B008EA537 /* WesternMusicalScale.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D9F1504A88200C865AE /* WesternMusicElementsTests.m in Sources */,
+				6A86F9921504E83B008EA537 /* WesternMusicalScale.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

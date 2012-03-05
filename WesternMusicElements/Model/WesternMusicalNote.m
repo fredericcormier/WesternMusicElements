@@ -89,6 +89,12 @@
     return [[[WesternMusicalPool pool] elements] objectAtIndex:[self midiValue] + semitones ];
 }
 
+
+- (WMInterval)intervalFrom:(WesternMusicalNote *)otherNote {
+    return abs([self midiValue] - [otherNote midiValue]);
+}
+
+
 - (WesternMusicalNote *)nextNote {
     return [self noteAtInterval:WMDiatonicIntervalMinorSecond];
     

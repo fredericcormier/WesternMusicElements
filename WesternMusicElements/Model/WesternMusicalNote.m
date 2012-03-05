@@ -69,6 +69,10 @@
     
 }
 
+- (NSString *)shortDescription {
+    return [NSString stringWithFormat:@"Note %@ num:%d freq:%.2f", [self shortName], [self midiValue], [self frequency]];
+}
+
 - (NSComparisonResult )compare:(WesternMusicalNote *)otherNote {
     if ([self midiValue] == [otherNote midiValue]) {
         return NSOrderedSame;

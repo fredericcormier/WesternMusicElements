@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "WesternMusicalPool.h"
+#import "TestNoteController.h"
 
 @implementation AppDelegate
 
@@ -17,9 +17,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    TestNoteController *testNoteController = [[TestNoteController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:testNoteController];
+    [[self window] setRootViewController:navController];
+    
     [self.window makeKeyAndVisible];
-    NSLog(@"Initializing elements: %@",[[WesternMusicalPool pool]elements]) ;
+
     return YES;
 }
 

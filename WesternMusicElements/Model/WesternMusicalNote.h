@@ -67,6 +67,7 @@ typedef enum WMInterval  WMInterval;
        atFrequency:(float)freq
       forShortName:(NSString *)aShortName;
 
+- (NSString *)shortDescription;
 
 - (NSComparisonResult)compare:(WesternMusicalNote *)otherNote;
 - (WesternMusicalNote *)noteAtInterval:(WMInterval)semitones;

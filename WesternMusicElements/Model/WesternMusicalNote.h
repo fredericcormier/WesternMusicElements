@@ -68,8 +68,10 @@ typedef enum WMInterval  WMInterval;
       forShortName:(NSString *)aShortName;
 
 
-- (BOOL)compareWith:(WesternMusicalNote *)otherNote;
+- (NSComparisonResult)compare:(WesternMusicalNote *)otherNote;
 - (WesternMusicalNote *)noteAtInterval:(WMInterval)semitones;
+- (WesternMusicalNote *)nextNote;
+- (WesternMusicalNote *)previousNote;
 
 @property(strong, nonatomic)NSString *root;
 @property(strong, nonatomic)NSString *accidental;

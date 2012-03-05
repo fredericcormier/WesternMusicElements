@@ -23,6 +23,10 @@
 		6A61BB7F1504B624003CE524 /* NotesArrayScripts.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */; };
 		6A86F9911504E83B008EA537 /* WesternMusicalScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WesternMusicalScale.m */; };
 		6A86F9921504E83B008EA537 /* WesternMusicalScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WesternMusicalScale.m */; };
+		6A86F99C1504FE03008EA537 /* TestNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F99A1504FE03008EA537 /* TestNoteController.m */; };
+		6A86F99D1504FE03008EA537 /* TestNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F99A1504FE03008EA537 /* TestNoteController.m */; };
+		6A86F99E1504FE03008EA537 /* TestNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A86F99B1504FE03008EA537 /* TestNoteController.xib */; };
+		6A86F99F1504FE03008EA537 /* TestNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A86F99B1504FE03008EA537 /* TestNoteController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,9 @@
 		6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = NotesArrayScripts.rb; sourceTree = "<group>"; };
 		6A86F98F1504E83B008EA537 /* WesternMusicalScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WesternMusicalScale.h; path = Model/WesternMusicalScale.h; sourceTree = "<group>"; };
 		6A86F9901504E83B008EA537 /* WesternMusicalScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WesternMusicalScale.m; path = Model/WesternMusicalScale.m; sourceTree = "<group>"; };
+		6A86F9991504FE03008EA537 /* TestNoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestNoteController.h; path = Controller/TestNoteController.h; sourceTree = "<group>"; };
+		6A86F99A1504FE03008EA537 /* TestNoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestNoteController.m; path = Controller/TestNoteController.m; sourceTree = "<group>"; };
+		6A86F99B1504FE03008EA537 /* TestNoteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestNoteController.xib; path = Controller/TestNoteController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +125,7 @@
 		6A0B6D7F1504A88100C865AE /* WesternMusicElements */ = {
 			isa = PBXGroup;
 			children = (
+				6A86F9981504FD46008EA537 /* Controllers */,
 				6A0B6DA81504AB7D00C865AE /* Model */,
 				6A0B6D881504A88100C865AE /* AppDelegate.h */,
 				6A0B6D891504A88100C865AE /* AppDelegate.m */,
@@ -168,6 +176,16 @@
 				6A86F9901504E83B008EA537 /* WesternMusicalScale.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		6A86F9981504FD46008EA537 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A86F9991504FE03008EA537 /* TestNoteController.h */,
+				6A86F99A1504FE03008EA537 /* TestNoteController.m */,
+				6A86F99B1504FE03008EA537 /* TestNoteController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +261,7 @@
 			files = (
 				6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */,
 				6A61BB7F1504B624003CE524 /* NotesArrayScripts.rb in Resources */,
+				6A86F99E1504FE03008EA537 /* TestNoteController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D9C1504A88200C865AE /* InfoPlist.strings in Resources */,
+				6A86F99F1504FE03008EA537 /* TestNoteController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +302,7 @@
 				6A0B6DAB1504AC1900C865AE /* WesternMusicalNote.m in Sources */,
 				6A61BB7C1504B38E003CE524 /* WesternMusicalPool.m in Sources */,
 				6A86F9911504E83B008EA537 /* WesternMusicalScale.m in Sources */,
+				6A86F99C1504FE03008EA537 /* TestNoteController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +312,7 @@
 			files = (
 				6A0B6D9F1504A88200C865AE /* WesternMusicElementsTests.m in Sources */,
 				6A86F9921504E83B008EA537 /* WesternMusicalScale.m in Sources */,
+				6A86F99D1504FE03008EA537 /* TestNoteController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

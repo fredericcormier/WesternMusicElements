@@ -5,8 +5,22 @@
 //  Created by Cormier Frederic on 05/03/12.
 //  Copyright (c) 2012 International MicrOondes. All rights reserved.
 //
-
+/*
+ 
+ 
+    [self midiValue] is the same value as the index where this object resides
+    in the [WesternMusicalPool pool] elements]
+    in other words the array is sorted by midiNote numbers from 0 to 127
+    thus, this Note Object Can be found at:
+    [[[WesternMusicalPool pool] elements] objectAtIndex:[self midiValue]]
+ 
+ 
+ */
 #import "WesternMusicalNote.h"
+#import "WesternMusicalPool.h"
+
+
+
 
 @implementation WesternMusicalNote
 
@@ -55,11 +69,30 @@
     
 }
 
-- (BOOL)compareWith:(WesternMusicalNote *)otherNote {
+- (NSComparisonResult )compare:(WesternMusicalNote *)otherNote {
+    if ([self midiValue] == [otherNote midiValue]) {
+        return NSOrderedSame;
+    }else if ([self midiValue] < [otherNote midiValue]) {
+        return NSOrderedAscending;
+    }else {
+        return NSOrderedDescending;
+    }
     
 }
+
+
 - (WesternMusicalNote *)noteAtInterval:(WMInterval)semitones {
+    return [[[WesternMusicalPool pool] elements] objectAtIndex:[self midiValue] + semitones ];
+}
+
+- (WesternMusicalNote *)nextNote {
+    return [self noteAtInterval:WMDiatonicIntervalMinorSecond];
     
 }
+- (WesternMusicalNote *)previousNote {
+    return [self noteAtInterval: - WMDiatonicIntervalMinorSecond];
+    
+}
+
 
 @end

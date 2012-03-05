@@ -65,8 +65,6 @@
             [self cpspch],
             [self frequency],
             [self shortName]];
-            
-    
 }
 
 - (NSString *)shortDescription {
@@ -80,8 +78,7 @@
         return NSOrderedAscending;
     }else {
         return NSOrderedDescending;
-    }
-    
+    }    
 }
 
 

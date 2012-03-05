@@ -8,6 +8,27 @@
 
 #import "WesternMusicalScale.h"
 
+@interface WesternMusicalScale()
+
+@property (strong, nonatomic)NSArray *scale;
+
+@end
+
+
 @implementation WesternMusicalScale
+
+@synthesize scale;
+
+
+- (id)initWithRoot:(NSString *)aRoot octave:(int)anOctave andMode:(WesternMusicalScaleMode)aMode {
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
+
+
+
+
 
 @end

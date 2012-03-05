@@ -35,7 +35,7 @@ enum WMInterval {
     WMDiatonicIntervalMajorSeventh          = 11,
     WMChromaticIntervalDiminishedOctave     = 11,
     WMDiatonicIntervalPerfectOctave         = 12,
-    WMChromaticIntervalAugmentedSeventh     = 12,
+    WMChromaticIntervalAugmentedSeventh     = 12
 };
 typedef enum WMInterval  WMInterval;
 

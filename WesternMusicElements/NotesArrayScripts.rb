@@ -66,9 +66,7 @@
 	}
     statements = []
     class Statement
-        
-        attr_accessor :root, :octave, :accidental, :cpscph, :midi, :freq, :short_name
-        
+        attr_accessor :midi
         def initialize( k, v)
             @short_name = k
             key_chars = k.split(//)
@@ -88,7 +86,7 @@
         end
         
         def render
-            puts "[[WesternMusicalNote alloc] initWithRoot:@\"#{root}\" accidental:#{accidental} atOctave:#{octave} withMidiValue:#{@midi} andCpspch:#{@cpscph} atFrequency:#{@freq} forShortName:@\"#{@short_name}\"],"
+            puts "[[WesternMusicalNote alloc] initWithRoot:@\"#{@root}\" accidental:#{@accidental} atOctave:#{@octave} withMidiValue:#{@midi} andCpspch:#{@cpscph} atFrequency:#{@freq} forShortName:@\"#{@short_name}\"],"
         end
     end
     

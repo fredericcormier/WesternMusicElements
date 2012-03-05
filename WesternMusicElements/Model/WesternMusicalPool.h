@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSArray+CArray.h"
 
 
 enum WMInterval {

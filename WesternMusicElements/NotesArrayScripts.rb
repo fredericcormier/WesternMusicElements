@@ -64,8 +64,35 @@
 		"E9" => [10548.08, 13.04, 124], "F9" => [11175.30, 13.05, 125],
 		"F#9" => [11839.82, 13.06, 126], "G9" => [12543.85, 13.07, 127]
 	}
-#	[NSArray arrayWithObjects: o1,o2,o3,nil], @"key",
-	PITCHES.each do |k,v|
-#	  puts "[NSArray arrayWithObjects:[NSNumber numberWithInt:#{v[2]}],[NSNumber numberWithFloat:#{v[0]}],[NSNumber numberWithFloat:#{v[1]}],@\"#{k}\",nil],"
-     puts "[[WesternMusicalNote alloc] initWithRoot:nil accidental:nil atOctave:0 withMidiValue:#{v[2]} andCpspch:#{v[1]} atFrequency:#{v[0]} forShortName:@\"#{k}\"],"
-  end
+    statements = []
+    class Statement
+        
+        attr_accessor :root, :octave, :accidental, :cpscph, :midi, :freq, :short_name
+        
+        def initialize( k, v)
+            @short_name = k
+            key_chars = k.split(//)
+            @root = key_chars[0]
+            @octave = key_chars[-1]
+            if key_chars[-2] == "-"
+                @octave = key_chars[-2] + key_chars[-1]
+            end
+            if key_chars[1] == "#"
+                @accidental = "@\"#\""
+            else
+                @accidental = "nil"
+            end
+            @midi = v[2]
+            @cpscph = v[1]
+            @freq = v[0]
+        end
+        
+        def render
+            puts "[[WesternMusicalNote alloc] initWithRoot:@\"#{root}\" accidental:#{accidental} atOctave:#{octave} withMidiValue:#{@midi} andCpspch:#{@cpscph} atFrequency:#{@freq} forShortName:@\"#{@short_name}\"],"
+        end
+    end
+    
+    PITCHES.each do |k,v|
+       statements.push Statement.new(k,v)
+   end
+   (statements.sort { |a, b| a.midi <=> b.midi }).each { |e| e.render  }

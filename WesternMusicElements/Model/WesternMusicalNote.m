@@ -20,7 +20,7 @@
 @synthesize frequency = frequency_;
 
 
-
+/* Designated intializer */
 - (id)initWithRoot:(NSString *)aRoot 
         accidental:(NSString *)anAccidental 
           atOctave:(int)anOctave
@@ -43,7 +43,7 @@
 
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@, %@, %d, %d, %f, %f, for %@",
+    return [NSString stringWithFormat:@"%@, %@, %d, %d, %f, %.2f, for %@",
             [self root], 
             [self accidental], 
             [self octave],

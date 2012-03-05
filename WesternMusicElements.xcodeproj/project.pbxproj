@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A0B6D7A1504A88100C865AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D791504A88100C865AE /* UIKit.framework */; };
+		6A0B6D7C1504A88100C865AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7B1504A88100C865AE /* Foundation.framework */; };
+		6A0B6D7E1504A88100C865AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7D1504A88100C865AE /* CoreGraphics.framework */; };
+		6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A0B6D821504A88100C865AE /* InfoPlist.strings */; };
+		6A0B6D861504A88100C865AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6D851504A88100C865AE /* main.m */; };
+		6A0B6D8A1504A88100C865AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6D891504A88100C865AE /* AppDelegate.m */; };
+		6A0B6D921504A88200C865AE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D911504A88100C865AE /* SenTestingKit.framework */; };
+		6A0B6D931504A88200C865AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D791504A88100C865AE /* UIKit.framework */; };
+		6A0B6D941504A88200C865AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7B1504A88100C865AE /* Foundation.framework */; };
+		6A0B6D9C1504A88200C865AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A0B6D9A1504A88200C865AE /* InfoPlist.strings */; };
+		6A0B6D9F1504A88200C865AE /* WesternMusicElementsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6D9E1504A88200C865AE /* WesternMusicElementsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A0B6D951504A88200C865AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A0B6D6C1504A88100C865AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A0B6D741504A88100C865AE;
+			remoteInfo = WesternMusicElements;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A0B6D751504A88100C865AE /* WesternMusicElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesternMusicElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0B6D791504A88100C865AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6A0B6D7B1504A88100C865AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A0B6D7D1504A88100C865AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6A0B6D811504A88100C865AE /* WesternMusicElements-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WesternMusicElements-Info.plist"; sourceTree = "<group>"; };
+		6A0B6D831504A88100C865AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A0B6D851504A88100C865AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A0B6D871504A88100C865AE /* WesternMusicElements-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WesternMusicElements-Prefix.pch"; sourceTree = "<group>"; };
+		6A0B6D881504A88100C865AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6A0B6D891504A88100C865AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A0B6D901504A88100C865AE /* WesternMusicElementsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WesternMusicElementsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0B6D911504A88100C865AE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6A0B6D991504A88200C865AE /* WesternMusicElementsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WesternMusicElementsTests-Info.plist"; sourceTree = "<group>"; };
+		6A0B6D9B1504A88200C865AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A0B6D9D1504A88200C865AE /* WesternMusicElementsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WesternMusicElementsTests.h; sourceTree = "<group>"; };
+		6A0B6D9E1504A88200C865AE /* WesternMusicElementsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WesternMusicElementsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A0B6D721504A88100C865AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0B6D7A1504A88100C865AE /* UIKit.framework in Frameworks */,
+				6A0B6D7C1504A88100C865AE /* Foundation.framework in Frameworks */,
+				6A0B6D7E1504A88100C865AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A0B6D8C1504A88100C865AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0B6D921504A88200C865AE /* SenTestingKit.framework in Frameworks */,
+				6A0B6D931504A88200C865AE /* UIKit.framework in Frameworks */,
+				6A0B6D941504A88200C865AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A0B6D6A1504A88100C865AE = {
+			isa = PBXGroup;
+			children = (
+				6A0B6D7F1504A88100C865AE /* WesternMusicElements */,
+				6A0B6D971504A88200C865AE /* WesternMusicElementsTests */,
+				6A0B6D781504A88100C865AE /* Frameworks */,
+				6A0B6D761504A88100C865AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A0B6D761504A88100C865AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A0B6D751504A88100C865AE /* WesternMusicElements.app */,
+				6A0B6D901504A88100C865AE /* WesternMusicElementsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A0B6D781504A88100C865AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A0B6D791504A88100C865AE /* UIKit.framework */,
+				6A0B6D7B1504A88100C865AE /* Foundation.framework */,
+				6A0B6D7D1504A88100C865AE /* CoreGraphics.framework */,
+				6A0B6D911504A88100C865AE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A0B6D7F1504A88100C865AE /* WesternMusicElements */ = {
+			isa = PBXGroup;
+			children = (
+				6A0B6D881504A88100C865AE /* AppDelegate.h */,
+				6A0B6D891504A88100C865AE /* AppDelegate.m */,
+				6A0B6D801504A88100C865AE /* Supporting Files */,
+			);
+			path = WesternMusicElements;
+			sourceTree = "<group>";
+		};
+		6A0B6D801504A88100C865AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A0B6D811504A88100C865AE /* WesternMusicElements-Info.plist */,
+				6A0B6D821504A88100C865AE /* InfoPlist.strings */,
+				6A0B6D851504A88100C865AE /* main.m */,
+				6A0B6D871504A88100C865AE /* WesternMusicElements-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A0B6D971504A88200C865AE /* WesternMusicElementsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A0B6D9D1504A88200C865AE /* WesternMusicElementsTests.h */,
+				6A0B6D9E1504A88200C865AE /* WesternMusicElementsTests.m */,
+				6A0B6D981504A88200C865AE /* Supporting Files */,
+			);
+			path = WesternMusicElementsTests;
+			sourceTree = "<group>";
+		};
+		6A0B6D981504A88200C865AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A0B6D991504A88200C865AE /* WesternMusicElementsTests-Info.plist */,
+				6A0B6D9A1504A88200C865AE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A0B6D741504A88100C865AE /* WesternMusicElements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A0B6DA21504A88200C865AE /* Build configuration list for PBXNativeTarget "WesternMusicElements" */;
+			buildPhases = (
+				6A0B6D711504A88100C865AE /* Sources */,
+				6A0B6D721504A88100C865AE /* Frameworks */,
+				6A0B6D731504A88100C865AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WesternMusicElements;
+			productName = WesternMusicElements;
+			productReference = 6A0B6D751504A88100C865AE /* WesternMusicElements.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A0B6D8F1504A88100C865AE /* WesternMusicElementsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A0B6DA51504A88200C865AE /* Build configuration list for PBXNativeTarget "WesternMusicElementsTests" */;
+			buildPhases = (
+				6A0B6D8B1504A88100C865AE /* Sources */,
+				6A0B6D8C1504A88100C865AE /* Frameworks */,
+				6A0B6D8D1504A88100C865AE /* Resources */,
+				6A0B6D8E1504A88100C865AE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A0B6D961504A88200C865AE /* PBXTargetDependency */,
+			);
+			name = WesternMusicElementsTests;
+			productName = WesternMusicElementsTests;
+			productReference = 6A0B6D901504A88100C865AE /* WesternMusicElementsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A0B6D6C1504A88100C865AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "International MicrOondes";
+			};
+			buildConfigurationList = 6A0B6D6F1504A88100C865AE /* Build configuration list for PBXProject "WesternMusicElements" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6A0B6D6A1504A88100C865AE;
+			productRefGroup = 6A0B6D761504A88100C865AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A0B6D741504A88100C865AE /* WesternMusicElements */,
+				6A0B6D8F1504A88100C865AE /* WesternMusicElementsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A0B6D731504A88100C865AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A0B6D8D1504A88100C865AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0B6D9C1504A88200C865AE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A0B6D8E1504A88100C865AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A0B6D711504A88100C865AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0B6D861504A88100C865AE /* main.m in Sources */,
+				6A0B6D8A1504A88100C865AE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A0B6D8B1504A88100C865AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0B6D9F1504A88200C865AE /* WesternMusicElementsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A0B6D961504A88200C865AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A0B6D741504A88100C865AE /* WesternMusicElements */;
+			targetProxy = 6A0B6D951504A88200C865AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A0B6D821504A88100C865AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A0B6D831504A88100C865AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6A0B6D9A1504A88200C865AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A0B6D9B1504A88200C865AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A0B6DA01504A88200C865AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6A0B6DA11504A88200C865AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A0B6DA31504A88200C865AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WesternMusicElements/WesternMusicElements-Prefix.pch";
+				INFOPLIST_FILE = "WesternMusicElements/WesternMusicElements-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6A0B6DA41504A88200C865AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WesternMusicElements/WesternMusicElements-Prefix.pch";
+				INFOPLIST_FILE = "WesternMusicElements/WesternMusicElements-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6A0B6DA61504A88200C865AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WesternMusicElements.app/WesternMusicElements";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WesternMusicElements/WesternMusicElements-Prefix.pch";
+				INFOPLIST_FILE = "WesternMusicElementsTests/WesternMusicElementsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6A0B6DA71504A88200C865AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WesternMusicElements.app/WesternMusicElements";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WesternMusicElements/WesternMusicElements-Prefix.pch";
+				INFOPLIST_FILE = "WesternMusicElementsTests/WesternMusicElementsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A0B6D6F1504A88100C865AE /* Build configuration list for PBXProject "WesternMusicElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0B6DA01504A88200C865AE /* Debug */,
+				6A0B6DA11504A88200C865AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A0B6DA21504A88200C865AE /* Build configuration list for PBXNativeTarget "WesternMusicElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0B6DA31504A88200C865AE /* Debug */,
+				6A0B6DA41504A88200C865AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6A0B6DA51504A88200C865AE /* Build configuration list for PBXNativeTarget "WesternMusicElementsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0B6DA61504A88200C865AE /* Debug */,
+				6A0B6DA71504A88200C865AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A0B6D6C1504A88100C865AE /* Project object */;
+}

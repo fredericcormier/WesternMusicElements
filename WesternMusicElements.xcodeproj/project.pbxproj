@@ -29,6 +29,8 @@
 		6A86F99F1504FE03008EA537 /* TestNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A86F99B1504FE03008EA537 /* TestNoteController.xib */; };
 		6A86F9A215053448008EA537 /* WesternMusicalChords.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WesternMusicalChords.m */; };
 		6A86F9A315053448008EA537 /* WesternMusicalChords.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WesternMusicalChords.m */; };
+		6A86F9A615055173008EA537 /* NSArray+CArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A515055173008EA537 /* NSArray+CArray.m */; };
+		6A86F9A715055173008EA537 /* NSArray+CArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A515055173008EA537 /* NSArray+CArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		6A86F99B1504FE03008EA537 /* TestNoteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestNoteController.xib; path = Controller/TestNoteController.xib; sourceTree = "<group>"; };
 		6A86F9A015053448008EA537 /* WesternMusicalChords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WesternMusicalChords.h; path = Model/WesternMusicalChords.h; sourceTree = "<group>"; };
 		6A86F9A115053448008EA537 /* WesternMusicalChords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WesternMusicalChords.m; path = Model/WesternMusicalChords.m; sourceTree = "<group>"; };
+		6A86F9A415055173008EA537 /* NSArray+CArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+CArray.h"; path = "Helpers/NSArray+CArray.h"; sourceTree = "<group>"; };
+		6A86F9A515055173008EA537 /* NSArray+CArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CArray.m"; path = "Helpers/NSArray+CArray.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 		6A0B6D7F1504A88100C865AE /* WesternMusicElements */ = {
 			isa = PBXGroup;
 			children = (
+				6A86F9A815055475008EA537 /* Helpers */,
 				6A86F9981504FD46008EA537 /* Controllers */,
 				6A0B6DA81504AB7D00C865AE /* Model */,
 				6A0B6D881504A88100C865AE /* AppDelegate.h */,
@@ -192,6 +197,15 @@
 				6A86F99B1504FE03008EA537 /* TestNoteController.xib */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6A86F9A815055475008EA537 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6A86F9A415055173008EA537 /* NSArray+CArray.h */,
+				6A86F9A515055173008EA537 /* NSArray+CArray.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +324,7 @@
 				6A86F9911504E83B008EA537 /* WesternMusicalScale.m in Sources */,
 				6A86F99C1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A215053448008EA537 /* WesternMusicalChords.m in Sources */,
+				6A86F9A615055173008EA537 /* NSArray+CArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +336,7 @@
 				6A86F9921504E83B008EA537 /* WesternMusicalScale.m in Sources */,
 				6A86F99D1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A315053448008EA537 /* WesternMusicalChords.m in Sources */,
+				6A86F9A715055173008EA537 /* NSArray+CArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

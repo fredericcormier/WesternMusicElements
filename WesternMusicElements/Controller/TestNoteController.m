@@ -73,14 +73,12 @@
 }
 
 - (IBAction)showPrevious:(id)sender {
-    NSLog(@"%s, %s", __FILE__, __FUNCTION__);
     WesternMusicalNote *previousNote = [[self ourNote] previousNote];
     [self setOurNote:previousNote];
     [self updateTextView];
 }
 
 - (IBAction)showNext:(id)sender {
-    NSLog(@"%s, %s", __FILE__, __FUNCTION__);
     WesternMusicalNote *nextNote = [[self ourNote] nextNote];
     [self setOurNote:nextNote];
     [self updateTextView];

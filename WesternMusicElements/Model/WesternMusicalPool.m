@@ -19,6 +19,12 @@
 
 static WesternMusicalPool *pool;
 
+@interface WesternMusicalPool() {
+    NSArray* notes;
+    NSArray* scales;    
+}
+
+@end
 
 @implementation WesternMusicalPool
 
@@ -37,7 +43,7 @@ static WesternMusicalPool *pool;
         return pool;
     else {
         if((self = [super init])){
-            elements = [[NSArray alloc] initWithObjects:
+            notes = [[NSArray alloc] initWithObjects:
                         [[WesternMusicalNote alloc] initWithRoot:@"C" accidental:nil atOctave:-1 withMidiValue:0 andCpspch:3.0 atFrequency:8.176 forShortName:@"C-1"],
                         [[WesternMusicalNote alloc] initWithRoot:@"C" accidental:@"#" atOctave:-1 withMidiValue:1 andCpspch:3.01 atFrequency:8.662 forShortName:@"C#-1"],
                         [[WesternMusicalNote alloc] initWithRoot:@"D" accidental:nil atOctave:-1 withMidiValue:2 andCpspch:3.02 atFrequency:9.177 forShortName:@"D-1"],
@@ -166,15 +172,37 @@ static WesternMusicalPool *pool;
                         [[WesternMusicalNote alloc] initWithRoot:@"F" accidental:nil atOctave:9 withMidiValue:125 andCpspch:13.05 atFrequency:11175.3 forShortName:@"F9"],
                         [[WesternMusicalNote alloc] initWithRoot:@"F" accidental:@"#" atOctave:9 withMidiValue:126 andCpspch:13.06 atFrequency:11839.82 forShortName:@"F#9"],
                         [[WesternMusicalNote alloc] initWithRoot:@"G" accidental:nil atOctave:9 withMidiValue:127 andCpspch:13.07 atFrequency:12543.85 forShortName:@"G9"],
-                        nil ];    
+                        nil ]; 
+            
         }
+    /*
+     SCALES = {
+     :chromatic =>           [0,1,2,3,4,5,6,7,8,9,10,11,12],
+     :major_scale => 	    [0,2,4,5,7,9,11,12],
+     :natural_minor =>       [0,2,3,5,7,8,10,12],
+     :harmonic_minor =>      [0,2,3,5,7,8,11,12],
+     :melodic_minor =>       [0,2,3,5,7,9,11,12],
+     :ionian =>              [0,2,4,5,7,9,11,12],
+     :dorian  =>             [0,2,3,5,7,9,10,12],
+     :phrygian =>            [0,1,3,5,7,8,10,12],
+     :lydian =>              [0,2,4,6,7,9,11,12],
+     :mixolydian =>          [0,2,4,5,7,9,10,12],
+     :aeolian =>             [0,2,3,5,7,8,10,12],
+     :locrian =>             [0,1,3,5,6,8,10,12],
+     :gypsy_minor =>         [0,2,3,6,7,8,11,12],
+     :whole_tone =>          [0,2,4,6,8,10,12],
+     :major_pentatonic =>    [0,2,4,7,9,12],
+     :minor_pentatonic =>    [0,3,5,7,10,12]
+     
+     }*/
+
     }
     
     return self;
 }
 
-- (NSArray *)elements {
-    return elements;
+- (NSArray *)notes {
+    return notes;
 }
 
 @end

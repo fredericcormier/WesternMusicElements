@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    [WesternMusicalPool pool];
+    NSLog(@"Initializing elements: %@",[[WesternMusicalPool pool]elements]) ;
     return YES;
 }
 

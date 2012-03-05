@@ -43,7 +43,7 @@
 
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@, %@, %d, %d, %f, %.2f, for %@",
+    return [NSString stringWithFormat:@"Note:%@, %@, %d, midi:%d, cpspch:%.2f, frequency:%.2f, for %@",
             [self root], 
             [self accidental], 
             [self octave],

@@ -17,4 +17,6 @@
 
 + (WesternMusicalPool *)pool;
 
+- (NSArray *)elements;
+
 @end

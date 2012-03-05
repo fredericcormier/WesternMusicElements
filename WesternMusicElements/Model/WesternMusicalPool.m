@@ -169,9 +169,12 @@ static WesternMusicalPool *pool;
                         nil ];    
         }
     }
-    NSLog(@"%@", elements);
+    
     return self;
 }
 
+- (NSArray *)elements {
+    return elements;
+}
 
 @end

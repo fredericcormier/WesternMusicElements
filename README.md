@@ -1,1 +1,1 @@
-A set of Objective-C classes that helps manipulating Western Musical Scales and Chords
+A set of Objective-C classes that helps manipulating Western Musical Scales and Chords.

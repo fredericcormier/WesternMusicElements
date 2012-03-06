@@ -41,11 +41,6 @@ enum WMInterval {
 typedef enum WMInterval  WMInterval;
 
 
-/*
- 
- SCALES
- 
- */
 enum WesternMusicalScaleMode {
     WMScaleModeChromatic = 0,
     WMScaleModeMajor,
@@ -66,57 +61,6 @@ enum WesternMusicalScaleMode {
 };
 typedef enum WesternMusicalScaleMode WesternMusicalScaleMode;
 
-
-int CScaleValueChromatic[13];      
-int CScaleValueMajor[8];           
-int CScaleValueNaturalMinor[8];    
-int CScaleValueHarmonicMinor[8];   
-int CScaleValueMelodicMinor[8];    
-int CScaleValueIonian[8];          
-int CScaleValueDorian[8];          
-int CScaleValuePhrygian[8];        
-int CScaleValueLydian[8];          
-int CScaleValueMixolydian[8];      
-int CScaleValueAeolian[8];         
-int CScaleValueLocrian[8];         
-int CScaleValueGypsyMinor[8];      
-int CScaleValueWholeTone[7];       
-int CScaleValuePentatonicMajor[6]; 
-int CScaleValuePentatonicMinor[6];  
-
-/*
- 
- 
- CHORDS
- 
- */
-
-int CChordValueMajor[3];
-int CChordValueMajor6[4];
-int CChordValueMajor7[4];
-int CChordValueMajor9[5];
-int CChordValueMajor69[5];
-int CChordValueMajor11[6];
-int CChordValueMajor13[7];
-int CChordValueMinor[3];
-int CChordValueMinor6[4];
-int CChordValueMinor7[4];
-int CChordValueMinor9[5];
-int CChordValueMinor69[5];
-int CChordValueMinor11[6];
-int CChordValueMinor13[7];
-int CChordValueDominant7[4];
-int CChordValueNinth[5];
-int CChordValueEleventh[6];
-int CChordValueThirteenth[7];
-int CChordValueDiminished[3];
-int CChordValueHalfDiminished7[4];
-int CChordValueDiminished7[4];
-int CChordValueAugmented[3];
-int CChordValueAugmented7[4];
-int CChordValueSus4[3];
-int CChordValueSevenSus4[4];
-int CChordValueMinorMajor[4];
 
 enum WesternMusicalChordType {
     WMChordTypeMajor = 0,
@@ -147,6 +91,51 @@ enum WesternMusicalChordType {
     WMChordTypeMinorMajor
 };
 typedef enum WesternMusicalChordType WesternMusicalChordType;
+
+
+int CScaleValueChromatic[13];      
+int CScaleValueMajor[8];           
+int CScaleValueNaturalMinor[8];    
+int CScaleValueHarmonicMinor[8];   
+int CScaleValueMelodicMinor[8];    
+int CScaleValueIonian[8];          
+int CScaleValueDorian[8];          
+int CScaleValuePhrygian[8];        
+int CScaleValueLydian[8];          
+int CScaleValueMixolydian[8];      
+int CScaleValueAeolian[8];         
+int CScaleValueLocrian[8];         
+int CScaleValueGypsyMinor[8];      
+int CScaleValueWholeTone[7];       
+int CScaleValuePentatonicMajor[6]; 
+int CScaleValuePentatonicMinor[6];  
+
+int CChordValueMajor[3];
+int CChordValueMajor6[4];
+int CChordValueMajor7[4];
+int CChordValueMajor9[5];
+int CChordValueMajor69[5];
+int CChordValueMajor11[6];
+int CChordValueMajor13[7];
+int CChordValueMinor[3];
+int CChordValueMinor6[4];
+int CChordValueMinor7[4];
+int CChordValueMinor9[5];
+int CChordValueMinor69[5];
+int CChordValueMinor11[6];
+int CChordValueMinor13[7];
+int CChordValueDominant7[4];
+int CChordValueNinth[5];
+int CChordValueEleventh[6];
+int CChordValueThirteenth[7];
+int CChordValueDiminished[3];
+int CChordValueHalfDiminished7[4];
+int CChordValueDiminished7[4];
+int CChordValueAugmented[3];
+int CChordValueAugmented7[4];
+int CChordValueSus4[3];
+int CChordValueSevenSus4[4];
+int CChordValueMinorMajor[4];
 
 
 

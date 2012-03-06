@@ -43,7 +43,7 @@ typedef enum WMInterval  WMInterval;
 
 /*
  
-            SCALES
+ SCALES
  
  */
 enum WesternMusicalScaleMode {
@@ -87,7 +87,7 @@ int CScaleValuePentatonicMinor[6];
 /*
  
  
-            CHORDS
+ CHORDS
  
  */
 

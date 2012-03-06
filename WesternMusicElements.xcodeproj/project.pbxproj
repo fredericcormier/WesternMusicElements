@@ -182,7 +182,6 @@
 			children = (
 				6A5D977C1505FDEB0053B13C /* WesternMusicalData.h */,
 				6A5D977D1505FDEB0053B13C /* WesternMusicalData.m */,
-				6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */,
 				6A0B6DA91504AC1900C865AE /* WesternMusicalNote.h */,
 				6A0B6DAA1504AC1900C865AE /* WesternMusicalNote.m */,
 				6A61BB7A1504B38E003CE524 /* WesternMusicalPool.h */,
@@ -208,6 +207,7 @@
 		6A86F9A815055475008EA537 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */,
 				6A86F9A415055173008EA537 /* NSArray+CArray.h */,
 				6A86F9A515055173008EA537 /* NSArray+CArray.m */,
 			);

@@ -38,9 +38,7 @@
 {
     [super viewDidLoad];
     [self newRandomNote:self];
-    NSLog(@"Scales Formulas:%@", [[WesternMusicalPool pool] scaleDefinitions] );
-    NSLog(@"Chord Formulas:%@", [[WesternMusicalPool pool] chordDefinitions] );
-
+ 
   }
 
 - (void)viewDidUnload

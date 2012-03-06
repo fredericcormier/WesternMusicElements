@@ -58,7 +58,7 @@ static WesternMusicalPool *pool;
     return notes;
 }
 
-- (NSArray *)scales {
+- (NSArray *)scaleFormulas {
     return scales;
 }
 

@@ -23,5 +23,5 @@
 + (WesternMusicalPool *)pool;
 
 - (NSArray *)notes;
-- (NSArray *)scales;
+- (NSArray *)scaleFormulas;
 @end

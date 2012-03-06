@@ -18,7 +18,7 @@
 
 
 @implementation WesternMusicalScale
-
+@synthesize rootNote;
 @synthesize scale;
 
 // Designated Initializer

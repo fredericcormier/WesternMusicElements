@@ -33,6 +33,8 @@
 		6A86F9A315053448008EA537 /* WesternMusicalChords.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WesternMusicalChords.m */; };
 		6A86F9A615055173008EA537 /* NSArray+CArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A515055173008EA537 /* NSArray+CArray.m */; };
 		6A86F9A715055173008EA537 /* NSArray+CArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A515055173008EA537 /* NSArray+CArray.m */; };
+		6AD1AA1B15067CEF00C72A92 /* WesternMusicalPool+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1AA1A15067CEF00C72A92 /* WesternMusicalPool+Loading.m */; };
+		6AD1AA1C15067CEF00C72A92 /* WesternMusicalPool+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1AA1A15067CEF00C72A92 /* WesternMusicalPool+Loading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		6A86F9A115053448008EA537 /* WesternMusicalChords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WesternMusicalChords.m; path = Model/WesternMusicalChords.m; sourceTree = "<group>"; };
 		6A86F9A415055173008EA537 /* NSArray+CArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+CArray.h"; path = "Helpers/NSArray+CArray.h"; sourceTree = "<group>"; };
 		6A86F9A515055173008EA537 /* NSArray+CArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CArray.m"; path = "Helpers/NSArray+CArray.m"; sourceTree = "<group>"; };
+		6AD1AA1915067CEF00C72A92 /* WesternMusicalPool+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WesternMusicalPool+Loading.h"; path = "Model/WesternMusicalPool+Loading.h"; sourceTree = "<group>"; };
+		6AD1AA1A15067CEF00C72A92 /* WesternMusicalPool+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WesternMusicalPool+Loading.m"; path = "Model/WesternMusicalPool+Loading.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,10 +186,12 @@
 			children = (
 				6A5D977C1505FDEB0053B13C /* WesternMusicalData.h */,
 				6A5D977D1505FDEB0053B13C /* WesternMusicalData.m */,
-				6A0B6DA91504AC1900C865AE /* WesternMusicalNote.h */,
-				6A0B6DAA1504AC1900C865AE /* WesternMusicalNote.m */,
+				6AD1AA1915067CEF00C72A92 /* WesternMusicalPool+Loading.h */,
+				6AD1AA1A15067CEF00C72A92 /* WesternMusicalPool+Loading.m */,
 				6A61BB7A1504B38E003CE524 /* WesternMusicalPool.h */,
 				6A61BB7B1504B38E003CE524 /* WesternMusicalPool.m */,
+				6A0B6DA91504AC1900C865AE /* WesternMusicalNote.h */,
+				6A0B6DAA1504AC1900C865AE /* WesternMusicalNote.m */,
 				6A86F98F1504E83B008EA537 /* WesternMusicalScale.h */,
 				6A86F9901504E83B008EA537 /* WesternMusicalScale.m */,
 				6A86F9A015053448008EA537 /* WesternMusicalChords.h */,
@@ -332,6 +338,7 @@
 				6A86F9A215053448008EA537 /* WesternMusicalChords.m in Sources */,
 				6A86F9A615055173008EA537 /* NSArray+CArray.m in Sources */,
 				6A5D977E1505FDEB0053B13C /* WesternMusicalData.m in Sources */,
+				6AD1AA1B15067CEF00C72A92 /* WesternMusicalPool+Loading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +352,7 @@
 				6A86F9A315053448008EA537 /* WesternMusicalChords.m in Sources */,
 				6A86F9A715055173008EA537 /* NSArray+CArray.m in Sources */,
 				6A5D977F1505FDEB0053B13C /* WesternMusicalData.m in Sources */,
+				6AD1AA1C15067CEF00C72A92 /* WesternMusicalPool+Loading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

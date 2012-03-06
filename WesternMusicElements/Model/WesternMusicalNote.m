@@ -83,7 +83,8 @@
 
 
 - (WesternMusicalNote *)noteAtInterval:(WMInterval)semitones {
-    return [[[WesternMusicalPool pool] notes] objectAtIndex:[self midiValue] + semitones ];
+   // return [[[WesternMusicalPool pool] notes] objectAtIndex:[self midiValue] + semitones ];
+    return [[WesternMusicalPool pool] noteWithMidiNoteNumber:[self midiValue] + semitones ];
 }
 
 

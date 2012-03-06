@@ -20,8 +20,7 @@
 
 + (WesternMusicalPool *)pool;
 
-- (NSArray *)notes;
-- (NSArray *)scaleDefinitions;
-- (NSArray *)chordDefinitions;
 - (WesternMusicalNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave;
+
+- (WesternMusicalNote *)noteWithMidiNoteNumber:(int)midiNoteNumber;
 @end

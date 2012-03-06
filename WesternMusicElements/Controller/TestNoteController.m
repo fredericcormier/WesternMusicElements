@@ -69,7 +69,7 @@
 }
 
 - (IBAction)newRandomNote:(id)sender {
-    [self setOurNote:[[[WesternMusicalPool pool] notes] objectAtIndex:arc4random() % 127]];
+    [self setOurNote:[[WesternMusicalPool pool] noteWithMidiNoteNumber:arc4random() % 127]];
     [self updateTextView];    
 
     

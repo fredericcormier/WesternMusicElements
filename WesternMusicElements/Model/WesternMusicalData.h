@@ -67,22 +67,22 @@ enum WesternMusicalScaleMode {
 typedef enum WesternMusicalScaleMode WesternMusicalScaleMode;
 
 
-int CChromaticScaleValues[13];      
-int CMajorScaleValues[8];           
-int CNaturalMinorScaleValues[8];    
-int CHarmonicMinorScaleValues[8];   
-int CMelodicMinorScaleValues[8];    
-int CIonianScaleValues[8];          
-int CDorianScaleValues[8];          
-int CPhrygianScaleValues[8];        
-int CLydianScaleValues[8];          
-int CMixolydianScaleValues[8];      
-int CAeolianScaleValues[8];         
-int CLocrianScaleValues[8];         
-int CGypsyMinorScaleValues[8];      
-int CWholeToneScaleValues[7];       
-int CPentatonicMajorScaleValues[6]; 
-int CPentatonicMinorScaleValues[6];  
+int CScaleValueChromatic[13];      
+int CScaleValueMajor[8];           
+int CScaleValueNaturalMinor[8];    
+int CScaleValueHarmonicMinor[8];   
+int CScaleValueMelodicMinor[8];    
+int CScaleValueIonian[8];          
+int CScaleValueDorian[8];          
+int CScaleValuePhrygian[8];        
+int CScaleValueLydian[8];          
+int CScaleValueMixolydian[8];      
+int CScaleValueAeolian[8];         
+int CScaleValueLocrian[8];         
+int CScaleValueGypsyMinor[8];      
+int CScaleValueWholeTone[7];       
+int CScaleValuePentatonicMajor[6]; 
+int CScaleValuePentatonicMinor[6];  
 
 /*
  

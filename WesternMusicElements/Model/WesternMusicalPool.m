@@ -64,22 +64,22 @@ static WesternMusicalPool *pool;
 
 - (void)prepareScales {
         scales = [[NSArray alloc] initWithObjects:
-              [NSArray arrayWithCArray:CChromaticScaleValues ofLength:13],
-              [NSArray arrayWithCArray:CMajorScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CNaturalMinorScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CHarmonicMinorScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CMelodicMinorScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CIonianScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CDorianScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CPhrygianScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CLydianScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CMixolydianScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CAeolianScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CLocrianScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CGypsyMinorScaleValues ofLength:8],
-              [NSArray arrayWithCArray:CWholeToneScaleValues ofLength:7],
-              [NSArray arrayWithCArray:CPentatonicMajorScaleValues ofLength:6],
-              [NSArray arrayWithCArray:CPentatonicMinorScaleValues ofLength:6],
+              [NSArray arrayWithCArray:CScaleValueChromatic ofLength:13],
+              [NSArray arrayWithCArray:CScaleValueMajor ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueNaturalMinor ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueHarmonicMinor ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueMelodicMinor ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueIonian ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueDorian ofLength:8],
+              [NSArray arrayWithCArray:CScaleValuePhrygian ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueLydian ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueMixolydian ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueAeolian ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueLocrian ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueGypsyMinor ofLength:8],
+              [NSArray arrayWithCArray:CScaleValueWholeTone ofLength:7],
+              [NSArray arrayWithCArray:CScaleValuePentatonicMajor ofLength:6],
+              [NSArray arrayWithCArray:CScaleValuePentatonicMinor ofLength:6],
               nil];
 }
 

@@ -59,40 +59,25 @@ static WesternMusicalPool *pool;
 }
 
 - (void)prepareScales {
-    /*
-     SCALES = {
-     :chromatic =>           [0,1,2,3,4,5,6,7,8,9,10,11,12],
-     :major_scale => 	    [0,2,4,5,7,9,11,12],
-     :natural_minor =>       [0,2,3,5,7,8,10,12],
-     :harmonic_minor =>      [0,2,3,5,7,8,11,12],
-     :melodic_minor =>       [0,2,3,5,7,9,11,12],
-     :ionian =>              [0,2,4,5,7,9,11,12],
-     :dorian  =>             [0,2,3,5,7,9,10,12],
-     :phrygian =>            [0,1,3,5,7,8,10,12],
-     :lydian =>              [0,2,4,6,7,9,11,12],
-     :mixolydian =>          [0,2,4,5,7,9,10,12],
-     :aeolian =>             [0,2,3,5,7,8,10,12],
-     :locrian =>             [0,1,3,5,6,8,10,12],
-     :gypsy_minor =>         [0,2,3,6,7,8,11,12],
-     :whole_tone =>          [0,2,4,6,8,10,12],
-     :major_pentatonic =>    [0,2,4,7,9,12],
-     :minor_pentatonic =>    [0,3,5,7,10,12]
-     
-     }*/
-    int CChromaticScaleValues[13]       = {0,1,2,3,4,5,6,7,8,9,10,11,12};
-    int CMajorScaleValues[8]            = {0,2,4,5,7,9,11,12};
-    int CNaturalMinorScaleValues[8]     = {0,2,3,5,7,8,10,12};
-    int CHarmonicMinorScaleValues[8]    = {0,2,3,5,7,8,11,12};
-    int CMelodicMinorScaleValues[8]     = {0,2,3,5,7,9,11,12};
-    int CIonianScaleValues[8]           = {0,2,4,5,7,9,11,12};
-    int CDorianScaleValues[8]           = {0,2,3,5,7,9,10,12};
-    int CPhrygianScaleValues[8]         = {0,1,3,5,7,8,10,12};
-    int CLydianScaleValues[8]           = {0,2,4,6,7,9,11,12};
-    int CMixolydianScaleValues[8]       = {0,2,4,5,7,9,10,12};
     
-    
-    
-    NSArray *chromaticScaleValues = [NSArray arrayWithCArray:CChromaticScaleValues ofLength:13];
+    scales = [[NSArray alloc] initWithObjects:
+              [NSArray arrayWithCArray:CChromaticScaleValues ofLength:13],
+              [NSArray arrayWithCArray:CMajorScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CNaturalMinorScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CHarmonicMinorScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CMelodicMinorScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CIonianScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CDorianScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CPhrygianScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CLydianScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CMixolydianScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CAeolianScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CLocrianScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CGypsyMinorScaleValues ofLength:8],
+              [NSArray arrayWithCArray:CWholeToneScaleValues ofLength:7],
+              [NSArray arrayWithCArray:CPentatonicMajorScaleValues ofLength:6],
+              [NSArray arrayWithCArray:CPentatonicMinorScaleValues ofLength:6],
+              nil];
 }
 
 - (void)prepareNotes {

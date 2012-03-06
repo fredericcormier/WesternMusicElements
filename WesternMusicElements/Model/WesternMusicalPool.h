@@ -63,6 +63,10 @@ enum WesternMusicalScaleMode {
 };
 typedef enum WesternMusicalScaleMode WesternMusicalScaleMode;
 
+
+
+
+
 @interface WesternMusicalPool : NSObject {
 
     

@@ -49,8 +49,9 @@ static WesternMusicalPool *pool;
         if((self = [super init])){
             [self prepareNotes];
             [self loadScaleDefinitions];
+            [self loadChordDefinitions];
         }
-   
+        
     }
     
     return self;
@@ -71,27 +72,55 @@ static WesternMusicalPool *pool;
 
 
 - (void)loadChordDefinitions {
+    chordDefinitions = [[NSArray alloc] initWithObjects:
+                        [NSArray arrayWithCArray:CChordValueMajor ofLength:3],
+                        [NSArray arrayWithCArray:CChordValueMajor6 ofLength:4],
+                        [NSArray arrayWithCArray:CChordValueMajor7 ofLength:4],
+                        [NSArray arrayWithCArray:CChordValueMajor9 ofLength:5],
+                        [NSArray arrayWithCArray:CChordValueMajor69 ofLength:5],
+                        [NSArray arrayWithCArray:CChordValueMajor11 ofLength:6],
+                        [NSArray arrayWithCArray:CChordValueMajor13 ofLength:7],
+                        [NSArray arrayWithCArray:CChordValueMinor ofLength:3],
+                        [NSArray arrayWithCArray:CChordValueMinor6 ofLength:4],
+                        [NSArray arrayWithCArray:CChordValueMinor7 ofLength:4],
+                        [NSArray arrayWithCArray:CChordValueMinor9 ofLength:5],
+                        [NSArray arrayWithCArray:CChordValueMinor69 ofLength:5],
+                        [NSArray arrayWithCArray:CChordValueMinor11 ofLength:6],
+                        [NSArray arrayWithCArray:CChordValueMinor13 ofLength:7],
+                        [NSArray arrayWithCArray:CChordValueDominant7 ofLength:4],
+                        [NSArray arrayWithCArray:CChordValueNinth ofLength:5],
+                        [NSArray arrayWithCArray:CChordValueEleventh ofLength:6],
+                        [NSArray arrayWithCArray:CChordValueThirteenth ofLength:7],
+                        [NSArray arrayWithCArray:CChordValueDiminished ofLength:3],
+                        [NSArray arrayWithCArray:CChordValueHalfDiminished7 ofLength:4],
+                        [NSArray arrayWithCArray:CChordValueDiminished7 ofLength:4],
+                        [NSArray arrayWithCArray:CChordValueAugmented ofLength:3],
+                        [NSArray arrayWithCArray:CChordValueAugmented7 ofLength:4],
+                        [NSArray arrayWithCArray:CChordValueSus4 ofLength:3],
+                        [NSArray arrayWithCArray:CChordValueSevenSus4 ofLength:4],
+                        [NSArray arrayWithCArray:CChordValueMinorMajor ofLength:4],
+                        nil];
     
 }
 - (void)loadScaleDefinitions {
-        scaleDefinitions = [[NSArray alloc] initWithObjects:
-              [NSArray arrayWithCArray:CScaleValueChromatic ofLength:13],
-              [NSArray arrayWithCArray:CScaleValueMajor ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueNaturalMinor ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueHarmonicMinor ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueMelodicMinor ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueIonian ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueDorian ofLength:8],
-              [NSArray arrayWithCArray:CScaleValuePhrygian ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueLydian ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueMixolydian ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueAeolian ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueLocrian ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueGypsyMinor ofLength:8],
-              [NSArray arrayWithCArray:CScaleValueWholeTone ofLength:7],
-              [NSArray arrayWithCArray:CScaleValuePentatonicMajor ofLength:6],
-              [NSArray arrayWithCArray:CScaleValuePentatonicMinor ofLength:6],
-              nil];
+    scaleDefinitions = [[NSArray alloc] initWithObjects:
+                        [NSArray arrayWithCArray:CScaleValueChromatic ofLength:13],
+                        [NSArray arrayWithCArray:CScaleValueMajor ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueNaturalMinor ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueHarmonicMinor ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueMelodicMinor ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueIonian ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueDorian ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValuePhrygian ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueLydian ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueMixolydian ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueAeolian ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueLocrian ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueGypsyMinor ofLength:8],
+                        [NSArray arrayWithCArray:CScaleValueWholeTone ofLength:7],
+                        [NSArray arrayWithCArray:CScaleValuePentatonicMajor ofLength:6],
+                        [NSArray arrayWithCArray:CScaleValuePentatonicMinor ofLength:6],
+                        nil];
 }
 
 - (void)prepareNotes {

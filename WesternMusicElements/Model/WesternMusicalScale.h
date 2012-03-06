@@ -12,4 +12,6 @@
 
 - (id)initWithRoot:(NSString *)aRoot octave:(int)anOctave andMode:(WesternMusicalScaleMode)aMode;
 
+- (id)initWithRootNote:(WesternMusicalNote *)note andMode:(WesternMusicalScaleMode)aMode;
+
 @end

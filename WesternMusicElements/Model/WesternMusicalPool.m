@@ -255,4 +255,16 @@ static WesternMusicalPool *pool;
              [[WesternMusicalNote alloc] initWithRoot:@"G" accidental:nil atOctave:9 withMidiValue:127 andCpspch:13.07 atFrequency:12543.85 forShortName:@"G9"],
              nil ];     
 }
+
+
+- (WesternMusicalNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave {
+    NSString *resolvedAccidental = anAccidental ? anAccidental : @"";
+    NSString *noteName = [NSString stringWithFormat:@"%@%@%d", [aRoot uppercaseString], resolvedAccidental, anOctave];
+    for (WesternMusicalNote *note in [self notes]) {
+        if ([[note valueForKey:@"shortName"] isEqualToString:noteName]) {
+            return note;
+        }
+    }
+    return nil;
+}
 @end

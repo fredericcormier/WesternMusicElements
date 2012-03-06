@@ -11,6 +11,8 @@
 @interface WesternMusicalScale()
 
 @property (strong, nonatomic)NSArray *scale;
+@property (strong, nonatomic)WesternMusicalNote *rootNote;
+
 
 @end
 
@@ -19,6 +21,7 @@
 
 @synthesize scale;
 
+// Designated Initializer
 
 - (id)initWithRoot:(NSString *)aRoot octave:(int)anOctave andMode:(WesternMusicalScaleMode)aMode {
     if (self = [super init]) {
@@ -29,6 +32,8 @@
 
 
 
-
+- (id)initWithRootNote:(WesternMusicalNote *)note andMode:(WesternMusicalScaleMode)aMode {
+    
+}
 
 @end

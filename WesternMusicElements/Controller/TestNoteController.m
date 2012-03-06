@@ -37,6 +37,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    WesternMusicalNote *poolNote = [[WesternMusicalPool pool] noteWithRoot:@"A" accidental:@"#" octave:5];
+    NSLog(@"note: %@", poolNote);
     [self newRandomNote:self];
  
   }

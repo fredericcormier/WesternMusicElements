@@ -19,6 +19,8 @@
 		6A0B6D9C1504A88200C865AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A0B6D9A1504A88200C865AE /* InfoPlist.strings */; };
 		6A0B6D9F1504A88200C865AE /* WesternMusicElementsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6D9E1504A88200C865AE /* WesternMusicElementsTests.m */; };
 		6A0B6DAB1504AC1900C865AE /* WesternMusicalNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6DAA1504AC1900C865AE /* WesternMusicalNote.m */; };
+		6A5D977E1505FDEB0053B13C /* WesternMusicalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D977D1505FDEB0053B13C /* WesternMusicalData.m */; };
+		6A5D977F1505FDEB0053B13C /* WesternMusicalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D977D1505FDEB0053B13C /* WesternMusicalData.m */; };
 		6A61BB7C1504B38E003CE524 /* WesternMusicalPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61BB7B1504B38E003CE524 /* WesternMusicalPool.m */; };
 		6A61BB7F1504B624003CE524 /* NotesArrayScripts.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */; };
 		6A86F9911504E83B008EA537 /* WesternMusicalScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WesternMusicalScale.m */; };
@@ -62,6 +64,8 @@
 		6A0B6D9E1504A88200C865AE /* WesternMusicElementsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WesternMusicElementsTests.m; sourceTree = "<group>"; };
 		6A0B6DA91504AC1900C865AE /* WesternMusicalNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WesternMusicalNote.h; path = Model/WesternMusicalNote.h; sourceTree = "<group>"; };
 		6A0B6DAA1504AC1900C865AE /* WesternMusicalNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WesternMusicalNote.m; path = Model/WesternMusicalNote.m; sourceTree = "<group>"; };
+		6A5D977C1505FDEB0053B13C /* WesternMusicalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WesternMusicalData.h; path = Model/WesternMusicalData.h; sourceTree = "<group>"; };
+		6A5D977D1505FDEB0053B13C /* WesternMusicalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WesternMusicalData.m; path = Model/WesternMusicalData.m; sourceTree = "<group>"; };
 		6A61BB7A1504B38E003CE524 /* WesternMusicalPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WesternMusicalPool.h; path = Model/WesternMusicalPool.h; sourceTree = "<group>"; };
 		6A61BB7B1504B38E003CE524 /* WesternMusicalPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WesternMusicalPool.m; path = Model/WesternMusicalPool.m; sourceTree = "<group>"; };
 		6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = NotesArrayScripts.rb; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 		6A0B6DA81504AB7D00C865AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6A5D977C1505FDEB0053B13C /* WesternMusicalData.h */,
+				6A5D977D1505FDEB0053B13C /* WesternMusicalData.m */,
 				6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */,
 				6A0B6DA91504AC1900C865AE /* WesternMusicalNote.h */,
 				6A0B6DAA1504AC1900C865AE /* WesternMusicalNote.m */,
@@ -325,6 +331,7 @@
 				6A86F99C1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A215053448008EA537 /* WesternMusicalChords.m in Sources */,
 				6A86F9A615055173008EA537 /* NSArray+CArray.m in Sources */,
+				6A5D977E1505FDEB0053B13C /* WesternMusicalData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +344,7 @@
 				6A86F99D1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A315053448008EA537 /* WesternMusicalChords.m in Sources */,
 				6A86F9A715055173008EA537 /* NSArray+CArray.m in Sources */,
+				6A5D977F1505FDEB0053B13C /* WesternMusicalData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

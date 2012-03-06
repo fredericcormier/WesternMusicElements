@@ -38,6 +38,7 @@
 {
     [super viewDidLoad];
     [self newRandomNote:self];
+    NSLog(@"Scales Formulas:%@", [[WesternMusicalPool pool] scales] );
   }
 
 - (void)viewDidUnload

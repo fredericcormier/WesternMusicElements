@@ -12,7 +12,12 @@
 @implementation WesternMusicalPool (Loading)
 
 #pragma mark - Ugly Code
-
+/*
+ 
+    Might find a better way to do this as i might want to add more
+    chords and scale
+ 
+ */
 - (NSArray *)loadChordDefinitions {
     return  [[NSArray alloc] initWithObjects:
                         [NSArray arrayWithCArray:CChordValueMajor ofLength:3],
@@ -65,6 +70,14 @@
                         nil];
 }
 
+/*  
+ 
+    The following data does not have to change.
+    The first note fondamental partial is at 8.17
+    The last fondamental at more than 12k which is enough for harmony (not harmonic) purposes
+    The midi note number standard is unlikely to change.
+ 
+ */
 - (NSArray *)prepareNotes {
     return  [[NSArray alloc] initWithObjects:
              [[WesternMusicalNote alloc] initWithRoot:@"C" accidental:nil atOctave:-1 withMidiValue:0 andCpspch:3.0 atFrequency:8.176 forShortName:@"C-1"],

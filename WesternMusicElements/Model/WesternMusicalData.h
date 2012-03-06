@@ -40,8 +40,6 @@ enum WMInterval {
 };
 typedef enum WMInterval  WMInterval;
 
-
-
 enum WesternMusicalScaleMode {
     WMScaleModeChromatic = 0,
     WMScaleModeMajor,

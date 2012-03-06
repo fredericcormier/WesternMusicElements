@@ -1,0 +1,1 @@
+A set of classes that help manipulating Western Musical Scales and Chords

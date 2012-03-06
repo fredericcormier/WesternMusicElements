@@ -21,10 +21,12 @@ static WesternMusicalPool *pool;
 
 @interface WesternMusicalPool() {
     NSArray* notes;
-    NSArray* scales;    
+    NSArray* scaleDefinitions;
+    NSArray* chordDefinitions;
 }
 - (void)prepareNotes;
-- (void)prepareScales;
+- (void)loadScaleDefinitions;
+- (void)loadChordDefinitions;
 
 @end
 
@@ -46,7 +48,7 @@ static WesternMusicalPool *pool;
     else {
         if((self = [super init])){
             [self prepareNotes];
-            [self prepareScales];
+            [self loadScaleDefinitions];
         }
    
     }
@@ -58,12 +60,21 @@ static WesternMusicalPool *pool;
     return notes;
 }
 
-- (NSArray *)scaleFormulas {
-    return scales;
+- (NSArray *)scaleDefinitions {
+    return scaleDefinitions;
 }
 
-- (void)prepareScales {
-        scales = [[NSArray alloc] initWithObjects:
+
+- (NSArray *)chordDefinitions {
+    return chordDefinitions;
+}
+
+
+- (void)loadChordDefinitions {
+    
+}
+- (void)loadScaleDefinitions {
+        scaleDefinitions = [[NSArray alloc] initWithObjects:
               [NSArray arrayWithCArray:CScaleValueChromatic ofLength:13],
               [NSArray arrayWithCArray:CScaleValueMajor ofLength:8],
               [NSArray arrayWithCArray:CScaleValueNaturalMinor ofLength:8],

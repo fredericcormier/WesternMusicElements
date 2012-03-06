@@ -120,6 +120,34 @@ CHORDS ={
     :minor_major =>         [0,3,7,11]
 }
 */
+
+int CChordValueMajor[3];
+int CChordValueMajor6[4];
+int CChordValueMajor7[4];
+int CChordValueMajor9[5];
+int CChordValueMajor69[5];
+int CChordValueMajor11[6];
+int CChordValueMajor13[7];
+int CChordValueMinor[3];
+int CChordValueMinor6[4];
+int CChordValueMinor7[4];
+int CChordValueMinor9[5];
+int CChordValueMinor69[5];
+int CChordValueMinor11[6];
+int CChordValueMinor13[7];
+int CChordValueDominant7[4];
+int CChordValueNinth[5];
+int CChordValueEleventh[6];
+int CChordValueThirteenth[7];
+int CChordValueDiminished[3];
+int CChordValueHalfDiminished7[4];
+int CChordValueDiminished7[4];
+int CChordValueAugmented[3];
+int CChordValueAugmented7[4];
+int CChordValueSus4[3];
+int CChordValueSevenSus4[4];
+int CChordValueMinorMajor[4];
+
 enum WesternMusicalChordType {
     WMChordTypeMajor = 0,
     WMChordTypeMajor6,

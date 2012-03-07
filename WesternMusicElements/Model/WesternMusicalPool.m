@@ -5,13 +5,6 @@
 //  Created by Cormier Frederic on 05/03/12.
 //  Copyright (c) 2012 International MicrOondes. All rights reserved.
 //
-/*
- #import "WesternMusicalPool.h"
- 
- @implementation WesternMusicalPool
- 
- @end
- */
 
 #import "WesternMusicalPool.h"
 #import "WesternMusicalNote.h"
@@ -21,9 +14,6 @@
 static WesternMusicalPool *pool;
 
 @interface WesternMusicalPool() 
-
-
-
 
 @property (strong, nonatomic)NSArray *notes;
 @property (strong, nonatomic)NSArray* scaleDefinitions;
@@ -44,6 +34,7 @@ static WesternMusicalPool *pool;
 
 
 + (id)allocWithZone:(NSZone *)zone { return [self pool]; };
+
 
 - (id)init {
     if (pool) 
@@ -72,16 +63,14 @@ static WesternMusicalPool *pool;
     return nil;
 }
 
+
 - (WesternMusicalNote *)noteWithMidiNoteNumber:(int)midiNoteNumber {
-    if ((midiNoteNumber >= 0) && (midiNoteNumber < 128)) {
-        
+    if ((midiNoteNumber >= 0) && (midiNoteNumber < 128)) {        
         return [[self notes] objectAtIndex:midiNoteNumber];
     }else {
         return nil;
     }
 }
-
-
 
 
 @end

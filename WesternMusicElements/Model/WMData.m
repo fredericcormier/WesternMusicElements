@@ -1,12 +1,12 @@
 //
-//  WesternMusicalData.m
+//  WMData.m
 //  WesternMusicElements
 //
 //  Created by Cormier Frederic on 06/03/12.
 //  Copyright (c) 2012 International MicrOondes. All rights reserved.
 //
 
-#import "WesternMusicalData.h"
+#import "WMData.h"
 
 //Scales
 int CScaleValueChromatic[13]        = {0,1,2,3,4,5,6,7,8,9,10,11,12};

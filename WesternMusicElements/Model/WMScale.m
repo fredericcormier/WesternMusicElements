@@ -5,35 +5,52 @@
 //  Created by Cormier Frederic on 05/03/12.
 //  Copyright (c) 2012 International MicrOondes. All rights reserved.
 //
-
+#import "WMNote.h"
 #import "WMScale.h"
+#import "WMPool.h"
 
 @interface WMScale()
 
-@property (strong, nonatomic)NSArray *scale;
+@property (strong, nonatomic)NSArray *notes;
 @property (strong, nonatomic)WMNote *rootNote;
+@property (assign, nonatomic)WMScaleMode mode;
+@property (strong, nonatomic)NSArray *definition;
 
 
 @end
 
 
 @implementation WMScale
-@synthesize rootNote;
-@synthesize scale;
+@synthesize rootNote, notes, definition, mode;
 
-// Designated Initializer
 
-- (id)initWithRoot:(NSString *)aRoot octave:(int)anOctave andMode:(WMChordType)aMode {
+- (id)initWithRootNote:(WMNote *)note forScaleMode:(WMScaleMode)aMode {
     if (self = [super init]) {
         
+        rootNote = note;
+        mode = aMode;
+        int rootIndex = [note midiNoteNumber];
+        
+        definition = [[[WMPool pool] scaleDefinitions] objectAtIndex:mode];
+        
+        NSMutableArray *tempScale = [[NSMutableArray alloc] init];
+        for (NSNumber *n in definition) {
+            WMNote *newNote = [[WMPool pool]noteWithMidiNoteNumber:rootIndex + [n intValue]];
+            [tempScale addObject:newNote];
+        }  
+        notes = tempScale;
     }
     return self;
 }
 
 
-
-- (id)initWithRootNote:(WMNote *)note andMode:(WMChordType)aMode {
-    
+- (NSArray *)notes {
+    return notes;
 }
 
+
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%@", [self notes]];
+}
 @end

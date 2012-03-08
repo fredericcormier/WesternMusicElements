@@ -29,7 +29,7 @@
 @synthesize accidental = accidental_;
 @synthesize octave = octave_;
 @synthesize shortName = shortName_;
-@synthesize midiValue = midiValue_;
+@synthesize midiNoteNumber = midiNoteNumber_;
 @synthesize cpspch = cpspch_;
 @synthesize frequency = frequency_;
 
@@ -47,7 +47,7 @@
         root_ = [aRoot uppercaseString];
         accidental_ = anAccidental;
         octave_ = anOctave;
-        midiValue_ = mValue;
+        midiNoteNumber_ = mValue;
         cpspch_ = cpspchValue;
         frequency_ = freq;
         shortName_ = aShortName;
@@ -61,20 +61,20 @@
             [self root], 
             [self accidental], 
             [self octave],
-            [self midiValue],
+            [self midiNoteNumber],
             [self cpspch],
             [self frequency],
             [self shortName]];
 }
 
 - (NSString *)shortDescription {
-    return [NSString stringWithFormat:@"Note %@ num:%d freq:%.2f", [self shortName], [self midiValue], [self frequency]];
+    return [NSString stringWithFormat:@"Note %@ num:%d freq:%.2f", [self shortName], [self midiNoteNumber], [self frequency]];
 }
 
 - (NSComparisonResult )compare:(WMNote *)otherNote {
-    if ([self midiValue] == [otherNote midiValue]) {
+    if ([self midiNoteNumber] == [otherNote midiNoteNumber]) {
         return NSOrderedSame;
-    }else if ([self midiValue] < [otherNote midiValue]) {
+    }else if ([self midiNoteNumber] < [otherNote midiNoteNumber]) {
         return NSOrderedAscending;
     }else {
         return NSOrderedDescending;
@@ -84,12 +84,12 @@
 
 - (WMNote *)noteAtInterval:(WMInterval)semitones {
    // return [[[WMPool pool] notes] objectAtIndex:[self midiValue] + semitones ];
-    return [[WMPool pool] noteWithMidiNoteNumber:[self midiValue] + semitones ];
+    return [[WMPool pool] noteWithMidiNoteNumber:[self midiNoteNumber] + semitones ];
 }
 
 
 - (WMInterval)intervalFrom:(WMNote *)otherNote {
-    return abs([self midiValue] - [otherNote midiValue]);
+    return abs([self midiNoteNumber] - [otherNote midiNoteNumber]);
 }
 
 

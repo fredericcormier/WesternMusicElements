@@ -34,7 +34,7 @@
 @property(strong, nonatomic)NSString *accidental;
 @property(strong, nonatomic)NSString *shortName;
 @property(assign, nonatomic)int octave;
-@property(assign, nonatomic)int midiValue;
+@property(assign, nonatomic)int midiNoteNumber;
 @property(assign, nonatomic)float cpspch;
 @property(assign, nonatomic)float frequency;
 

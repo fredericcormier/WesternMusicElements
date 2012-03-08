@@ -66,7 +66,7 @@
 		6A0B6D9E1504A88200C865AE /* WesternMusicElementsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WesternMusicElementsTests.m; sourceTree = "<group>"; };
 		6A0B6DA91504AC1900C865AE /* WMNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMNote.h; path = Model/WMNote.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A0B6DAA1504AC1900C865AE /* WMNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMNote.m; path = Model/WMNote.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6A5D977C1505FDEB0053B13C /* WMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lineEnding = 0; name = WMData.h; path = Model/WMData.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6A5D977C1505FDEB0053B13C /* WMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMData.h; path = Model/WMData.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A5D977D1505FDEB0053B13C /* WMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMData.m; path = Model/WMData.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A61BB7A1504B38E003CE524 /* WMPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMPool.h; path = Model/WMPool.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A61BB7B1504B38E003CE524 /* WMPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMPool.m; path = Model/WMPool.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -78,7 +78,7 @@
 		6A86F99B1504FE03008EA537 /* TestNoteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestNoteController.xib; path = Controller/TestNoteController.xib; sourceTree = "<group>"; };
 		6A86F9A015053448008EA537 /* WMChord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMChord.h; path = Model/WMChord.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A86F9A115053448008EA537 /* WMChord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMChord.m; path = Model/WMChord.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6A86F9A415055173008EA537 /* NSArray+IMOCArray.h */ = {isa = PBXFileReference; fileEncoding = 4; name = "NSArray+IMOCArray.h"; path = "Helpers/NSArray+IMOCArray.h"; sourceTree = "<group>"; };
+		6A86F9A415055173008EA537 /* NSArray+IMOCArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+IMOCArray.h"; path = "Helpers/NSArray+IMOCArray.h"; sourceTree = "<group>"; };
 		6A86F9A515055173008EA537 /* NSArray+IMOCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+IMOCArray.m"; path = "Helpers/NSArray+IMOCArray.m"; sourceTree = "<group>"; };
 		6AD1AA1A15067CEF00C72A92 /* WMPool+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "WMPool+Loading.m"; path = "Model/WMPool+Loading.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6AE6DFF515089E9400C715C8 /* WMPool+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "WMPool+Loading.h"; path = "Model/WMPool+Loading.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -188,14 +188,14 @@
 				6A5D977D1505FDEB0053B13C /* WMData.m */,
 				6AE6DFF515089E9400C715C8 /* WMPool+Loading.h */,
 				6AD1AA1A15067CEF00C72A92 /* WMPool+Loading.m */,
-				6A61BB7A1504B38E003CE524 /* WMPool.h */,
-				6A61BB7B1504B38E003CE524 /* WMPool.m */,
 				6A0B6DA91504AC1900C865AE /* WMNote.h */,
 				6A0B6DAA1504AC1900C865AE /* WMNote.m */,
 				6A86F98F1504E83B008EA537 /* WMScale.h */,
 				6A86F9901504E83B008EA537 /* WMScale.m */,
 				6A86F9A015053448008EA537 /* WMChord.h */,
 				6A86F9A115053448008EA537 /* WMChord.m */,
+				6A61BB7A1504B38E003CE524 /* WMPool.h */,
+				6A61BB7B1504B38E003CE524 /* WMPool.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";

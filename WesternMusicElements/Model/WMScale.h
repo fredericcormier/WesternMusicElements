@@ -10,8 +10,9 @@
 
 @interface WMScale : NSObject
 
-- (id)initWithRoot:(NSString *)aRoot octave:(int)anOctave andMode:(WMChordType)aMode;
 
-- (id)initWithRootNote:(WMNote *)note andMode:(WMChordType)aMode;
+- (id)initWithRootNote:(WMNote *)note forScaleMode:(WMScaleMode)aMode;
+
+- (NSArray *)notes;
 
 @end

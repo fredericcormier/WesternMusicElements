@@ -8,16 +8,15 @@
 
 #import "WMPool.h"
 #import "WMNote.h"
+#import "WMScale.h"
 #import "WMPool+Loading.h"
+
 
 
 static WMPool *pool;
 
 @interface WMPool() 
 
-@property (strong, nonatomic)NSArray *notes;
-@property (strong, nonatomic)NSArray* scaleDefinitions;
-@property (strong, nonatomic)NSArray* chordDefinitions;
 
 
 @end
@@ -50,7 +49,7 @@ static WMPool *pool;
 }
 
 
-
+#pragma mark - Notes
 
 - (WMNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave {
     NSString *resolvedAccidental = anAccidental ? anAccidental : @"";
@@ -72,5 +71,15 @@ static WMPool *pool;
     }
 }
 
+#pragma mark - Scales
+
+- (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(WMScaleMode)mode {
+    return nil;
+}
+
+
+- (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(WMScaleMode)mode {
+    return [[WMScale alloc] initWithRootNote:rootNote forScaleMode:mode];
+}
 
 @end

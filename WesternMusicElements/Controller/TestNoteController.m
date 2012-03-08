@@ -8,6 +8,7 @@
 
 #import "TestNoteController.h"
 #import "WMNote.h"
+#import "WMScale.h"
 #import "WMPool.h"
 
 @interface TestNoteController ()
@@ -39,6 +40,9 @@
     [super viewDidLoad];
     WMNote *poolNote = [[WMPool pool] noteWithRoot:@"A" accidental:@"#" octave:5];
     NSLog(@"note: %@", poolNote);
+    WMNote *c3 = [[WMPool pool] noteWithRoot:@"C" accidental:nil octave:3];
+    WMScale *c3MajorScale = [[WMPool pool] scaleWithRootNote:c3 scaleMode:WMScaleModeGypsyMinor];
+    NSLog(@"C 3 Major scale is: %@", c3MajorScale);
     [self newRandomNote:self];
  
   }

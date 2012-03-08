@@ -43,6 +43,10 @@
     WMNote *c3 = [[WMPool pool] noteWithRoot:@"C" accidental:nil octave:3];
     WMScale *c3MajorScale = [[WMPool pool] scaleWithRootNote:c3 scaleMode:WMScaleModeGypsyMinor];
     NSLog(@"C 3 Major scale is: %@", c3MajorScale);
+    
+    WMScale *aSharp2Major = [[WMPool pool] scaleWithRoot:@"A" accidental:@"#" octave:2 scaleMode:WMScaleModeMajor];
+    NSLog(@"%@", aSharp2Major);
+    
     [self newRandomNote:self];
  
   }

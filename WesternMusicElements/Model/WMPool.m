@@ -81,13 +81,21 @@ static WMPool *pool;
 
 #pragma mark - Scales
 
+
 - (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(WMScaleMode)mode {
+    WMNote *rootNote = [self noteWithRoot:aRoot accidental:anAccidental octave:anOctave];
+    return [self scaleWithRootNote:rootNote scaleMode:mode];
     
 }
 
 
 - (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(WMScaleMode)mode {
     return [[WMScale alloc] initWithRootNote:rootNote forScaleMode:mode];
+}
+
+
+- (WMScale *)scaleWithShortName:(NSString *)name scaleMode:(WMScaleMode)mode {
+    return [[WMScale alloc] initWithRootNote:[self noteWithShortName:name] forScaleMode:mode];
 }
 
 @end

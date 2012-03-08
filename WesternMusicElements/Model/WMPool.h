@@ -32,4 +32,5 @@
 
 - (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(WMScaleMode)mode;
 - (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(WMScaleMode)mode;
+- (WMScale *)scaleWithShortName:(NSString *)name scaleMode:(WMScaleMode)mode;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WMPool.h"
+#import "WMData.h"
 
 
 @interface WMNote : NSObject

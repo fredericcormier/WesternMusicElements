@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 International MicrOondes. All rights reserved.
 //
 
-#import "WMPool.h"
+
 
 @interface WMPool (Loading)
 

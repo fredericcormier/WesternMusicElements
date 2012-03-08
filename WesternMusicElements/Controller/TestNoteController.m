@@ -7,11 +7,11 @@
 //
 
 #import "TestNoteController.h"
-#import "WMNote.h"
-#import "WMScale.h"
+
 #import "WMPool.h"
 
 @interface TestNoteController ()
+
 @property (strong, nonatomic)WMNote *ourNote;
 @property (strong, nonatomic)NSMutableString* textBuffer;
 

@@ -8,11 +8,11 @@
 /*
  
  
-    [self midiValue] is the same value as the index where this object resides
+    [self midiNoteNumber] is the same value as the index where this object resides
     in the [WMPool pool] elements]
     in other words the array is sorted by midiNote numbers from 0 to 127
     thus, this Note Object Can be found at:
-    [[[WMPool pool] elements] objectAtIndex:[self midiValue]]
+    [[[WMPool pool] elements] objectAtIndex:[self midiNoteNumber]]
  
  
  */

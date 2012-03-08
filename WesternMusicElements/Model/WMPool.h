@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WMData.h"
-
+#import "WMNote.h"
 
 #import "NSArray+IMOCArray.h"
 

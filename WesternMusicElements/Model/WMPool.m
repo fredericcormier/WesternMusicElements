@@ -51,16 +51,24 @@ static WMPool *pool;
 
 #pragma mark - Notes
 
-- (WMNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave {
-    NSString *resolvedAccidental = anAccidental ? anAccidental : @"";
-    NSString *noteName = [NSString stringWithFormat:@"%@%@%d", [aRoot uppercaseString], resolvedAccidental, anOctave];
+- (WMNote *)noteWithShortName:(NSString *)aShortName {
     for (WMNote *note in [self notes]) {
-        if ([[note valueForKey:@"shortName"] isEqualToString:noteName]) {
+        if ([[note valueForKey:@"shortName"] isEqualToString:aShortName]) {
             return note;
         }
     }
     return nil;
 }
+
+
+
+- (WMNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave {
+    NSString *resolvedAccidental = anAccidental ? anAccidental : @"";
+    NSString *noteName = [NSString stringWithFormat:@"%@%@%d", [aRoot uppercaseString], resolvedAccidental, anOctave];
+    return [self noteWithShortName:noteName];
+}
+
+
 
 
 - (WMNote *)noteWithMidiNoteNumber:(int)midiNoteNumber {
@@ -74,7 +82,7 @@ static WMPool *pool;
 #pragma mark - Scales
 
 - (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(WMScaleMode)mode {
-    return nil;
+    
 }
 
 

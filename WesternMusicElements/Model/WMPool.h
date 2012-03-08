@@ -26,6 +26,7 @@
 
 + (WMPool *)pool;
 
+- (WMNote *)noteWithShortName:(NSString *)aShortName;
 - (WMNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave;
 - (WMNote *)noteWithMidiNoteNumber:(int)midiNoteNumber;
 

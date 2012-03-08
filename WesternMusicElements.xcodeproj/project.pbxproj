@@ -31,8 +31,8 @@
 		6A86F99F1504FE03008EA537 /* TestNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A86F99B1504FE03008EA537 /* TestNoteController.xib */; };
 		6A86F9A215053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
 		6A86F9A315053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
-		6A86F9A615055173008EA537 /* NSArray+CArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A515055173008EA537 /* NSArray+CArray.m */; };
-		6A86F9A715055173008EA537 /* NSArray+CArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A515055173008EA537 /* NSArray+CArray.m */; };
+		6A86F9A615055173008EA537 /* NSArray+IMOCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A515055173008EA537 /* NSArray+IMOCArray.m */; };
+		6A86F9A715055173008EA537 /* NSArray+IMOCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A515055173008EA537 /* NSArray+IMOCArray.m */; };
 		6AD1AA1B15067CEF00C72A92 /* WMPool+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1AA1A15067CEF00C72A92 /* WMPool+Loading.m */; };
 		6AD1AA1C15067CEF00C72A92 /* WMPool+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1AA1A15067CEF00C72A92 /* WMPool+Loading.m */; };
 /* End PBXBuildFile section */
@@ -78,8 +78,8 @@
 		6A86F99B1504FE03008EA537 /* TestNoteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestNoteController.xib; path = Controller/TestNoteController.xib; sourceTree = "<group>"; };
 		6A86F9A015053448008EA537 /* WMChord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMChord.h; path = Model/WMChord.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A86F9A115053448008EA537 /* WMChord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMChord.m; path = Model/WMChord.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6A86F9A415055173008EA537 /* NSArray+CArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+CArray.h"; path = "Helpers/NSArray+CArray.h"; sourceTree = "<group>"; };
-		6A86F9A515055173008EA537 /* NSArray+CArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CArray.m"; path = "Helpers/NSArray+CArray.m"; sourceTree = "<group>"; };
+		6A86F9A415055173008EA537 /* NSArray+IMOCArray.h */ = {isa = PBXFileReference; fileEncoding = 4; name = "NSArray+IMOCArray.h"; path = "Helpers/NSArray+IMOCArray.h"; sourceTree = "<group>"; };
+		6A86F9A515055173008EA537 /* NSArray+IMOCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+IMOCArray.m"; path = "Helpers/NSArray+IMOCArray.m"; sourceTree = "<group>"; };
 		6AD1AA1A15067CEF00C72A92 /* WMPool+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "WMPool+Loading.m"; path = "Model/WMPool+Loading.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6AE6DFF515089E9400C715C8 /* WMPool+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "WMPool+Loading.h"; path = "Model/WMPool+Loading.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 /* End PBXFileReference section */
@@ -214,8 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */,
-				6A86F9A415055173008EA537 /* NSArray+CArray.h */,
-				6A86F9A515055173008EA537 /* NSArray+CArray.m */,
+				6A86F9A415055173008EA537 /* NSArray+IMOCArray.h */,
+				6A86F9A515055173008EA537 /* NSArray+IMOCArray.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 				6A86F9911504E83B008EA537 /* WMScale.m in Sources */,
 				6A86F99C1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A215053448008EA537 /* WMChord.m in Sources */,
-				6A86F9A615055173008EA537 /* NSArray+CArray.m in Sources */,
+				6A86F9A615055173008EA537 /* NSArray+IMOCArray.m in Sources */,
 				6A5D977E1505FDEB0053B13C /* WMData.m in Sources */,
 				6AD1AA1B15067CEF00C72A92 /* WMPool+Loading.m in Sources */,
 			);
@@ -350,7 +350,7 @@
 				6A86F9921504E83B008EA537 /* WMScale.m in Sources */,
 				6A86F99D1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A315053448008EA537 /* WMChord.m in Sources */,
-				6A86F9A715055173008EA537 /* NSArray+CArray.m in Sources */,
+				6A86F9A715055173008EA537 /* NSArray+IMOCArray.m in Sources */,
 				6A5D977F1505FDEB0053B13C /* WMData.m in Sources */,
 				6AD1AA1C15067CEF00C72A92 /* WMPool+Loading.m in Sources */,
 			);

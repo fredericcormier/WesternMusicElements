@@ -86,7 +86,7 @@ class Statement
     end
     
     def render
-        puts "[[WesternMusicalNote alloc] initWithRoot:@\"#{@root}\" accidental:#{@accidental} atOctave:#{@octave} withMidiValue:#{@midi} andCpspch:#{@cpscph} atFrequency:#{@freq} forShortName:@\"#{@short_name}\"],"
+        puts "[[WMNote alloc] initWithRoot:@\"#{@root}\" accidental:#{@accidental} atOctave:#{@octave} withMidiValue:#{@midi} andCpspch:#{@cpscph} atFrequency:#{@freq} forShortName:@\"#{@short_name}\"],"
     end
 end
 

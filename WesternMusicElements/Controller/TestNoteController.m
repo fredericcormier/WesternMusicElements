@@ -7,11 +7,11 @@
 //
 
 #import "TestNoteController.h"
-#import "WesternMusicalNote.h"
-#import "WesternMusicalPool.h"
+#import "WMNote.h"
+#import "WMPool.h"
 
 @interface TestNoteController ()
-@property (strong, nonatomic)WesternMusicalNote *ourNote;
+@property (strong, nonatomic)WMNote *ourNote;
 @property (strong, nonatomic)NSMutableString* textBuffer;
 
 - (void)updateTextView;
@@ -37,7 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    WesternMusicalNote *poolNote = [[WesternMusicalPool pool] noteWithRoot:@"A" accidental:@"#" octave:5];
+    WMNote *poolNote = [[WMPool pool] noteWithRoot:@"A" accidental:@"#" octave:5];
     NSLog(@"note: %@", poolNote);
     [self newRandomNote:self];
  
@@ -69,20 +69,20 @@
 }
 
 - (IBAction)newRandomNote:(id)sender {
-    [self setOurNote:[[WesternMusicalPool pool] noteWithMidiNoteNumber:arc4random() % 127]];
+    [self setOurNote:[[WMPool pool] noteWithMidiNoteNumber:arc4random() % 127]];
     [self updateTextView];    
 
     
 }
 
 - (IBAction)showPrevious:(id)sender {
-    WesternMusicalNote *previousNote = [[self ourNote] previousNote];
+    WMNote *previousNote = [[self ourNote] previousNote];
     [self setOurNote:previousNote];
     [self updateTextView];
 }
 
 - (IBAction)showNext:(id)sender {
-    WesternMusicalNote *nextNote = [[self ourNote] nextNote];
+    WMNote *nextNote = [[self ourNote] nextNote];
     [self setOurNote:nextNote];
     [self updateTextView];
 }

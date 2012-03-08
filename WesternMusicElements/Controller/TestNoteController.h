@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@class WesternMusicalNote;
+@class WMNote;
 
 @interface TestNoteController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *noteLabel;

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6A0271761509FAEA006231DF /* NotesArrayScripts.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A0271751509FAEA006231DF /* NotesArrayScripts.rb */; };
 		6A0271781509FAFA006231DF /* scales_and_chords_to_json.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A0271771509FAFA006231DF /* scales_and_chords_to_json.rb */; };
+		6A02717B150A0ECA006231DF /* chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A027179150A0ECA006231DF /* chords.json */; };
+		6A02717C150A0ECA006231DF /* scales.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A02717A150A0ECA006231DF /* scales.json */; };
 		6A0B6D7A1504A88100C865AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D791504A88100C865AE /* UIKit.framework */; };
 		6A0B6D7C1504A88100C865AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7B1504A88100C865AE /* Foundation.framework */; };
 		6A0B6D7E1504A88100C865AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7D1504A88100C865AE /* CoreGraphics.framework */; };
@@ -51,6 +53,8 @@
 /* Begin PBXFileReference section */
 		6A0271751509FAEA006231DF /* NotesArrayScripts.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NotesArrayScripts.rb; path = Ruby/NotesArrayScripts.rb; sourceTree = "<group>"; };
 		6A0271771509FAFA006231DF /* scales_and_chords_to_json.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = scales_and_chords_to_json.rb; path = Ruby/scales_and_chords_to_json.rb; sourceTree = "<group>"; };
+		6A027179150A0ECA006231DF /* chords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = chords.json; path = Ruby/chords.json; sourceTree = "<group>"; };
+		6A02717A150A0ECA006231DF /* scales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scales.json; path = Ruby/scales.json; sourceTree = "<group>"; };
 		6A0B6D751504A88100C865AE /* WesternMusicElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesternMusicElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0B6D791504A88100C865AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6A0B6D7B1504A88100C865AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,6 +117,8 @@
 		6A0271741509F926006231DF /* Ruby */ = {
 			isa = PBXGroup;
 			children = (
+				6A027179150A0ECA006231DF /* chords.json */,
+				6A02717A150A0ECA006231DF /* scales.json */,
 				6A0271751509FAEA006231DF /* NotesArrayScripts.rb */,
 				6A0271771509FAFA006231DF /* scales_and_chords_to_json.rb */,
 			);
@@ -306,6 +312,8 @@
 				6A86F99E1504FE03008EA537 /* TestNoteController.xib in Resources */,
 				6A0271761509FAEA006231DF /* NotesArrayScripts.rb in Resources */,
 				6A0271781509FAFA006231DF /* scales_and_chords_to_json.rb in Resources */,
+				6A02717B150A0ECA006231DF /* chords.json in Resources */,
+				6A02717C150A0ECA006231DF /* scales.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

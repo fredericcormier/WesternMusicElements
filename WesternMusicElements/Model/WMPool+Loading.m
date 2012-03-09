@@ -18,7 +18,9 @@
     NSError *error;
     NSData *jsonData = [NSData dataWithContentsOfFile:path];
     NSDictionary *jsonChords = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
-    NSLog(@"Error :%@ , %@", error, [error userInfo]);
+    if (error) {
+        NSLog(@"Error :%@ , %@", error, [error userInfo]);
+    }
     return jsonChords;
 }
 
@@ -28,7 +30,9 @@
     NSError *error;
     NSData *jsonData = [NSData dataWithContentsOfFile:path];
     NSDictionary *jsonScales = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
-    NSLog(@"Error :%@ , %@", error, [error userInfo]);
+    if (error) {
+        NSLog(@"Error :%@ , %@", error, [error userInfo]);
+    }
     return jsonScales;
 }    
 
@@ -36,74 +40,6 @@
 
 
 
-
-#pragma mark - Ugly Code
-/*
- 
- Might find a better way to do this as i might want to add more
- chords and scale
- 
- */
-- (NSArray *)loadChordDefinitions {
-    return  [[NSArray alloc] initWithObjects:
-             [NSArray IMOArrayWithCArray:CChordValueMajor ofLength:3],
-             [NSArray IMOArrayWithCArray:CChordValueMajor6 ofLength:4],
-             [NSArray IMOArrayWithCArray:CChordValueMajor7 ofLength:4],
-             [NSArray IMOArrayWithCArray:CChordValueMajor9 ofLength:5],
-             [NSArray IMOArrayWithCArray:CChordValueMajor69 ofLength:5],
-             [NSArray IMOArrayWithCArray:CChordValueMajor11 ofLength:6],
-             [NSArray IMOArrayWithCArray:CChordValueMajor13 ofLength:7],
-             [NSArray IMOArrayWithCArray:CChordValueMinor ofLength:3],
-             [NSArray IMOArrayWithCArray:CChordValueMinor6 ofLength:4],
-             [NSArray IMOArrayWithCArray:CChordValueMinor7 ofLength:4],
-             [NSArray IMOArrayWithCArray:CChordValueMinor9 ofLength:5],
-             [NSArray IMOArrayWithCArray:CChordValueMinor69 ofLength:5],
-             [NSArray IMOArrayWithCArray:CChordValueMinor11 ofLength:6],
-             [NSArray IMOArrayWithCArray:CChordValueMinor13 ofLength:7],
-             [NSArray IMOArrayWithCArray:CChordValueDominant7 ofLength:4],
-             [NSArray IMOArrayWithCArray:CChordValueNinth ofLength:5],
-             [NSArray IMOArrayWithCArray:CChordValueEleventh ofLength:6],
-             [NSArray IMOArrayWithCArray:CChordValueThirteenth ofLength:7],
-             [NSArray IMOArrayWithCArray:CChordValueDiminished ofLength:3],
-             [NSArray IMOArrayWithCArray:CChordValueHalfDiminished7 ofLength:4],
-             [NSArray IMOArrayWithCArray:CChordValueDiminished7 ofLength:4],
-             [NSArray IMOArrayWithCArray:CChordValueAugmented ofLength:3],
-             [NSArray IMOArrayWithCArray:CChordValueAugmented7 ofLength:4],
-             [NSArray IMOArrayWithCArray:CChordValueSus4 ofLength:3],
-             [NSArray IMOArrayWithCArray:CChordValueSevenSus4 ofLength:4],
-             [NSArray IMOArrayWithCArray:CChordValueMinorMajor ofLength:4],
-             nil];
-    
-}
-- (NSArray *)loadScaleDefinitions {
-    return   [[NSArray alloc] initWithObjects:
-              [NSArray IMOArrayWithCArray:CScaleValueChromatic ofLength:13],
-              [NSArray IMOArrayWithCArray:CScaleValueMajor ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueNaturalMinor ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueHarmonicMinor ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueMelodicMinor ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueIonian ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueDorian ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValuePhrygian ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueLydian ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueMixolydian ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueAeolian ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueLocrian ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueGypsyMinor ofLength:8],
-              [NSArray IMOArrayWithCArray:CScaleValueWholeTone ofLength:7],
-              [NSArray IMOArrayWithCArray:CScaleValuePentatonicMajor ofLength:6],
-              [NSArray IMOArrayWithCArray:CScaleValuePentatonicMinor ofLength:6],
-              nil];
-}
-
-/*  
- 
- The following data does not have to change.
- The first note fondamental partial is at 8.17
- The last fondamental at more than 12k which is enough for harmony (not harmonic) purposes
- The midi note number standard is unlikely to change.
- 
- */
 - (NSArray *)prepareNotes {
     return  [[NSArray alloc] initWithObjects:
              [[WMNote alloc] initWithRoot:@"C" accidental:nil atOctave:-1 withMidiValue:0 andCpspch:3.0 atFrequency:8.176 forShortName:@"C-1"],

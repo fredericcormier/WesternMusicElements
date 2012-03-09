@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic)NSArray *notes;
 @property (strong, nonatomic)WMNote *rootNote;
-@property (assign, nonatomic)WMScaleMode mode;
+@property (assign, nonatomic)NSString * mode;
 @property (strong, nonatomic)NSArray *definition;
 
 
@@ -24,14 +24,14 @@
 @synthesize rootNote, notes, definition, mode;
 
 
-- (id)initWithRootNote:(WMNote *)note forScaleMode:(WMScaleMode)aMode {
+- (id)initWithRootNote:(WMNote *)note forScaleMode:(NSString *)aMode {
     if (self = [super init]) {
         
         rootNote = note;
         mode = aMode;
         int rootIndex = [note midiNoteNumber];
         
-        definition = [[[WMPool pool] scaleDefinitions] objectAtIndex:mode];
+        definition = [[[WMPool pool] scaleDefinitions] valueForKey:mode];
         
         NSMutableArray *tempScale = [[NSMutableArray alloc] init];
         for (NSNumber *n in definition) {
@@ -51,6 +51,6 @@
 
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@", [self notes]];
+    return [NSString stringWithFormat:@"%@ %@ %@",[self rootNote], [self mode], [self notes]];
 }
 @end

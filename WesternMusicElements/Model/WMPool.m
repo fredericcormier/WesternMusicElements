@@ -41,10 +41,8 @@ static WMPool *pool;
     else {
         if((self = [super init])){
             notes =[self prepareNotes];
-            scaleDefinitions =[self loadScaleDefinitions];
-            chordDefinitions =[self loadChordDefinitions];
-            [self loadChordsDefinitionsFromJSONFile];
-            [self loadScalesDefinitionsFromJSONFile];
+            chordDefinitions = [self loadChordsDefinitionsFromJSONFile];
+            scaleDefinitions = [self loadScalesDefinitionsFromJSONFile];
         }
     }
     return self;
@@ -84,19 +82,19 @@ static WMPool *pool;
 #pragma mark - Scales
 
 
-- (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(WMScaleMode)mode {
+- (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(NSString *)mode {
     WMNote *rootNote = [self noteWithRoot:aRoot accidental:anAccidental octave:anOctave];
     return [self scaleWithRootNote:rootNote scaleMode:mode];
     
 }
 
 
-- (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(WMScaleMode)mode {
+- (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(NSString *)mode {
     return [[WMScale alloc] initWithRootNote:rootNote forScaleMode:mode];
 }
 
 
-- (WMScale *)scaleWithShortName:(NSString *)name scaleMode:(WMScaleMode)mode {
+- (WMScale *)scaleWithShortName:(NSString *)name scaleMode:(NSString *)mode {
     return [[WMScale alloc] initWithRootNote:[self noteWithShortName:name] forScaleMode:mode];
 }
 

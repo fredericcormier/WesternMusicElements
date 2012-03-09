@@ -41,102 +41,47 @@ enum WMInterval {
 typedef enum WMInterval  WMInterval;
 
 
-enum WMScaleMode {
-    WMScaleModeChromatic = 0,
-    WMScaleModeMajor,
-    WMScaleModeNaturalMinor,
-    WMScaleModeHarmonicMinor,
-    WMScaleModeMelodicMinor,
-    WMScaleModeIonian,
-    WMScaleModeDorian,
-    WMScaleModePhrygian,
-    WMScaleModeLydian,
-    WMScaleModeMixolydian,
-    WMScaleModeAeolian,
-    WMScaleModeLocrian,
-    WMScaleModeGypsyMinor,
-    WMScaleModeWholeTone,
-    WMScaleModeMajorPentatonic,
-    WMScaleModeMinorPentatonic
-};
-typedef enum WMScaleMode WMScaleMode;
 
+static NSString *WMScaleModeChromatic = @"Chromatic";
+static NSString *WMScaleModeMajor = @"Major";
+static NSString *WMScaleModeNaturalMinor = @"Natural Minor";
+static NSString *WMScaleModeHarmonicMinor = @"Harmonic Minor";
+static NSString *WMScaleModeMelodicMinor = @"Melodic Minor";
+static NSString *WMScaleModeIonian = @"Ionian";
+static NSString *WMScaleModeDorian = @"Dorian";
+static NSString *WMScaleModePhrygian = @"Phrygian";
+static NSString *WMScaleModeLydian = @"Lydian";
+static NSString *WMScaleModeMixolydian = @"Mixolydian";
+static NSString *WMScaleModeAeolian = @"Aeolian";
+static NSString *WMScaleModeLocrian = @"Locrian";
+static NSString *WMScaleModeGypsyMinor = @"Gypsy Minor";
+static NSString *WMScaleModeWholeTone = @"Whole Tone";
+static NSString *WMScaleModeMajorPentatonic = @"Major Pentatonic";
+static NSString *WMScaleModeMinorPentatonic = @"Minor Pentatonic";
 
-enum WMChordType {
-    WMChordTypeMajor = 0,
-    WMChordTypeMajor6,
-    WMChordTypeMajor7,
-    WMChordTypeMajor9,
-    WMChordTypeMajor69,
-    WMChordTypeMajor11,
-    WMChordTypeMajor13,
-    WMChordTypeMinor,
-    WMChordTypeMinor6,
-    WMChordTypeMinor7,
-    WMChordTypeMinor9,
-    WMChordTypeMinor69,
-    WMChordTypeMinor11,
-    WMChordTypeMinor13,
-    WMChordTypeDominant7,
-    WMChordTypeNinth,
-    WMChordTypeEleventh,
-    WMChordTypeThirteenth,
-    WMChordTypeDiminished,
-    WMChordTypeHalfDiminished7,
-    WMChordTypeDiminished7,
-    WMChordTypeAugmented,
-    WMChordTypeAugmented7,
-    WMChordTypeSus4,
-    WMChordTypeSeventhSus4,
-    WMChordTypeMinorMajor
-};
-typedef enum WMChordType WMChordType;
-
-
-int CScaleValueChromatic[13];      
-int CScaleValueMajor[8];           
-int CScaleValueNaturalMinor[8];    
-int CScaleValueHarmonicMinor[8];   
-int CScaleValueMelodicMinor[8];    
-int CScaleValueIonian[8];          
-int CScaleValueDorian[8];          
-int CScaleValuePhrygian[8];        
-int CScaleValueLydian[8];          
-int CScaleValueMixolydian[8];      
-int CScaleValueAeolian[8];         
-int CScaleValueLocrian[8];         
-int CScaleValueGypsyMinor[8];      
-int CScaleValueWholeTone[7];       
-int CScaleValuePentatonicMajor[6]; 
-int CScaleValuePentatonicMinor[6];  
-
-int CChordValueMajor[3];
-int CChordValueMajor6[4];
-int CChordValueMajor7[4];
-int CChordValueMajor9[5];
-int CChordValueMajor69[5];
-int CChordValueMajor11[6];
-int CChordValueMajor13[7];
-int CChordValueMinor[3];
-int CChordValueMinor6[4];
-int CChordValueMinor7[4];
-int CChordValueMinor9[5];
-int CChordValueMinor69[5];
-int CChordValueMinor11[6];
-int CChordValueMinor13[7];
-int CChordValueDominant7[4];
-int CChordValueNinth[5];
-int CChordValueEleventh[6];
-int CChordValueThirteenth[7];
-int CChordValueDiminished[3];
-int CChordValueHalfDiminished7[4];
-int CChordValueDiminished7[4];
-int CChordValueAugmented[3];
-int CChordValueAugmented7[4];
-int CChordValueSus4[3];
-int CChordValueSevenSus4[4];
-int CChordValueMinorMajor[4];
-
-
-
-
+static NSString *WMChordTypeMajor = @"Major";
+static NSString *WMChordTypeMajor6 = @"Major 6";
+static NSString *WMChordTypeMajor7 = @"Major 7";
+static NSString *WMChordTypeMajor9 = @"Major 9";
+static NSString *WMChordTypeMajor69 = @"Major 69";
+static NSString *WMChordTypeMajor11 = @"Major 11";
+static NSString *WMChordTypeMajor13 = @"Major 13";
+static NSString *WMChordTypeMinor = @"Minor";
+static NSString *WMChordTypeMinor6 = @"Minor 6";
+static NSString *WMChordTypeMinor7 = @"Minor 7";
+static NSString *WMChordTypeMinor9 = @"Minor 9";
+static NSString *WMChordTypeMinor69 = @"Minor 69";
+static NSString *WMChordTypeMinor11 = @"Minor 11";
+static NSString *WMChordTypeMinor13 = @"Minor 13";
+static NSString *WMChordTypeDominant7 = @"Dominant 7";
+static NSString *WMChordTypeNinth = @"Ninth";
+static NSString *WMChordTypeEleventh = @"Eleventh";
+static NSString *WMChordTypeThirteenth = @"Thirteenth";
+static NSString *WMChordTypeDiminished = @"Diminished";
+static NSString *WMChordTypeHalfDiminished7 = @"Half Diminished 7";
+static NSString *WMChordTypeDiminished7 = @"Diminished 7";
+static NSString *WMChordTypeAugmented = @"Augmented";
+static NSString *WMChordTypeAugmented7 = @"Augmented 7";
+static NSString *WMChordTypeSus4 = @"Sus4";
+static NSString *WMChordTypeSeventhSus4 = @"Seventh sus4";
+static NSString *WMChordTypeMinorMajor = @"Minor major";

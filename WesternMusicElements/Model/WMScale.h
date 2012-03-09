@@ -11,7 +11,7 @@
 @interface WMScale : NSObject
 
 
-- (id)initWithRootNote:(WMNote *)note forScaleMode:(WMScaleMode)aMode;
+- (id)initWithRootNote:(WMNote *)note forScaleMode:(NSString *)aMode;
 
 - (NSArray *)notes;
 

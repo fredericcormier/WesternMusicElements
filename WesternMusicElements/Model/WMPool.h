@@ -21,8 +21,8 @@
 @interface WMPool : NSObject 
 
 @property (strong, nonatomic)NSArray *notes;
-@property (strong, nonatomic)NSArray* scaleDefinitions;
-@property (strong, nonatomic)NSArray* chordDefinitions;
+@property (strong, nonatomic)NSDictionary* scaleDefinitions;
+@property (strong, nonatomic)NSDictionary* chordDefinitions;
 
 + (WMPool *)pool;
 
@@ -30,7 +30,7 @@
 - (WMNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave;
 - (WMNote *)noteWithMidiNoteNumber:(int)midiNoteNumber;
 
-- (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(WMScaleMode)mode;
-- (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(WMScaleMode)mode;
-- (WMScale *)scaleWithShortName:(NSString *)name scaleMode:(WMScaleMode)mode;
+- (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(NSString *)mode;
+- (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(NSString *)mode;
+- (WMScale *)scaleWithShortName:(NSString *)name scaleMode:(NSString *)mode;
 @end

@@ -29,7 +29,9 @@
 - (WMNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave;
 - (WMNote *)noteWithMidiNoteNumber:(int)midiNoteNumber;
 
-- (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(NSString *)mode;
-- (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(NSString *)mode;
-- (WMScale *)scaleWithRootShortName:(NSString *)name scaleMode:(NSString *)mode;
+- (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(WMScaleMode *)mode;
+- (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(WMScaleMode *)mode;
+- (WMScale *)scaleWithRootShortName:(NSString *)name scaleMode:(WMScaleMode *)mode;
+
+
 @end

@@ -256,7 +256,7 @@ static WMPool *pool;
 }
 
 
-- (WMScale *)scaleWithShortName:(NSString *)name scaleMode:(NSString *)mode {
+- (WMScale *)scaleWithRootShortName:(NSString *)name scaleMode:(NSString *)mode {
     return [[WMScale alloc] initWithRootNote:[self noteWithShortName:name] forScaleMode:mode];
 }
 

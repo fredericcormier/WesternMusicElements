@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A0271721509F91B006231DF /* scales_and_chords_to_json.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A0271711509F91B006231DF /* scales_and_chords_to_json.rb */; };
+		6A0271761509FAEA006231DF /* NotesArrayScripts.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A0271751509FAEA006231DF /* NotesArrayScripts.rb */; };
+		6A0271781509FAFA006231DF /* scales_and_chords_to_json.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A0271771509FAFA006231DF /* scales_and_chords_to_json.rb */; };
 		6A0B6D7A1504A88100C865AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D791504A88100C865AE /* UIKit.framework */; };
 		6A0B6D7C1504A88100C865AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7B1504A88100C865AE /* Foundation.framework */; };
 		6A0B6D7E1504A88100C865AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7D1504A88100C865AE /* CoreGraphics.framework */; };
@@ -23,7 +24,6 @@
 		6A5D977E1505FDEB0053B13C /* WMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D977D1505FDEB0053B13C /* WMData.m */; };
 		6A5D977F1505FDEB0053B13C /* WMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D977D1505FDEB0053B13C /* WMData.m */; };
 		6A61BB7C1504B38E003CE524 /* WMPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61BB7B1504B38E003CE524 /* WMPool.m */; };
-		6A61BB7F1504B624003CE524 /* NotesArrayScripts.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */; };
 		6A86F9911504E83B008EA537 /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WMScale.m */; };
 		6A86F9921504E83B008EA537 /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WMScale.m */; };
 		6A86F99C1504FE03008EA537 /* TestNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F99A1504FE03008EA537 /* TestNoteController.m */; };
@@ -49,7 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A0271711509F91B006231DF /* scales_and_chords_to_json.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = scales_and_chords_to_json.rb; sourceTree = "<group>"; };
+		6A0271751509FAEA006231DF /* NotesArrayScripts.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NotesArrayScripts.rb; path = Ruby/NotesArrayScripts.rb; sourceTree = "<group>"; };
+		6A0271771509FAFA006231DF /* scales_and_chords_to_json.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = scales_and_chords_to_json.rb; path = Ruby/scales_and_chords_to_json.rb; sourceTree = "<group>"; };
 		6A0B6D751504A88100C865AE /* WesternMusicElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesternMusicElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0B6D791504A88100C865AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6A0B6D7B1504A88100C865AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,7 +73,6 @@
 		6A5D977D1505FDEB0053B13C /* WMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMData.m; path = Model/WMData.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A61BB7A1504B38E003CE524 /* WMPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMPool.h; path = Model/WMPool.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A61BB7B1504B38E003CE524 /* WMPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMPool.m; path = Model/WMPool.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; lineEnding = 0; path = NotesArrayScripts.rb; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6A86F98F1504E83B008EA537 /* WMScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMScale.h; path = Model/WMScale.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A86F9901504E83B008EA537 /* WMScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMScale.m; path = Model/WMScale.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A86F9991504FE03008EA537 /* TestNoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TestNoteController.h; path = Controller/TestNoteController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -113,8 +113,8 @@
 		6A0271741509F926006231DF /* Ruby */ = {
 			isa = PBXGroup;
 			children = (
-				6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */,
-				6A0271711509F91B006231DF /* scales_and_chords_to_json.rb */,
+				6A0271751509FAEA006231DF /* NotesArrayScripts.rb */,
+				6A0271771509FAFA006231DF /* scales_and_chords_to_json.rb */,
 			);
 			name = Ruby;
 			sourceTree = "<group>";
@@ -303,9 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */,
-				6A61BB7F1504B624003CE524 /* NotesArrayScripts.rb in Resources */,
 				6A86F99E1504FE03008EA537 /* TestNoteController.xib in Resources */,
-				6A0271721509F91B006231DF /* scales_and_chords_to_json.rb in Resources */,
+				6A0271761509FAEA006231DF /* NotesArrayScripts.rb in Resources */,
+				6A0271781509FAFA006231DF /* scales_and_chords_to_json.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

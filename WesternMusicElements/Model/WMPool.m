@@ -261,4 +261,10 @@ static WMPool *pool;
 }
 
 
+#pragma mark - Chords
+
+- (WMChord *)chordWithRootShortName:(NSString *)name chordType:(WMChordType *)aType inversion:(int)theInversion {
+    
+}
+
 @end

@@ -15,7 +15,7 @@
 
 @class WMNote;
 @class WMScale;
-
+@class WMChord;
 
 @interface WMPool : NSObject 
 
@@ -33,5 +33,6 @@
 - (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(WMScaleMode *)mode;
 - (WMScale *)scaleWithRootShortName:(NSString *)name scaleMode:(WMScaleMode *)mode;
 
+- (WMChord *)chordWithRootShortName:(NSString *)name chordType:(WMChordType *)aType inversion:(int)theInversion;
 
 @end

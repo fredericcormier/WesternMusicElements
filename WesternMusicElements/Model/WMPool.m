@@ -43,6 +43,8 @@ static WMPool *pool;
             notes =[self prepareNotes];
             scaleDefinitions =[self loadScaleDefinitions];
             chordDefinitions =[self loadChordDefinitions];
+            [self loadChordsDefinitionsFromJSONFile];
+            [self loadScalesDefinitionsFromJSONFile];
         }
     }
     return self;

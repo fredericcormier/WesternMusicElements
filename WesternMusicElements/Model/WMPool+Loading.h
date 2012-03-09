@@ -14,4 +14,7 @@
 - (NSArray *)loadScaleDefinitions;
 - (NSArray *)loadChordDefinitions;
 
+- (NSDictionary *)loadChordsDefinitionsFromJSONFile;
+- (NSDictionary *)loadScalesDefinitionsFromJSONFile;
+
 @end

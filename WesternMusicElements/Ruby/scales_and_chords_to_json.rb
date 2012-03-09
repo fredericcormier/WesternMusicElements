@@ -59,3 +59,5 @@ end
 File.open("scales.json","w+") do |f|
     SCALES.to_json.each { |l| f << l.to_s << "\n" }
 end
+
+

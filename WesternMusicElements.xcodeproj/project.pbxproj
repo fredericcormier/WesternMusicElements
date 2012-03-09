@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0271721509F91B006231DF /* scales_and_chords_to_json.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A0271711509F91B006231DF /* scales_and_chords_to_json.rb */; };
 		6A0B6D7A1504A88100C865AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D791504A88100C865AE /* UIKit.framework */; };
 		6A0B6D7C1504A88100C865AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7B1504A88100C865AE /* Foundation.framework */; };
 		6A0B6D7E1504A88100C865AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7D1504A88100C865AE /* CoreGraphics.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A0271711509F91B006231DF /* scales_and_chords_to_json.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = scales_and_chords_to_json.rb; sourceTree = "<group>"; };
 		6A0B6D751504A88100C865AE /* WesternMusicElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesternMusicElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0B6D791504A88100C865AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6A0B6D7B1504A88100C865AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A0271741509F926006231DF /* Ruby */ = {
+			isa = PBXGroup;
+			children = (
+				6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */,
+				6A0271711509F91B006231DF /* scales_and_chords_to_json.rb */,
+			);
+			name = Ruby;
+			sourceTree = "<group>";
+		};
 		6A0B6D6A1504A88100C865AE = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +152,7 @@
 		6A0B6D7F1504A88100C865AE /* WesternMusicElements */ = {
 			isa = PBXGroup;
 			children = (
+				6A0271741509F926006231DF /* Ruby */,
 				6A86F9A815055475008EA537 /* Helpers */,
 				6A86F9981504FD46008EA537 /* Controllers */,
 				6A0B6DA81504AB7D00C865AE /* Model */,
@@ -213,7 +225,6 @@
 		6A86F9A815055475008EA537 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				6A61BB7E1504B624003CE524 /* NotesArrayScripts.rb */,
 				6A86F9A415055173008EA537 /* NSArray+IMOCArray.h */,
 				6A86F9A515055173008EA537 /* NSArray+IMOCArray.m */,
 			);
@@ -294,6 +305,7 @@
 				6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */,
 				6A61BB7F1504B624003CE524 /* NotesArrayScripts.rb in Resources */,
 				6A86F99E1504FE03008EA537 /* TestNoteController.xib in Resources */,
+				6A0271721509F91B006231DF /* scales_and_chords_to_json.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

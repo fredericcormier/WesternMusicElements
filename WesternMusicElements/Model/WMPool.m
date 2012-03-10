@@ -224,7 +224,9 @@ static WMPool *pool;
 
 
 
-- (WMNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave {
+- (WMNote *)noteWithRoot:(NSString *)aRoot
+              accidental:(NSString *)anAccidental 
+                  octave:(int)anOctave {
     NSString *resolvedAccidental = anAccidental ? anAccidental : @"";
     NSString *noteName = [NSString stringWithFormat:@"%@%@%d", [aRoot uppercaseString], resolvedAccidental, anOctave];
     return [self noteWithShortName:noteName];
@@ -244,7 +246,10 @@ static WMPool *pool;
 #pragma mark - Scales
 
 
-- (WMScale *)scaleWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave scaleMode:(WMScaleMode *)mode {
+- (WMScale *)scaleWithRoot:(NSString *)aRoot 
+                accidental:(NSString *)anAccidental 
+                    octave:(int)anOctave 
+                 scaleMode:(WMScaleMode *)mode {
     WMNote *rootNote = [self noteWithRoot:aRoot accidental:anAccidental octave:anOctave];
     return [self scaleWithRootNote:rootNote scaleMode:mode];
     
@@ -263,7 +268,9 @@ static WMPool *pool;
 
 #pragma mark - Chords
 
-- (WMChord *)chordWithRootShortName:(NSString *)name chordType:(WMChordType *)aType inversion:(int)theInversion {
+- (WMChord *)chordWithRootShortName:(NSString *)name
+                          chordType:(WMChordType *)aType 
+                          inversion:(int)theInversion {
     
 }
 

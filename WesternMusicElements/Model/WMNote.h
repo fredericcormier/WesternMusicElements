@@ -29,6 +29,7 @@
 - (WMNote *)nextNote;
 - (WMNote *)previousNote;
 - (WMInterval)intervalFrom:(WMNote *)otherNote;
+- (BOOL)isEqualToNote:(WMNote *)otherNote;
 
 @property(strong, nonatomic)NSString *root;
 @property(strong, nonatomic)NSString *accidental;

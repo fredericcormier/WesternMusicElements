@@ -83,7 +83,6 @@
 
 
 - (WMNote *)noteAtInterval:(WMInterval)semitones {
-   // return [[[WMPool pool] notes] objectAtIndex:[self midiValue] + semitones ];
     return [[WMPool pool] noteWithMidiNoteNumber:[self midiNoteNumber] + semitones ];
 }
 
@@ -102,5 +101,8 @@
     
 }
 
+- (BOOL)isEqualToNote:(WMNote *)otherNote {
+    return [self midiNoteNumber] == [otherNote midiNoteNumber];
+}
 
 @end

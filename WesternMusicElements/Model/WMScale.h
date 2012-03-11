@@ -15,4 +15,7 @@
 
 - (NSArray *)notes;
 
+
+- (WMScale *)transpose:(WMInterval)semitones;
+
 @end

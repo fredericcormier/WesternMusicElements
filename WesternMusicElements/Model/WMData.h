@@ -43,6 +43,9 @@ typedef enum WMInterval  WMInterval;
 typedef NSString WMScaleMode;
 typedef NSString WMChordType;
 
+
+typedef int WMChordInvertion;
+
 static WMScaleMode *WMScaleModeChromatic = @"Chromatic";
 static WMScaleMode *WMScaleModeMajor = @"Major";
 static WMScaleMode *WMScaleModeNaturalMinor = @"Natural Minor";

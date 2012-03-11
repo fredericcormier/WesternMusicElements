@@ -35,4 +35,6 @@
 
 - (WMChord *)chordWithRootShortName:(NSString *)name chordType:(WMChordType *)aType inversion:(int)theInversion;
 
+
+
 @end

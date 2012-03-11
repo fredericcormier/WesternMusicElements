@@ -61,6 +61,7 @@ float frequency_;
     return self;
 }
 
+#pragma mark - Accessors
 
 - (NSString *)root {
     return root_;
@@ -85,6 +86,9 @@ float frequency_;
     return shortName_;
 }
 
+
+#pragma mark - Descriptors
+
 - (NSString *)description {
     return [NSString stringWithFormat:@"Note:%@, %@, %d, midi:%d, cpspch:%.2f, frequency:%.2f, for %@",
             root_, 
@@ -99,6 +103,10 @@ float frequency_;
 - (NSString *)shortDescription {
     return [NSString stringWithFormat:@"Note %@ num:%d freq:%.2f", shortName_, midiNoteNumber_, frequency_];
 }
+
+
+
+#pragma mark - Our Concern
 
 - (NSComparisonResult )compare:(WMNote *)otherNote {
     if ( [self midiNoteNumber] == [otherNote midiNoteNumber]) {

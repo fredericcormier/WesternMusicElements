@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WMData.h"
 
 @interface WMChord : NSObject
 
+- (WMChord *)transpose:(WMInterval)semitones;
+- (WMChord *)invert:(WMChordInvertion)degree;
 @end

@@ -53,4 +53,9 @@
 - (NSString *)description {
     return [NSString stringWithFormat:@"%@ %@ %@",[self rootNote], [self mode], [self notes]];
 }
+
+- (WMScale *)transpose:(WMInterval)semitones {
+    
+}
+
 @end

@@ -10,4 +10,13 @@
 
 @implementation WMChord
 
+
+
+- (WMChord *)transpose:(WMInterval)semitones {
+    
+}
+- (WMChord *)invert:(WMChordInvertion)degree {
+    
+}
+
 @end

@@ -44,7 +44,7 @@ float frequency_;
 - (id)initWithRoot:(NSString *)aRoot 
         accidental:(NSString *)anAccidental 
           atOctave:(int)anOctave
-     withMidiValue:(int)mValue
+     withMidiNoteNumber:(int)aMidiNoteNumber
          andCpspch:(float)cpspchValue
        atFrequency:(float)freq
       forShortName:(NSString *)aShortName{
@@ -53,7 +53,7 @@ float frequency_;
         root_ = [aRoot uppercaseString];
         accidental_ = anAccidental;
         octave_ = anOctave;
-        midiNoteNumber_ = mValue;
+        midiNoteNumber_ = aMidiNoteNumber;
         cpspch_ = cpspchValue;
         frequency_ = freq;
         shortName_ = aShortName;

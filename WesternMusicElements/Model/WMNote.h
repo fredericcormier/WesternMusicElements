@@ -17,7 +17,7 @@
 - (id)initWithRoot:(NSString *)aRoot 
         accidental:(NSString *)anAccidental 
           atOctave:(int)anOctave
-     withMidiValue:(int)mValue
+     withMidiNoteNumber:(int)aMidiNoteNumber
          andCpspch:(float)cpspchValue
        atFrequency:(float)freq
       forShortName:(NSString *)aShortName;

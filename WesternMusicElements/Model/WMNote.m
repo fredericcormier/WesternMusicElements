@@ -19,19 +19,25 @@
 #import "WMNote.h"
 #import "WMPool.h"
 
+@interface WMNote () {
+
+NSString *root_;
+NSString *accidental_;
+NSString *shortName_;
+int octave_;
+int midiNoteNumber_;
+float cpspch_;
+float frequency_;
+
+}
+@end
 
 
 
 @implementation WMNote
 
 
-@synthesize root = root_;
-@synthesize accidental = accidental_;
-@synthesize octave = octave_;
-@synthesize shortName = shortName_;
-@synthesize midiNoteNumber = midiNoteNumber_;
-@synthesize cpspch = cpspch_;
-@synthesize frequency = frequency_;
+
 
 
 /* Designated intializer */
@@ -56,25 +62,48 @@
 }
 
 
+- (NSString *)root {
+    return root_;
+}
+- (NSString *)accidental {
+    return accidental_;
+}
+- (int)octave {
+    return octave_;
+}
+- (int)midiNoteNumber {
+    return midiNoteNumber_;
+}
+- (float)cpspch {
+    return cpspch_;
+}
+
+- (float)frequency {
+    return frequency_;
+}
+- (NSString *)shortName {
+    return shortName_;
+}
+
 - (NSString *)description {
     return [NSString stringWithFormat:@"Note:%@, %@, %d, midi:%d, cpspch:%.2f, frequency:%.2f, for %@",
-            [self root], 
-            [self accidental], 
-            [self octave],
-            [self midiNoteNumber],
-            [self cpspch],
-            [self frequency],
-            [self shortName]];
+            root_, 
+            accidental_, 
+            octave_,
+            midiNoteNumber_,
+            cpspch_,
+            frequency_,
+            shortName_];
 }
 
 - (NSString *)shortDescription {
-    return [NSString stringWithFormat:@"Note %@ num:%d freq:%.2f", [self shortName], [self midiNoteNumber], [self frequency]];
+    return [NSString stringWithFormat:@"Note %@ num:%d freq:%.2f", shortName_, midiNoteNumber_, frequency_];
 }
 
 - (NSComparisonResult )compare:(WMNote *)otherNote {
-    if ([self midiNoteNumber] == [otherNote midiNoteNumber]) {
+    if ( [self midiNoteNumber] == [otherNote midiNoteNumber]) {
         return NSOrderedSame;
-    }else if ([self midiNoteNumber] < [otherNote midiNoteNumber]) {
+    }else if ([self midiNoteNumber]  < [otherNote midiNoteNumber]) {
         return NSOrderedAscending;
     }else {
         return NSOrderedDescending;
@@ -83,12 +112,12 @@
 
 
 - (WMNote *)noteAtInterval:(WMInterval)semitones {
-    return [[WMPool pool] noteWithMidiNoteNumber:[self midiNoteNumber] + semitones ];
+    return [[WMPool pool] noteWithMidiNoteNumber: [self midiNoteNumber] + semitones ];
 }
 
 
 - (WMInterval)intervalFrom:(WMNote *)otherNote {
-    return abs([self midiNoteNumber] - [otherNote midiNoteNumber]);
+    return abs([self midiNoteNumber ] - [otherNote midiNoteNumber]);
 }
 
 

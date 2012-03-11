@@ -31,12 +31,11 @@
 - (WMInterval)intervalFrom:(WMNote *)otherNote;
 - (BOOL)isEqualToNote:(WMNote *)otherNote;
 
-@property(strong, nonatomic)NSString *root;
-@property(strong, nonatomic)NSString *accidental;
-@property(strong, nonatomic)NSString *shortName;
-@property(assign, nonatomic)int octave;
-@property(assign, nonatomic)int midiNoteNumber;
-@property(assign, nonatomic)float cpspch;
-@property(assign, nonatomic)float frequency;
-
+- (NSString *)root;
+- (NSString *)accidental;
+- (int)octave;
+- (int)midiNoteNumber;
+- (float)cpspch;
+- (float)frequency;
+- (NSString *)shortName;
 @end

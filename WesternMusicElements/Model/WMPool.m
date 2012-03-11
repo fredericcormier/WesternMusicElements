@@ -215,7 +215,7 @@ static WMPool *pool;
 
 - (WMNote *)noteWithShortName:(NSString *)aShortName {
     for (WMNote *note in [self notes]) {
-        if ([[note valueForKey:@"shortName"] isEqualToString:aShortName]) {
+        if ([[note valueForKey:@"shortName"] isEqualToString:[aShortName uppercaseString]]) {
             return note;
         }
     }

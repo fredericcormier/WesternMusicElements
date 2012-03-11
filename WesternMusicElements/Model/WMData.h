@@ -24,7 +24,7 @@ enum WMInterval {
     WMChromaticIntervalAugmentedThird       = 5,
     WMDiatonicIntervalAugmentedFourth       = 6,
     WMDiatonicIntervalDiminishedFifth       = 6,
-    WDLatinIntervalTritone                  = 6,
+    WMLatinIntervalTritone                  = 6,
     WMDiatonicIntervalPerfectFith           = 7,
     WMChromaticIntervalDiminishedSixth      = 7,
     WMDiatonicIntervalMinorSixth            = 8,

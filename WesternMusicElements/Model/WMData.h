@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark - Intervals
 
 enum WMInterval {
     WMDiatonicIntervalPerfectUnison         = 0,
@@ -40,8 +41,8 @@ enum WMInterval {
 };
 typedef enum WMInterval  WMInterval;
 
-typedef NSString WMScaleMode;
-typedef NSString WMChordType;
+
+#pragma mark - Inversions
 
 /*
 
@@ -61,6 +62,12 @@ enum WMChordInversion {
 
 typedef enum WMChordInversion WMChordInversion;
 
+
+#pragma mark - Scales
+
+
+typedef NSString WMScaleMode;
+
 static WMScaleMode *WMScaleModeChromatic = @"Chromatic";
 static WMScaleMode *WMScaleModeMajor = @"Major";
 static WMScaleMode *WMScaleModeNaturalMinor = @"Natural Minor";
@@ -77,6 +84,13 @@ static WMScaleMode *WMScaleModeGypsyMinor = @"Gypsy Minor";
 static WMScaleMode *WMScaleModeWholeTone = @"Whole Tone";
 static WMScaleMode *WMScaleModeMajorPentatonic = @"Major Pentatonic";
 static WMScaleMode *WMScaleModeMinorPentatonic = @"Minor Pentatonic";
+
+
+#pragma mark - Chords
+
+
+typedef NSString WMChordType;
+
 
 static WMChordType *WMChordTypeMajor = @"Major";
 static WMChordType *WMChordTypeMajor6 = @"Major 6";

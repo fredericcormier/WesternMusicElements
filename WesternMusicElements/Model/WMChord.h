@@ -13,15 +13,6 @@
 @class WMNote;
 @interface WMChord : NSObject
 
-- (WMChord *)transpose:(WMInterval)semitones;
-- (WMChord *)invert:(WMChordInversion)inv;
-
-
-
-// Accessors
-
-- (WMNote *)rootNote;
-- (WMChordType *)type;
-- (WMChordInversion) invertion;
+- (id)initWithRootNote:(WMNote *)aNote forType:(WMChordType *)aType inversion:(WMChordInversion)inv;
 
 @end

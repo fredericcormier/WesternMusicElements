@@ -47,6 +47,9 @@
     WMScale *aSharp2Major = [[WMPool pool] scaleWithRoot:@"A" accidental:@"#" octave:2 scaleMode:WMScaleModeMajor];
     NSLog(@"%@", aSharp2Major);
     
+    WMChord *cMchord = [[WMPool pool] chordWithRootShortName:@"c1" chordType:WMChordTypeMajor inversion:WMChordInversionSecond];
+    NSLog(@"%@",cMchord);
+    
     [self newRandomNote:self];
  
   }

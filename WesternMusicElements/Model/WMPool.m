@@ -9,7 +9,7 @@
 #import "WMPool.h"
 #import "WMNote.h"
 #import "WMScale.h"
-
+#import "WMChord.h"
 
 static WMPool *pool;
 
@@ -271,7 +271,7 @@ static WMPool *pool;
 - (WMChord *)chordWithRootShortName:(NSString *)name
                           chordType:(WMChordType *)aType 
                           inversion:(int)theInversion {
-    
+    return [[WMChord alloc] initWithRootNote:[self noteWithShortName:name]  forType:aType inversion:theInversion];
 }
 
 @end

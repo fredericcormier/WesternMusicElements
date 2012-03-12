@@ -43,8 +43,23 @@ typedef enum WMInterval  WMInterval;
 typedef NSString WMScaleMode;
 typedef NSString WMChordType;
 
+/*
 
-typedef int WMChordInvertion;
+    A thirteenth chord has the max of 7 notes
+    that gives us a max of 6 inversions
+ 
+ */
+enum WMChordInversion {
+    WMChordInversionRootPosition = 0,
+    WMChordInversionFirst,
+    WMChordInversionSecond,
+    WMChordInversionThird,
+    WMChordInversionFourth,
+    WMChordInversionFith,
+    WMChordInversionSixth,
+};
+
+typedef enum WMChordInversion WMChordInversion;
 
 static WMScaleMode *WMScaleModeChromatic = @"Chromatic";
 static WMScaleMode *WMScaleModeMajor = @"Major";

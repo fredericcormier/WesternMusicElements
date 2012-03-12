@@ -7,15 +7,35 @@
 //
 
 #import "WMChord.h"
+#import "WMNote.h"
 
-@implementation WMChord
+@implementation WMChord {
+    
+    WMNote *rootNote_;
+    WMChordType *type_;
+    WMChordInversion invertion_;
+    
+}
 
+- (id)initWithRootNote:(WMNote *)aNote forType:(WMChordType *)aType invertion:(WMChordInversion)inv {
+    
+    
+}
 
+- (WMNote *)rootNote {
+    return rootNote_;
+}
 
+- (WMChordType *)type {
+    return type_;
+}
+- (WMChordInversion) invertion{
+    return invertion_;
+}
 - (WMChord *)transpose:(WMInterval)semitones {
     
 }
-- (WMChord *)invert:(WMChordInvertion)degree {
+- (WMChord *)invert:(WMChordInversion)inv {
     
 }
 

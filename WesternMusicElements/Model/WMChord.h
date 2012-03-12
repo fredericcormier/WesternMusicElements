@@ -9,8 +9,19 @@
 #import <Foundation/Foundation.h>
 #import "WMData.h"
 
+
+@class WMNote;
 @interface WMChord : NSObject
 
 - (WMChord *)transpose:(WMInterval)semitones;
-- (WMChord *)invert:(WMChordInvertion)degree;
+- (WMChord *)invert:(WMChordInversion)inv;
+
+
+
+// Accessors
+
+- (WMNote *)rootNote;
+- (WMChordType *)type;
+- (WMChordInversion) invertion;
+
 @end

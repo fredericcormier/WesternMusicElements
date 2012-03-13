@@ -28,10 +28,6 @@
 		6A61BB7C1504B38E003CE524 /* WMPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61BB7B1504B38E003CE524 /* WMPool.m */; };
 		6A86F9911504E83B008EA537 /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WMScale.m */; };
 		6A86F9921504E83B008EA537 /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WMScale.m */; };
-		6A86F99C1504FE03008EA537 /* TestNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F99A1504FE03008EA537 /* TestNoteController.m */; };
-		6A86F99D1504FE03008EA537 /* TestNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F99A1504FE03008EA537 /* TestNoteController.m */; };
-		6A86F99E1504FE03008EA537 /* TestNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A86F99B1504FE03008EA537 /* TestNoteController.xib */; };
-		6A86F99F1504FE03008EA537 /* TestNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A86F99B1504FE03008EA537 /* TestNoteController.xib */; };
 		6A86F9A215053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
 		6A86F9A315053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
 		6AB10B69150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
@@ -80,9 +76,6 @@
 		6A61BB7B1504B38E003CE524 /* WMPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMPool.m; path = Model/WMPool.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A86F98F1504E83B008EA537 /* WMScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMScale.h; path = Model/WMScale.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A86F9901504E83B008EA537 /* WMScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMScale.m; path = Model/WMScale.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6A86F9991504FE03008EA537 /* TestNoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TestNoteController.h; path = Controller/TestNoteController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		6A86F99A1504FE03008EA537 /* TestNoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TestNoteController.m; path = Controller/TestNoteController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6A86F99B1504FE03008EA537 /* TestNoteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestNoteController.xib; path = Controller/TestNoteController.xib; sourceTree = "<group>"; };
 		6A86F9A015053448008EA537 /* WMChord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMChord.h; path = Model/WMChord.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A86F9A115053448008EA537 /* WMChord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMChord.m; path = Model/WMChord.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6AB10B67150F40DD0047FF0E /* WMNoteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollection.h; path = Model/WMNoteCollection.h; sourceTree = "<group>"; };
@@ -224,9 +217,6 @@
 		6A86F9981504FD46008EA537 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6A86F9991504FE03008EA537 /* TestNoteController.h */,
-				6A86F99A1504FE03008EA537 /* TestNoteController.m */,
-				6A86F99B1504FE03008EA537 /* TestNoteController.xib */,
 				6AB10B74150F649F0047FF0E /* WMScaleTestViewController.h */,
 				6AB10B75150F649F0047FF0E /* WMScaleTestViewController.m */,
 				6AB10B76150F649F0047FF0E /* WMScaleTestViewController.xib */,
@@ -314,7 +304,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */,
-				6A86F99E1504FE03008EA537 /* TestNoteController.xib in Resources */,
 				6A0271761509FAEA006231DF /* NotesArrayScripts.rb in Resources */,
 				6A0271781509FAFA006231DF /* scales_and_chords_to_json.rb in Resources */,
 				6A02717B150A0ECA006231DF /* chords.json in Resources */,
@@ -329,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D9C1504A88200C865AE /* InfoPlist.strings in Resources */,
-				6A86F99F1504FE03008EA537 /* TestNoteController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +349,6 @@
 				6A0B6DAB1504AC1900C865AE /* WMNote.m in Sources */,
 				6A61BB7C1504B38E003CE524 /* WMPool.m in Sources */,
 				6A86F9911504E83B008EA537 /* WMScale.m in Sources */,
-				6A86F99C1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A215053448008EA537 /* WMChord.m in Sources */,
 				6A5D977E1505FDEB0053B13C /* WMData.m in Sources */,
 				6AB10B69150F40DD0047FF0E /* WMNoteCollection.m in Sources */,
@@ -375,7 +362,6 @@
 			files = (
 				6A0B6D9F1504A88200C865AE /* WesternMusicElementsTests.m in Sources */,
 				6A86F9921504E83B008EA537 /* WMScale.m in Sources */,
-				6A86F99D1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A315053448008EA537 /* WMChord.m in Sources */,
 				6A5D977F1505FDEB0053B13C /* WMData.m in Sources */,
 				6AB10B6A150F40DD0047FF0E /* WMNoteCollection.m in Sources */,

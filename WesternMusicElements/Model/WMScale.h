@@ -7,17 +7,11 @@
 //
 #import <Foundation/Foundation.h>
 #import "WMPool.h"
+#import "WMNoteCollection.h"
 
-@interface WMScale : NSObject
+@interface WMScale : WMNoteCollection
 
 
 - (id)initWithRootNote:(WMNote *)note forScaleMode:(NSString *)aMode;
-
-- (NSArray *)notes;
-
-// return an NSString which is the concatenation of all note's shortnames
-- (NSString *)notesShortNames;
-
-- (WMScale *)transpose:(WMInterval)semitones;
 
 @end

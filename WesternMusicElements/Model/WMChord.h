@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "WMData.h"
+#import "WMNoteCollection.h"
 
 
 @class WMNote;
-@interface WMChord : NSObject
+
+@interface WMChord : WMNoteCollection
 
 - (id)initWithRootNote:(WMNote *)aNote forType:(WMChordType *)aType inversion:(WMChordInversion)inv;
 

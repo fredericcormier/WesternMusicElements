@@ -11,61 +11,31 @@
 
 @interface WMScale()
 
-@property (strong, nonatomic)NSArray *notes;
-@property (strong, nonatomic)WMNote *rootNote;
 @property (assign, nonatomic)NSString * mode;
-@property (strong, nonatomic)NSArray *definition;
+
 
 
 @end
 
 
 @implementation WMScale
-@synthesize rootNote, notes, definition, mode;
+@synthesize mode;
 
 
 - (id)initWithRootNote:(WMNote *)note forScaleMode:(NSString *)aMode {
-    if (self = [super init]) {
-        
-        rootNote = note;
-        mode = aMode;
-        int rootIndex = [note midiNoteNumber];
-        
-        definition = [[[WMPool pool] scaleDefinitions] valueForKey:mode];
-        
-        NSMutableArray *tempScale = [[NSMutableArray alloc] init];
-        for (NSNumber *n in definition) {
-            WMNote *newNote = [[WMPool pool]noteWithMidiNoteNumber:rootIndex + [n intValue]];
-            [tempScale addObject:newNote];
-        }  
-        notes = tempScale;
+    NSArray *scaleDef = [[[WMPool pool] scaleDefinitions] valueForKey:aMode];
+    if (self = [super initWithRootNote:note definition:scaleDef]) {
+        mode = aMode;       
     }
     return self;
 }
 
 
-- (NSArray *)notes {
-    return notes;
-}
 
 
 
-- (NSString *)description {
-    return [NSString stringWithFormat:@"%@ %@ %@",[self rootNote], [self mode], [self notes]];
-}
 
 
-- (NSString *)notesShortNames {
-    NSMutableString *allShortNames = [[NSMutableString alloc] init];
-    for (WMNote *n  in [self notes]) {
-        [allShortNames appendString:[n shortName]];
-        [allShortNames appendString:@" "];
-    }
-    return allShortNames;
-}
 
-- (WMScale *)transpose:(WMInterval)semitones {
-    
-}
 
 @end

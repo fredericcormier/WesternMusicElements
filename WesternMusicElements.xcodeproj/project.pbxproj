@@ -34,6 +34,8 @@
 		6A86F99F1504FE03008EA537 /* TestNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A86F99B1504FE03008EA537 /* TestNoteController.xib */; };
 		6A86F9A215053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
 		6A86F9A315053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
+		6AB10B69150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
+		6AB10B6A150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		6A86F99B1504FE03008EA537 /* TestNoteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestNoteController.xib; path = Controller/TestNoteController.xib; sourceTree = "<group>"; };
 		6A86F9A015053448008EA537 /* WMChord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMChord.h; path = Model/WMChord.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A86F9A115053448008EA537 /* WMChord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMChord.m; path = Model/WMChord.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6AB10B67150F40DD0047FF0E /* WMNoteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollection.h; path = Model/WMNoteCollection.h; sourceTree = "<group>"; };
+		6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMNoteCollection.m; path = Model/WMNoteCollection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,8 @@
 				6A86F9A115053448008EA537 /* WMChord.m */,
 				6A61BB7A1504B38E003CE524 /* WMPool.h */,
 				6A61BB7B1504B38E003CE524 /* WMPool.m */,
+				6AB10B67150F40DD0047FF0E /* WMNoteCollection.h */,
+				6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -345,6 +351,7 @@
 				6A86F99C1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A215053448008EA537 /* WMChord.m in Sources */,
 				6A5D977E1505FDEB0053B13C /* WMData.m in Sources */,
+				6AB10B69150F40DD0047FF0E /* WMNoteCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +364,7 @@
 				6A86F99D1504FE03008EA537 /* TestNoteController.m in Sources */,
 				6A86F9A315053448008EA537 /* WMChord.m in Sources */,
 				6A5D977F1505FDEB0053B13C /* WMData.m in Sources */,
+				6AB10B6A150F40DD0047FF0E /* WMNoteCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

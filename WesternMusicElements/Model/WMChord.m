@@ -10,14 +10,14 @@
 #import "WMNote.h"
 #import "WMPool.h"
 
+
 @interface WMChord()
-@property (strong, nonatomic)NSArray *notes;
-@property (strong, nonatomic)WMNote *rootNote;
+
 @property (assign, nonatomic)NSString * type;
 @property (assign, nonatomic)WMChordInversion inversion;
-@property (strong, nonatomic)NSArray *definition;
 
-- (WMChord *)transpose:(WMInterval)semitones;
+
+
 - (NSArray *)invertArray:(NSArray *) inArray:(WMChordInversion)inv;
 
 @end
@@ -25,34 +25,30 @@
 
 
 @implementation WMChord 
-@synthesize notes, rootNote, type, inversion, definition;
+@synthesize type, inversion;
 
 
 - (id)initWithRootNote:(WMNote *)aNote forType:(WMChordType *)aType inversion:(WMChordInversion)inv {
-    if (self = [super init]) {
-        rootNote = aNote;
-        type = aType;
-        inversion = inv;
-        definition = [self invertArray:[[[WMPool pool] chordDefinitions] valueForKey:aType] :inv];    
+    NSArray *chordDef = [self invertArray:[[[WMPool pool] chordDefinitions] valueForKey:aType] :inv];
+    if (!chordDef) {
+        return nil;
+    }else {
+        if (self = [super initWithRootNote:aNote definition:chordDef]) {
+            type = aType;
+            inversion = inv;            
+        }
     }
-    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
-    for (NSNumber *n in definition) {
-        [tempArray addObject:[[WMPool pool] noteWithMidiNoteNumber:[rootNote midiNoteNumber]+[n intValue]]];
-    }
-    notes = tempArray;
     return self;
 }
 
 
 
-- (WMChord *)transpose:(WMInterval)semitones {
-   
-}
 
 
 
+//TODO: Make sure the inversion exist for the chord . throw exeption or something
 
-//TODO: Make sure the inversion exist for the chord - throw exeption or something
+
 - (NSArray *)invertArray:(NSArray *) inArray:(WMChordInversion)inv{
     if (inv == WMChordInversionRootPosition) {
         return inArray;
@@ -65,6 +61,7 @@
         }
         return marray;
     }
+    return nil;
 }
 
 

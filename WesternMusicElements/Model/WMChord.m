@@ -41,11 +41,6 @@
     return self;
 }
 
-
-
-
-
-
 //TODO: Make sure the inversion exist for the chord . throw exeption or something
 
 

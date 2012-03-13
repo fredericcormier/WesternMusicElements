@@ -274,4 +274,9 @@ static WMPool *pool;
     return [[WMChord alloc] initWithRootNote:[self noteWithShortName:name]  forType:aType inversion:theInversion];
 }
 
+- (WMChord *)chordWithRootNote:(WMNote *)rootNote chordType:(WMChordType *)aType inversion:(int)theInversion {
+    return [[WMChord alloc] initWithRootNote:rootNote forType:aType inversion:theInversion];
+}
+
+
 @end

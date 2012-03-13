@@ -63,5 +63,12 @@
     return allShortNames;
 }
 
-
+- (NSString *)notesMidiNoteNumberString {
+    NSMutableString *allNoteNumbers = [[NSMutableString alloc] init ];
+    for (WMNote *n in [self notes]) {
+        [allNoteNumbers appendFormat:@"%d", [n midiNoteNumber]];
+        [allNoteNumbers appendString:@" "];
+    }
+    return allNoteNumbers;
+}
 @end

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#define WMSystemFont            [UIFont boldSystemFontOfSize:17.0]
+
+#define WMMonoSpaceFont         [UIFont fontWithName:@"Courier" size:14.0]
+
+
 @interface WMScaleTestViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

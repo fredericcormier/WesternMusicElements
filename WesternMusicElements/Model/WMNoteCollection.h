@@ -19,5 +19,6 @@
 - (NSArray *)definition;
 
 - (NSString *)notesShortNames;
+- (NSString *)notesMidiNoteNumberString;
 
 @end

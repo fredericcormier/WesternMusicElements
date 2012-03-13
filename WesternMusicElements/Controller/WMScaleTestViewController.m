@@ -29,7 +29,7 @@
     if (self) {
         allModeKeys_ = [[[WMPool pool] scaleDefinitions] allKeys];
     }
-    return self;
+       return self;
 }
 
 - (void)viewDidLoad
@@ -98,16 +98,19 @@
                                       reuseIdentifier:basicCellName];
     }
     [[cell textLabel] setTextAlignment:UITextAlignmentCenter];
-    if ([indexPath row] == 0) {
-        [[cell textLabel] setText:NSLocalizedString(@"Scale:", nil)];
-    }
-    if ([indexPath row] == 1 ) {
-        
+    
+    if ([indexPath row] == 0 ) {
+        [[cell textLabel] setFont:WMSystemFont];
         [[cell textLabel] setText:[[self scale] name]];
     }
     
-    if ([indexPath row] == 2) {
+    if ([indexPath row] == 1) {
+        [[cell textLabel] setFont:WMMonoSpaceFont];
         [[cell textLabel] setText:[[self scale] notesShortNames]];
+    }
+    if ([indexPath row] == 2) {
+        [[cell textLabel] setFont:WMMonoSpaceFont];
+        [[cell textLabel] setText:[[self scale] notesMidiNoteNumberString]];
     }
     return cell;
 }

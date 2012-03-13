@@ -7,3 +7,13 @@
 //
 
 #import "WMData.h"
+
+
+NSArray *noteNames() {
+ return [NSArray arrayWithObjects:@"A", @"A#", @"B", @"C", @"C#", @"D", @"D#", @"E", @"F", @"F#", @"G", @"G#",nil];
+}
+
+NSArray *accidentalNames() {
+    return [NSArray arrayWithObjects:@"Natural", @"Sharp", nil];
+
+}

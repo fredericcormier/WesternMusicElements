@@ -50,6 +50,9 @@ typedef enum WMInterval  WMInterval;
     that gives us a max of 6 inversions
  
  */
+
+
+
 enum WMChordInversion {
     WMChordInversionRootPosition = 0,
     WMChordInversionFirst,
@@ -118,3 +121,6 @@ static WMChordType *WMChordTypeAugmented7 = @"Augmented 7";
 static WMChordType *WMChordTypeSus4 = @"Sus4";
 static WMChordType *WMChordTypeSeventhSus4 = @"Seventh sus4";
 static WMChordType *WMChordTypeMinorMajor = @"Minor major";
+
+NSArray *noteNames();
+NSArray *accidentalNames();

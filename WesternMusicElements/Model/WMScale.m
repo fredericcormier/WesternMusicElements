@@ -19,21 +19,30 @@
 
 
 @implementation WMScale
-@synthesize mode;
+@synthesize mode = mode_;
 
 
 - (id)initWithRootNote:(WMNote *)note forScaleMode:(NSString *)aMode {
     NSArray *scaleDef = [[[WMPool pool] scaleDefinitions] valueForKey:aMode];
     if (self = [super initWithRootNote:note definition:scaleDef]) {
-        mode = aMode;       
+        mode_ = aMode;       
     }
     return self;
 }
 
+- (NSString *)name {
+    return [NSString stringWithFormat:@"%@ %@",[[self rootNote] shortName], [self mode]];
+}
+- (NSString *)mode {
+    return mode_;
+}
 
-
-
-
+- (NSString *)description {
+    return [NSString stringWithFormat:@"SCALE: %@ %@ \n %@",
+            [[self rootNote] shortName], 
+            [self mode],
+            [self notesShortNames]];
+}
 
 
 

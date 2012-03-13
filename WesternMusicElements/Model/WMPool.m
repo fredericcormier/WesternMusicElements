@@ -15,6 +15,11 @@ static WMPool *pool;
 
 @interface WMPool() 
 
+
+@property (strong, nonatomic)NSArray *allNotes;
+@property (strong, nonatomic)NSDictionary* scaleDefinitions;
+@property (strong, nonatomic)NSDictionary* chordDefinitions;
+
 - (NSArray *)prepareNotes;
 - (NSDictionary *)loadChordsDefinitionsFromJSONFile;
 - (NSDictionary *)loadScalesDefinitionsFromJSONFile;
@@ -23,7 +28,9 @@ static WMPool *pool;
 @end
 
 @implementation WMPool
-@synthesize notes, scaleDefinitions, chordDefinitions;
+@synthesize allNotes = allNotes_;
+@synthesize scaleDefinitions =  scaleDefinitions_;
+@synthesize chordDefinitions = chordDefinitions_;
 
 + (WMPool *)pool {
     if (!pool) {
@@ -41,14 +48,26 @@ static WMPool *pool;
         return pool;
     else {
         if((self = [super init])){
-            notes =[self prepareNotes];
-            chordDefinitions = [self loadChordsDefinitionsFromJSONFile];
-            scaleDefinitions = [self loadScalesDefinitionsFromJSONFile];
+            allNotes_ =[self prepareNotes];
+            chordDefinitions_ = [self loadChordsDefinitionsFromJSONFile];
+            scaleDefinitions_ = [self loadScalesDefinitionsFromJSONFile];
         }
     }
     return self;
 }
 
+- (NSDictionary *)scaleDefinitions {
+    return scaleDefinitions_;
+}
+
+
+- (NSDictionary *)chordDefinitions {
+    return chordDefinitions_;
+}
+
+- (NSArray *)allNotes {
+    return allNotes_;
+}
 
 - (NSDictionary *)loadChordsDefinitionsFromJSONFile {
     
@@ -214,7 +233,7 @@ static WMPool *pool;
 #pragma mark - Notes
 
 - (WMNote *)noteWithShortName:(NSString *)aShortName {
-    for (WMNote *note in [self notes]) {
+    for (WMNote *note in [self allNotes]) {
         if ([[note valueForKey:@"shortName"] isEqualToString:[aShortName uppercaseString]]) {
             return note;
         }
@@ -237,7 +256,7 @@ static WMPool *pool;
 
 - (WMNote *)noteWithMidiNoteNumber:(int)midiNoteNumber {
     if ((midiNoteNumber >= 0) && (midiNoteNumber < 128)) {        
-        return [[self notes] objectAtIndex:midiNoteNumber];
+        return [[self allNotes] objectAtIndex:midiNoteNumber];
     }else {
         return nil;
     }

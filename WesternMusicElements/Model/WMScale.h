@@ -13,5 +13,7 @@
 
 
 - (id)initWithRootNote:(WMNote *)note forScaleMode:(NSString *)aMode;
+- (NSString *)mode;
+- (NSString *)name;
 
 @end

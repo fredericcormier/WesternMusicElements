@@ -19,11 +19,14 @@
 
 @interface WMPool : NSObject 
 
-@property (strong, nonatomic)NSArray *notes;
-@property (strong, nonatomic)NSDictionary* scaleDefinitions;
-@property (strong, nonatomic)NSDictionary* chordDefinitions;
 
 + (WMPool *)pool;
+
+- (NSArray *)allNotes;
+- (NSDictionary *)scaleDefinitions;
+- (NSDictionary *)chordDefinitions ;
+
+
 
 - (WMNote *)noteWithShortName:(NSString *)aShortName;
 - (WMNote *)noteWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave;

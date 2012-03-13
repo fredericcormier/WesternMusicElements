@@ -168,7 +168,16 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
     return 0;
 }
 
-
+- (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
+    CGFloat pickerViewWidth = [pickerView bounds].size.width;
+    CGFloat aSixthOfWidth = pickerViewWidth / 6.0;
+    if (component == 2) {
+        return aSixthOfWidth * 4.0;
+    } else {
+        return aSixthOfWidth;
+    }
+    
+}
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
     

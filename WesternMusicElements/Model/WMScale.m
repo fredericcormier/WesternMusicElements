@@ -54,6 +54,16 @@
     return [NSString stringWithFormat:@"%@ %@ %@",[self rootNote], [self mode], [self notes]];
 }
 
+
+- (NSString *)notesShortNames {
+    NSMutableString *allShortNames = [[NSMutableString alloc] init];
+    for (WMNote *n  in [self notes]) {
+        [allShortNames appendString:[n shortName]];
+        [allShortNames appendString:@" "];
+    }
+    return allShortNames;
+}
+
 - (WMScale *)transpose:(WMInterval)semitones {
     
 }

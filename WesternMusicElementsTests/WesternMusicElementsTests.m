@@ -36,7 +36,7 @@
     [super tearDown];
 }
 
-- (void)testNotes
+- (void)testEasyNotes
 {
     STAssertNotNil(c , @" c should not be nil");
     STAssertNotNil(cLowerCase, @" c lower case should not be nil");

@@ -15,6 +15,8 @@
 
 - (NSArray *)notes;
 
+// return an NSString which is the concatenation of all note's shortnames
+- (NSString *)notesShortNames;
 
 - (WMScale *)transpose:(WMInterval)semitones;
 

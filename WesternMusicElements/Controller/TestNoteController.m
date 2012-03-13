@@ -9,6 +9,7 @@
 #import "TestNoteController.h"
 
 #import "WMPool.h"
+#import "WMScale.h"
 
 @interface TestNoteController ()
 
@@ -45,7 +46,8 @@
     NSLog(@"C 3 Major scale is: %@", c3MajorScale);
     
     WMScale *aSharp2Major = [[WMPool pool] scaleWithRoot:@"A" accidental:@"#" octave:2 scaleMode:WMScaleModeMajor];
-    NSLog(@"%@", aSharp2Major);
+    NSLog(@"%@", [aSharp2Major notesShortNames]);
+    
     
     WMChord *cMchord = [[WMPool pool] chordWithRootShortName:@"c1" chordType:WMChordTypeMajor inversion:WMChordInversionSecond];
     NSLog(@"%@",cMchord);

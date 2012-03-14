@@ -10,7 +10,7 @@
 
 #define WMSystemFont            [UIFont boldSystemFontOfSize:17.0]
 
-#define WMMonoSpaceFont         [UIFont fontWithName:@"Courier" size:14.0]
+#define WMMonoSpaceFont         [UIFont fontWithName:@"Courier" size:13.0]
 
 
 @interface WMScaleTestViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource>

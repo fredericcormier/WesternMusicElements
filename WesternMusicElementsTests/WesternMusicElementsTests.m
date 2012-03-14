@@ -15,7 +15,7 @@
 {
     WMNote *c;
     WMNote *cLowerCase;    
-    WMNote *c1, *g1, *b0;
+    WMNote *c1, *g1, *b0, *gSharp5;
     WMScale *fSharp2Mixolydian, *C2MajorScale;
     NSString *fSharp2MixolydianString;
     WMChord *C3MajorChord, *C3MajorChordInv2;
@@ -33,11 +33,13 @@
     c1 = [[WMPool pool]noteWithShortName:@"c1"];
     g1 = [[WMPool pool] noteWithShortName:@"g1"];
     b0 = [[WMPool pool] noteWithShortName:@"b0"];
-    fSharp2Mixolydian = [[WMPool pool] scaleWithRootShortName:@"F#2" scaleMode:WMScaleModeMixolydian];
+//    fSharp2Mixolydian = [[WMPool pool] scaleWithRootShortName:@"F#2" scaleMode:WMScaleModeMixolydian];
+    fSharp2Mixolydian = [[WMPool pool] scaleWithRoot:@"f" accidental:@"#" octave:2 scaleMode:WMScaleModeMixolydian];
     fSharp2MixolydianString = @"F#2 G#2 A#2 B2 C#3 D#3 E3 F#3 ";
     C2MajorScale = [[WMPool pool] scaleWithRoot:@"c" accidental:nil octave:2 scaleMode:WMScaleModeMajor];
     C3MajorChord = [[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionRootPosition];    
-    C3MajorChordInv2 = [[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionSecond];    
+    C3MajorChordInv2 = [[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionSecond];  
+    gSharp5 = [[WMPool pool]noteWithRoot:@"g" accidental:@"#" octave:5];
 
 }
 
@@ -54,6 +56,7 @@
     STAssertTrue([[c1 noteAtInterval:WMDiatonicIntervalPerfectFith] isEqualToNote:g1], @"c1 and g1 are a fith appart");
     STAssertTrue([[b0 nextNote] isEqualToNote:c1], @"b0 next note is c1");
     STAssertTrue([[c1 previousNote] isEqualToNote:b0], @"c1 previous note is b0");
+    STAssertTrue([gSharp5 midiNoteNumber] == 80,@"G#5 is note #80");
 
 }
 

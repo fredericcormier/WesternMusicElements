@@ -24,12 +24,22 @@
 
 @synthesize rootNote, notes, definition;
 
+
+// If we root the NoteCollection to high, we may end up with notes that
+// are out of range. 
+// A solution would be to lower out of range notes one octave down.
+// A different solution is to block all notes that are out of range to 127.
+// Here we'are talking of notes whose root partials are at 12khz and up.
+
 - (id)initWithRootNote:(WMNote *)note definition:(NSArray *)collectionDefinition {
     if (self = [super init]) {
         rootNote = note;
         NSMutableArray *tempScale = [[NSMutableArray alloc] init];
         for (NSNumber *n in collectionDefinition) {
-            WMNote *newNote = [[WMPool pool]noteWithMidiNoteNumber:[note midiNoteNumber] + [n intValue]];
+            int midiNoteNumber = [note midiNoteNumber] + [n intValue];
+            // Block out of range notes
+            midiNoteNumber = midiNoteNumber > 127 ? 127: midiNoteNumber;
+            WMNote *newNote = [[WMPool pool]noteWithMidiNoteNumber:midiNoteNumber];
             [tempScale addObject:newNote];
         }  
         notes = tempScale;

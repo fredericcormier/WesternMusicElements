@@ -59,6 +59,11 @@ Of course, each WMNote embed that information, as well as the `cpspch` value use
 
 Check the WMPool.h and WMData.h for more details 
 
+#Western Musical Elements Test app screenshot:
+<center>
+![screenshot]  
+(Media/app_test_screenshot.png)
+</center>
 
 
 

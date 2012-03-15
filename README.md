@@ -62,7 +62,7 @@ Check the WMPool.h and WMData.h for more details
 #Western Musical Elements Test app screenshot:
 <center>
 ![screenshot]  
-(Media/app_test_screenshot.png)
+(https://github.com/fredericcormier/WesternMusicElements/blob/master/Media/app_test_screenshot.png?raw=true)
 </center>
 
 

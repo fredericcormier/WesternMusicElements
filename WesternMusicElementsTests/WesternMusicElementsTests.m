@@ -79,6 +79,6 @@
 - (void)testTranspose {
     STAssertTrue([[[C2MajorScale transpose:WMDiatonicIntervalMajorThird] StringWithNoteShortNames]
                   isEqualToString:[E2MajorScale StringWithNoteShortNames]],
-                 @"e2 is a third major higher tha c2, hence the scales");
+                 @"e2 is a third major higher that c2, so are the scales");
     }
 @end

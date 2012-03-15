@@ -23,14 +23,16 @@
 @synthesize scale = scale_;
 @synthesize allModeKeys = allModeKeys_;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        allModeKeys_ = [[[WMPool pool] scaleDefinitions] allKeys];
-    }
-       return self;
+
+- (id)initForCollectionType:(WMNoteCollectionType)collectionType;{
+        self = [super initWithNibName:nil bundle:nil];
+        if (self) {
+            allModeKeys_ = [[[WMPool pool] scaleDefinitions] allKeys];
+        }
+        return self;
+    
 }
+
 
 - (void)viewDidLoad
 {

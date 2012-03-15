@@ -20,7 +20,7 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    WMNoteCollectionViewController *scaleTestViewController = [[WMNoteCollectionViewController alloc] initWithNibName:nil bundle:nil];
+    WMNoteCollectionViewController *scaleTestViewController = [[WMNoteCollectionViewController alloc] initForCollectionType:WMCollectionTypeScale];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:scaleTestViewController];
     [[self window] setRootViewController:navController];
     

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "WMData.h"
 #define WMSystemFont            [UIFont boldSystemFontOfSize:17.0]
 #define WMMonoSpaceFont         [UIFont fontWithName:@"Courier" size:13.0]
 
@@ -18,6 +18,9 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIPickerView *scalePicker;
+
+- (id)initForCollectionType:(WMNoteCollectionType)collectionType;
+
 - (IBAction)showScale:(id)sender;
 
 @end

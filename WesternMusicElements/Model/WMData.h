@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+
+enum WMNoteCollectionType {
+    WMCollectionTypeScale        = 0,
+    WMCollectionTypeChord         
+};
+typedef enum WMNoteCollectionType WMNoteCollectionType;
+
 #pragma mark - Intervals
 
 enum WMInterval {
@@ -45,9 +52,9 @@ typedef enum WMInterval  WMInterval;
 #pragma mark - Inversions
 
 /*
-
-    A thirteenth chord has the max of 7 notes
-    that gives us a max of 6 inversions
+ 
+ A thirteenth chord has the max of 7 notes
+ that gives us a max of 6 inversions
  
  */
 

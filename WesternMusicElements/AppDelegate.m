@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "WMScaleTestViewController.h"
+#import "WMNoteCollectionViewController.h"
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -20,7 +20,7 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    WMScaleTestViewController *scaleTestViewController = [[WMScaleTestViewController alloc] initWithNibName:nil bundle:nil];
+    WMNoteCollectionViewController *scaleTestViewController = [[WMNoteCollectionViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:scaleTestViewController];
     [[self window] setRootViewController:navController];
     

@@ -32,8 +32,8 @@
 		6A86F9A315053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
 		6AB10B69150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
 		6AB10B6A150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
-		6AB10B77150F649F0047FF0E /* WMScaleTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B75150F649F0047FF0E /* WMScaleTestViewController.m */; };
-		6AB10B78150F649F0047FF0E /* WMScaleTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB10B76150F649F0047FF0E /* WMScaleTestViewController.xib */; };
+		6AB10B77150F649F0047FF0E /* WMNoteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */; };
+		6AB10B78150F649F0047FF0E /* WMNoteCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB10B76150F649F0047FF0E /* WMNoteCollectionViewController.xib */; };
 		6AB10B7F150F7D250047FF0E /* green_button_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AB10B7E150F7D250047FF0E /* green_button_off.png */; };
 /* End PBXBuildFile section */
 
@@ -80,9 +80,9 @@
 		6A86F9A115053448008EA537 /* WMChord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMChord.m; path = Model/WMChord.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6AB10B67150F40DD0047FF0E /* WMNoteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollection.h; path = Model/WMNoteCollection.h; sourceTree = "<group>"; };
 		6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMNoteCollection.m; path = Model/WMNoteCollection.m; sourceTree = "<group>"; };
-		6AB10B74150F649F0047FF0E /* WMScaleTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMScaleTestViewController.h; path = Controller/WMScaleTestViewController.h; sourceTree = "<group>"; };
-		6AB10B75150F649F0047FF0E /* WMScaleTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMScaleTestViewController.m; path = Controller/WMScaleTestViewController.m; sourceTree = "<group>"; };
-		6AB10B76150F649F0047FF0E /* WMScaleTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WMScaleTestViewController.xib; path = Controller/WMScaleTestViewController.xib; sourceTree = "<group>"; };
+		6AB10B74150F649F0047FF0E /* WMNoteCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; name = WMNoteCollectionViewController.h; path = Controller/WMNoteCollectionViewController.h; sourceTree = "<group>"; };
+		6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMNoteCollectionViewController.m; path = Controller/WMNoteCollectionViewController.m; sourceTree = "<group>"; };
+		6AB10B76150F649F0047FF0E /* WMNoteCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WMNoteCollectionViewController.xib; path = Controller/WMNoteCollectionViewController.xib; sourceTree = "<group>"; };
 		6AB10B7E150F7D250047FF0E /* green_button_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_button_off.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,9 +217,9 @@
 		6A86F9981504FD46008EA537 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6AB10B74150F649F0047FF0E /* WMScaleTestViewController.h */,
-				6AB10B75150F649F0047FF0E /* WMScaleTestViewController.m */,
-				6AB10B76150F649F0047FF0E /* WMScaleTestViewController.xib */,
+				6AB10B74150F649F0047FF0E /* WMNoteCollectionViewController.h */,
+				6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */,
+				6AB10B76150F649F0047FF0E /* WMNoteCollectionViewController.xib */,
 				6AB10B7E150F7D250047FF0E /* green_button_off.png */,
 			);
 			name = Controllers;
@@ -308,7 +308,7 @@
 				6A0271781509FAFA006231DF /* scales_and_chords_to_json.rb in Resources */,
 				6A02717B150A0ECA006231DF /* chords.json in Resources */,
 				6A02717C150A0ECA006231DF /* scales.json in Resources */,
-				6AB10B78150F649F0047FF0E /* WMScaleTestViewController.xib in Resources */,
+				6AB10B78150F649F0047FF0E /* WMNoteCollectionViewController.xib in Resources */,
 				6AB10B7F150F7D250047FF0E /* green_button_off.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +352,7 @@
 				6A86F9A215053448008EA537 /* WMChord.m in Sources */,
 				6A5D977E1505FDEB0053B13C /* WMData.m in Sources */,
 				6AB10B69150F40DD0047FF0E /* WMNoteCollection.m in Sources */,
-				6AB10B77150F649F0047FF0E /* WMScaleTestViewController.m in Sources */,
+				6AB10B77150F649F0047FF0E /* WMNoteCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@
 @interface WMNoteCollectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIPickerView *scalePicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *noteCollectionPicker;
 
 - (id)initForCollectionType:(WMNoteCollectionType)collectionType;
 

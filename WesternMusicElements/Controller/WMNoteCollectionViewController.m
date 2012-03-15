@@ -23,7 +23,7 @@
 
 @implementation WMNoteCollectionViewController
 @synthesize tableView;
-@synthesize scalePicker;
+@synthesize noteCollectionPicker;
 @synthesize scale = scale_;
 @synthesize chord = chord_;
 @synthesize allModeKeys = allModeKeys_;
@@ -52,15 +52,15 @@
     [super viewDidLoad];
     [[self tableView] setDelegate:self];
     [[self tableView] setDataSource:self];
-    [[self scalePicker] setDelegate:self];
-    [[self scalePicker] setDataSource:self];
+    [[self noteCollectionPicker] setDelegate:self];
+    [[self noteCollectionPicker] setDataSource:self];
     
 }
 
 - (void)viewDidUnload
 {
     [self setTableView:nil];
-    [self setScalePicker:nil];
+    [self setNoteCollectionPicker:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -73,12 +73,12 @@
 
 - (IBAction)showCollection:(id)sender {
     if ([self noteCollectionType] == WMCollectionTypeScale) {        
-        NSString *pickerNote = [noteNames() objectAtIndex:[[self scalePicker] selectedRowInComponent:0]];
-        int poctave = [[self scalePicker] selectedRowInComponent:1] - 1;
+        NSString *pickerNote = [noteNames() objectAtIndex:[[self noteCollectionPicker] selectedRowInComponent:0]];
+        int poctave = [[self noteCollectionPicker] selectedRowInComponent:1] - 1;
         NSString *pickerOctave = [NSString stringWithFormat:@"%d",poctave];
         
         NSString *pickerShortName = [NSString stringWithFormat:@"%@%@",pickerNote, pickerOctave ];
-        NSString *pickerModeKey = [[self allModeKeys] objectAtIndex:[[self scalePicker] selectedRowInComponent:2]];
+        NSString *pickerModeKey = [[self allModeKeys] objectAtIndex:[[self noteCollectionPicker] selectedRowInComponent:2]];
         
         WMScale *theScale = [[WMPool pool] scaleWithRootShortName:pickerShortName scaleMode:pickerModeKey];
         [self setScale:theScale];

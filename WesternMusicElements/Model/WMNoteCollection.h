@@ -21,4 +21,6 @@
 - (NSString *)StringWithNoteShortNames;
 - (NSString *)StringWithMidiNoteNumbers;
 
+
+
 @end

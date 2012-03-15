@@ -15,9 +15,9 @@
     WMNote *c;
     WMNote *cLowerCase;    
     WMNote *c1, *g1, *b0, *gSharp5;
-    WMScale *fSharp2Mixolydian, *C2MajorScale;
+    WMScale *fSharp2Mixolydian, *C2MajorScale, *E2MajorScale;
     NSString *fSharp2MixolydianString;
-    WMChord *C3MajorChord, *C3MajorChordInv2;
+    WMChord *C3MajorChord, *E3MajorChord, *C3MajorChordInv2;
     
     
 }
@@ -35,8 +35,12 @@
 //    fSharp2Mixolydian = [[WMPool pool] scaleWithRootShortName:@"F#2" scaleMode:WMScaleModeMixolydian];
     fSharp2Mixolydian = [[WMPool pool] scaleWithRoot:@"f" accidental:@"#" octave:2 scaleMode:WMScaleModeMixolydian];
     fSharp2MixolydianString = @"F#2 G#2 A#2 B2 C#3 D#3 E3 F#3 ";
+    
     C2MajorScale = [[WMPool pool] scaleWithRoot:@"c" accidental:nil octave:2 scaleMode:WMScaleModeMajor];
-    C3MajorChord = [[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionRootPosition];    
+    E2MajorScale = [[WMPool pool] scaleWithRoot:@"e" accidental:nil octave:2 scaleMode:WMScaleModeMajor];
+    
+    C3MajorChord = [[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionRootPosition]; 
+    E3MajorChord = [[WMPool pool] chordWithRootShortName:@"e3" chordType:WMChordTypeMajor inversion:WMChordInversionRootPosition ];
     C3MajorChordInv2 = [[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionSecond];  
     gSharp5 = [[WMPool pool]noteWithRoot:@"g" accidental:@"#" octave:5];
 
@@ -72,4 +76,9 @@
 
 }
 
+- (void)testTranspose {
+    STAssertTrue([[[C2MajorScale transpose:WMDiatonicIntervalMajorThird] StringWithNoteShortNames]
+                  isEqualToString:[E2MajorScale StringWithNoteShortNames]],
+                 @"e2 is a third major higher tha c2, hence the scales");
+    }
 @end

@@ -9,6 +9,7 @@
 #import "WMScale.h"
 
 
+
 @interface WMScale()
 
 @property (assign, nonatomic)NSString * mode;
@@ -44,6 +45,11 @@
             [self StringWithNoteShortNames]];
 }
 
+- (WMScale *)transpose:(WMInterval)interval {
+    WMNote *newRootNote = [[self rootNote] noteAtInterval:interval];
+    return [self initWithRootNote:newRootNote forScaleMode:[self mode]];
+    
+}
 
 
 

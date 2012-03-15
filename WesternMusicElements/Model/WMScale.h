@@ -16,4 +16,6 @@
 - (NSString *)mode;
 - (NSString *)name;
 
+- (WMScale *)transpose:(WMInterval)interval;
+
 @end

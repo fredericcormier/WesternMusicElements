@@ -16,6 +16,7 @@
 @property(strong, nonatomic)WMScale *scale;
 @property(strong, nonatomic)WMChord *chord;
 @property(strong, nonatomic)NSArray *allModeKeys;
+@property(strong, nonatomic)NSArray *allTypeKeys;
 @property(assign, nonatomic)WMNoteCollectionType noteCollectionType;
 
 @end
@@ -26,14 +27,20 @@
 @synthesize scale = scale_;
 @synthesize chord = chord_;
 @synthesize allModeKeys = allModeKeys_;
+@synthesize allTypeKeys = allTypeKeys_;
 @synthesize noteCollectionType = noteCollectionType_;
 
 
 - (id)initForCollectionType:(WMNoteCollectionType)collectionType;{
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        allModeKeys_ = [[[WMPool pool] scaleDefinitions] allKeys];
+        
         noteCollectionType_ = collectionType;
+
+        if ([self noteCollectionType] == WMCollectionTypeScale)
+            allModeKeys_ = [[[WMPool pool] scaleDefinitions] allKeys];
+        else
+            allTypeKeys_ = [[[WMPool pool] chordDefinitions] allKeys];
     }
     return self;
     
@@ -174,32 +181,67 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 #pragma  mark - UIPickerView things
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     
-    // Note  Octave Mode
-    return 3;
+    //For Scales: Note  Octave Mode
+    if ([self noteCollectionType] == WMCollectionTypeScale)
+        return 3;
+    //For Chords: Note Octave Type Inversion
+    else
+        return 4;
 }
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    if (component == 0) {
-        return [noteNames() count];
-    }
-    if (component == 1) {
-        return 11; //from -1 to 9
-    }
-    if (component == 2) {
-        return [[[WMPool pool] scaleDefinitions] count];
+    switch ([self noteCollectionType]) {
+        case WMCollectionTypeScale:
+            if (component == 0) {
+                return [noteNames() count];
+            }
+            if (component == 1) {
+                return 11; //from -1 to 9
+            }
+            if (component == 2) {
+                return [[[WMPool pool] scaleDefinitions] count];
+            }
+            break;
+        case WMCollectionTypeChord:
+            
+            if (component == 0) {
+                return [noteNames() count];
+            }
+            if (component == 1) {
+                return 11; //from -1 to 9
+            }
+            if (component == 2) {
+                return [[[WMPool pool] chordDefinitions] count];
+            }
+            if (component == 3) {
+                return 6;// Max of 6 inversion for 13th
+            }
+        default:
+            break;
     }
     return 0;
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
     CGFloat pickerViewWidth = [pickerView bounds].size.width;
-    CGFloat aSixthOfWidth = pickerViewWidth / 6.0;
-    if (component == 2) {
-        return aSixthOfWidth * 4.0;
-    } else {
-        return aSixthOfWidth;
+    if ([self noteCollectionType] == WMCollectionTypeScale){
+        
+        CGFloat aSixthOfWidth = pickerViewWidth / 6.0;
+        if (component == 2) {
+            return aSixthOfWidth * 4.0;
+        } else {
+            return aSixthOfWidth;
+        }
+    }else {
+        CGFloat aSeventhOfWidth = pickerViewWidth / 7.0;
+        if (component ==  2) {
+            return aSeventhOfWidth * 3.5;
+        }else {
+            return aSeventhOfWidth;
+        }
     }
-    
 }
+
+
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
     
@@ -210,17 +252,31 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
         label = [[UILabel  alloc] init];
     }
     switch (component) {
-        case 0:
+            
+        case 0://note
             [label setText:[noteNames() objectAtIndex:row]];
             [label sizeToFit];
             break;
-        case 1:
+            
+        case 1://octave
             [label setText: [NSString stringWithFormat:@"%d", row -1]];
             [label sizeToFit];
             break;
-        case 2:
-            [label setText: [[self allModeKeys] objectAtIndex:row]];
+            
+        case 2://mode or type
+            if ([self noteCollectionType] == WMCollectionTypeScale)
+                [label setText: [[self allModeKeys] objectAtIndex:row]];
+            else {
+                [label setText: [[self allTypeKeys] objectAtIndex:row]];
+            }
             [label sizeToFit];
+            break;
+            
+        case 3:// inversion - only happens with chords
+            [label setText:[NSString stringWithFormat:@"%d", row]];
+            [label sizeToFit];
+            break;
+            
         default:
             break;
     }

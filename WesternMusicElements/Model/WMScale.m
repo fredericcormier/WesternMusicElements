@@ -7,6 +7,7 @@
 //
 #import "WMNote.h"
 #import "WMScale.h"
+#import "WMPool.h"
 
 
 

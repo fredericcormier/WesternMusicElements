@@ -15,9 +15,7 @@
 
 
 
-@class WMNote;
-@class WMScale;
-@class WMChord;
+
 
 @interface WMPool : NSObject 
 

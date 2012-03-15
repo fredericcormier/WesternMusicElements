@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 International MicrOondes. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import "WMPool.h"
+#import "WMData.h"
 #import "WMNoteCollection.h"
 
 @interface WMScale : WMNoteCollection

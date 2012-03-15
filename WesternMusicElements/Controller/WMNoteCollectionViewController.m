@@ -72,19 +72,24 @@
 }
 
 - (IBAction)showCollection:(id)sender {
+    
+    NSString *pickerNote = [noteNames() objectAtIndex:[[self noteCollectionPicker] selectedRowInComponent:0]];
+    int poctave = [[self noteCollectionPicker] selectedRowInComponent:1] - 1;
+    NSString *pickerOctave = [NSString stringWithFormat:@"%d",poctave];
+    NSString *pickerShortName = [NSString stringWithFormat:@"%@%@",pickerNote, pickerOctave ];
+    
     if ([self noteCollectionType] == WMCollectionTypeScale) {        
-        NSString *pickerNote = [noteNames() objectAtIndex:[[self noteCollectionPicker] selectedRowInComponent:0]];
-        int poctave = [[self noteCollectionPicker] selectedRowInComponent:1] - 1;
-        NSString *pickerOctave = [NSString stringWithFormat:@"%d",poctave];
-        
-        NSString *pickerShortName = [NSString stringWithFormat:@"%@%@",pickerNote, pickerOctave ];
         NSString *pickerModeKey = [[self allModeKeys] objectAtIndex:[[self noteCollectionPicker] selectedRowInComponent:2]];
-        
         WMScale *theScale = [[WMPool pool] scaleWithRootShortName:pickerShortName scaleMode:pickerModeKey];
         [self setScale:theScale];
         NSLog(@"%@",theScale);
-    } else {
         
+    } else if ([self noteCollectionType] == WMCollectionTypeChord ) {
+        NSString *pickerTypeKey = [[self allTypeKeys] objectAtIndex:[[self noteCollectionPicker] selectedRowInComponent:2]];
+        int pickerInversion = [[self noteCollectionPicker] selectedRowInComponent:3];
+        WMChord *theChord = [[WMPool pool] chordWithRootShortName:pickerShortName chordType:pickerTypeKey inversion:pickerInversion];
+        [self setChord:theChord];
+        NSLog(@"%@", theChord);
     }
     [[self tableView] reloadData];
 }

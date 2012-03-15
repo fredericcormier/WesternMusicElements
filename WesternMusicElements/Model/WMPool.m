@@ -287,6 +287,18 @@ static WMPool *pool;
 
 #pragma mark - Chords
 
+- (WMChord *)chordWithRoot:(NSString *)aRoot
+                accidental:(NSString *)anAccidental 
+                    octave:(int)anOctave
+                 chordType:(WMChordType *)aType
+                 inversion:(int)theInversion {
+    WMNote *rootNote = [self noteWithRoot:aRoot accidental:anAccidental octave:anOctave];
+    return [self chordWithRootNote:rootNote chordType:aType inversion:theInversion];
+    
+}
+
+
+
 - (WMChord *)chordWithRootShortName:(NSString *)name
                           chordType:(WMChordType *)aType 
                           inversion:(int)theInversion {

@@ -36,6 +36,7 @@
 - (WMScale *)scaleWithRootNote:(WMNote *)rootNote scaleMode:(WMScaleMode *)mode;
 - (WMScale *)scaleWithRootShortName:(NSString *)name scaleMode:(WMScaleMode *)mode;
 
+- (WMChord *)chordWithRoot:(NSString *)aRoot accidental:(NSString *)anAccidental octave:(int)anOctave chordType:(WMChordType *)aType inversion:(int)theInversion;
 - (WMChord *)chordWithRootNote:(WMNote *)rootNote chordType:(WMChordType *)aType inversion:(int)theInversion;
 - (WMChord *)chordWithRootShortName:(NSString *)name chordType:(WMChordType *)aType inversion:(int)theInversion;
 

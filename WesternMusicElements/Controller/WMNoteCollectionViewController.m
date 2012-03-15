@@ -54,7 +54,11 @@
     [[self tableView] setDataSource:self];
     [[self noteCollectionPicker] setDelegate:self];
     [[self noteCollectionPicker] setDataSource:self];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self showCollection:self];
 }
 
 - (void)viewDidUnload

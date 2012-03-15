@@ -20,9 +20,17 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    WMNoteCollectionViewController *scaleTestViewController = [[WMNoteCollectionViewController alloc] initForCollectionType:WMCollectionTypeChord];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:scaleTestViewController];
-    [[self window] setRootViewController:navController];
+    WMNoteCollectionViewController *scaleTestViewController = [[WMNoteCollectionViewController alloc] initForCollectionType:WMCollectionTypeScale];
+    [scaleTestViewController setTitle:NSLocalizedString(@"Scales", nil)];
+    
+    WMNoteCollectionViewController *chordTestViewController = [[WMNoteCollectionViewController alloc] initForCollectionType:WMCollectionTypeChord];
+    [chordTestViewController setTitle:NSLocalizedString(@"Chords", nil)];
+    
+    NSArray *noteCollectionControllers = [NSArray arrayWithObjects:scaleTestViewController, chordTestViewController, nil];
+
+    UITabBarController *tabController = [[UITabBarController alloc] init];
+    [tabController setViewControllers:noteCollectionControllers];
+    [[self window] setRootViewController:tabController];
     
     [self.window makeKeyAndVisible];
     

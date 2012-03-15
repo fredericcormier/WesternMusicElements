@@ -246,7 +246,9 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
     }
 }
 
-
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    [self showCollection:self];
+}
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
     

@@ -7,9 +7,6 @@
 //
 
 #import "WMNoteCollectionViewController.h"
-#import "WMPool.h"
-#import "WMScale.h"
-#import "WMChord.h"
 
 @interface WMNoteCollectionViewController ()
 

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WMData.h"
+#import "WMPool.h"
+
 #define WMSystemFont            [UIFont boldSystemFontOfSize:17.0]
 #define WMMonoSpaceFont         [UIFont fontWithName:@"Courier" size:13.0]
 

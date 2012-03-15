@@ -7,9 +7,8 @@
 //
 
 #import "WesternMusicElementsTests.h"
-#import "WMScale.h"
 #import "WMPool.h"
-#import "WMChord.h"
+
 
 @interface WesternMusicElementsTests ()
 {

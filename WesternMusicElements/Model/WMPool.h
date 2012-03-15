@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "WMData.h"
 #import "WMNote.h"
+#import "WMChord.h"
+#import "WMScale.h"
 
 
 

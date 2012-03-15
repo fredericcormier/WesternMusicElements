@@ -21,6 +21,6 @@
 
 - (id)initForCollectionType:(WMNoteCollectionType)collectionType;
 
-- (IBAction)showScale:(id)sender;
+- (IBAction)showCollection:(id)sender;
 
 @end

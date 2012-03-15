@@ -59,7 +59,9 @@
     return nil;
 }
 
-
+- (NSString *)name {
+    return [NSString stringWithFormat:@"%@ %@ inv: %d",[[self rootNote] shortName], [self type], [self inversion]];
+}
 - (NSString *)description {
     return [NSString stringWithFormat:@"Chord: %@ %@ inversion %d is %@",
             [[self rootNote] shortName],

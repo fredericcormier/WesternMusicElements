@@ -17,4 +17,6 @@
 
 - (id)initWithRootNote:(WMNote *)aNote forType:(WMChordType *)aType inversion:(WMChordInversion)inv;
 
+- (NSString *)name;
+
 @end

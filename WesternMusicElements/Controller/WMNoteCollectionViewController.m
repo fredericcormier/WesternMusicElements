@@ -9,11 +9,14 @@
 #import "WMNoteCollectionViewController.h"
 #import "WMPool.h"
 #import "WMScale.h"
+#import "WMChord.h"
 
 @interface WMNoteCollectionViewController ()
 
 @property(strong, nonatomic)WMScale *scale;
+@property(strong, nonatomic)WMChord *chord;
 @property(strong, nonatomic)NSArray *allModeKeys;
+@property(assign, nonatomic)WMNoteCollectionType noteCollectionType;
 
 @end
 
@@ -21,15 +24,18 @@
 @synthesize tableView;
 @synthesize scalePicker;
 @synthesize scale = scale_;
+@synthesize chord = chord_;
 @synthesize allModeKeys = allModeKeys_;
+@synthesize noteCollectionType = noteCollectionType_;
 
 
 - (id)initForCollectionType:(WMNoteCollectionType)collectionType;{
-        self = [super initWithNibName:nil bundle:nil];
-        if (self) {
-            allModeKeys_ = [[[WMPool pool] scaleDefinitions] allKeys];
-        }
-        return self;
+    self = [super initWithNibName:nil bundle:nil];
+    if (self) {
+        allModeKeys_ = [[[WMPool pool] scaleDefinitions] allKeys];
+        noteCollectionType_ = collectionType;
+    }
+    return self;
     
 }
 
@@ -58,17 +64,21 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)showScale:(id)sender {
-    NSString *pickerNote = [noteNames() objectAtIndex:[[self scalePicker] selectedRowInComponent:0]];
-    int poctave = [[self scalePicker] selectedRowInComponent:1] - 1;
-    NSString *pickerOctave = [NSString stringWithFormat:@"%d",poctave];
-    
-    NSString *pickerShortName = [NSString stringWithFormat:@"%@%@",pickerNote, pickerOctave ];
-    NSString *pickerModeKey = [[self allModeKeys] objectAtIndex:[[self scalePicker] selectedRowInComponent:2]];
-    
-    WMScale *theScale = [[WMPool pool] scaleWithRootShortName:pickerShortName scaleMode:pickerModeKey];
-    [self setScale:theScale];
-    NSLog(@"%@",theScale);
+- (IBAction)showCollection:(id)sender {
+    if ([self noteCollectionType] == WMCollectionTypeScale) {        
+        NSString *pickerNote = [noteNames() objectAtIndex:[[self scalePicker] selectedRowInComponent:0]];
+        int poctave = [[self scalePicker] selectedRowInComponent:1] - 1;
+        NSString *pickerOctave = [NSString stringWithFormat:@"%d",poctave];
+        
+        NSString *pickerShortName = [NSString stringWithFormat:@"%@%@",pickerNote, pickerOctave ];
+        NSString *pickerModeKey = [[self allModeKeys] objectAtIndex:[[self scalePicker] selectedRowInComponent:2]];
+        
+        WMScale *theScale = [[WMPool pool] scaleWithRootShortName:pickerShortName scaleMode:pickerModeKey];
+        [self setScale:theScale];
+        NSLog(@"%@",theScale);
+    } else {
+        
+    }
     [[self tableView] reloadData];
 }
 
@@ -103,16 +113,26 @@
     
     if ([indexPath row] == 0 ) {
         [[cell textLabel] setFont:WMSystemFont];
-        [[cell textLabel] setText:[[self scale] name]];
+        if ([self noteCollectionType] == WMCollectionTypeScale)
+            [[cell textLabel] setText:[[self scale] name]];
+        else
+            [[cell textLabel] setText:[[self chord] name]];
     }
     
     if ([indexPath row] == 1) {
         [[cell textLabel] setFont:WMMonoSpaceFont];
-        [[cell textLabel] setText:[[self scale] notesShortNames]];
+        if ([self noteCollectionType] == WMCollectionTypeScale)
+            [[cell textLabel] setText:[[self scale] notesShortNames]];
+        else
+            [[cell textLabel] setText:[[self chord] notesShortNames]];
     }
+    
     if ([indexPath row] == 2) {
         [[cell textLabel] setFont:WMMonoSpaceFont];
-        [[cell textLabel] setText:[[self scale] notesMidiNoteNumberString]];
+        if ([self noteCollectionType] == WMCollectionTypeScale)
+            [[cell textLabel] setText:[[self scale] notesMidiNoteNumberString]];
+        else
+            [[cell textLabel] setText:[[self chord] notesMidiNoteNumberString]];
     }
     return cell;
 }
@@ -154,7 +174,7 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 #pragma  mark - UIPickerView things
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     
-    // Note Accidental Octave Mode
+    // Note  Octave Mode
     return 3;
 }
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {

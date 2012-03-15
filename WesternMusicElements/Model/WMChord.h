@@ -19,4 +19,6 @@
 
 - (NSString *)name;
 
+- (WMChord *)transpose:(WMInterval)interval;
+
 @end

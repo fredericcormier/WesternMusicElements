@@ -80,5 +80,9 @@
     STAssertTrue([[[C2MajorScale transpose:WMDiatonicIntervalMajorThird] StringWithNoteShortNames]
                   isEqualToString:[E2MajorScale StringWithNoteShortNames]],
                  @"e2 is a third major higher that c2, so are the scales");
+    
+    STAssertTrue([[[C3MajorChord transpose:WMDiatonicIntervalMajorThird] StringWithNoteShortNames] 
+                  isEqualToString:[E3MajorChord StringWithNoteShortNames]],
+                 @"c3 aMajor third higher is e3, so are the chords");
     }
 @end

@@ -59,6 +59,12 @@
     return nil;
 }
 
+- (WMChord *)transpose:(WMInterval)interval {
+    WMNote *newRootNote = [[self rootNote] noteAtInterval:interval];
+    return [self initWithRootNote:newRootNote forType:[self type] inversion:[self inversion]];
+}
+
+
 - (NSString *)name {
     return [NSString stringWithFormat:@"%@ %@ inv: %d",[[self rootNote] shortName], [self type], [self inversion]];
 }

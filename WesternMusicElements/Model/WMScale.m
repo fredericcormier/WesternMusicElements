@@ -41,7 +41,7 @@
     return [NSString stringWithFormat:@"SCALE: %@ %@ \n %@",
             [[self rootNote] shortName], 
             [self mode],
-            [self notesShortNames]];
+            [self StringWithNoteShortNames]];
 }
 
 

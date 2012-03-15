@@ -83,14 +83,14 @@
         NSString *pickerModeKey = [[self allModeKeys] objectAtIndex:[[self noteCollectionPicker] selectedRowInComponent:2]];
         WMScale *theScale = [[WMPool pool] scaleWithRootShortName:pickerShortName scaleMode:pickerModeKey];
         [self setScale:theScale];
-        NSLog(@"%@",theScale);
+        //NSLog(@"%@",theScale);
         
     } else if ([self noteCollectionType] == WMCollectionTypeChord ) {
         NSString *pickerTypeKey = [[self allTypeKeys] objectAtIndex:[[self noteCollectionPicker] selectedRowInComponent:2]];
         int pickerInversion = [[self noteCollectionPicker] selectedRowInComponent:3];
         WMChord *theChord = [[WMPool pool] chordWithRootShortName:pickerShortName chordType:pickerTypeKey inversion:pickerInversion];
         [self setChord:theChord];
-        NSLog(@"%@", theChord);
+        //NSLog(@"%@", theChord);
     }
     [[self tableView] reloadData];
 }
@@ -135,17 +135,17 @@
     if ([indexPath row] == 1) {
         [[cell textLabel] setFont:WMMonoSpaceFont];
         if ([self noteCollectionType] == WMCollectionTypeScale)
-            [[cell textLabel] setText:[[self scale] notesShortNames]];
+            [[cell textLabel] setText:[[self scale] StringWithNoteShortNames]];
         else
-            [[cell textLabel] setText:[[self chord] notesShortNames]];
+            [[cell textLabel] setText:[[self chord] StringWithNoteShortNames]];
     }
     
     if ([indexPath row] == 2) {
         [[cell textLabel] setFont:WMMonoSpaceFont];
         if ([self noteCollectionType] == WMCollectionTypeScale)
-            [[cell textLabel] setText:[[self scale] notesMidiNoteNumberString]];
+            [[cell textLabel] setText:[[self scale] StringWithMidiNoteNumbers]];
         else
-            [[cell textLabel] setText:[[self chord] notesMidiNoteNumberString]];
+            [[cell textLabel] setText:[[self chord] StringWithMidiNoteNumbers]];
     }
     return cell;
 }

@@ -18,7 +18,7 @@
 - (WMNote *)rootNote;
 - (NSArray *)definition;
 
-- (NSString *)notesShortNames;
-- (NSString *)notesMidiNoteNumberString;
+- (NSString *)StringWithNoteShortNames;
+- (NSString *)StringWithMidiNoteNumbers;
 
 @end

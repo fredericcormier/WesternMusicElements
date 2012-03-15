@@ -61,14 +61,14 @@
 
 
 - (void)testScales {
-    STAssertTrue([[fSharp2Mixolydian notesShortNames] isEqualToString: fSharp2MixolydianString], @"Incorrect shortname string for F#2 Mixolydian"   );
+    STAssertTrue([[fSharp2Mixolydian StringWithNoteShortNames] isEqualToString: fSharp2MixolydianString], @"Incorrect shortname string for F#2 Mixolydian"   );
     STAssertTrue([[fSharp2Mixolydian rootNote]isEqualToNote:[[WMPool pool] noteWithShortName:@"f#2"]], @"Incorrect root Note");
-    STAssertTrue([[C2MajorScale notesShortNames] isEqualToString:@"C2 D2 E2 F2 G2 A2 B2 C3 "],@"incorrect C2 major representation");
+    STAssertTrue([[C2MajorScale StringWithNoteShortNames] isEqualToString:@"C2 D2 E2 F2 G2 A2 B2 C3 "],@"incorrect C2 major representation");
 }
 
 - (void)testChords {
-    STAssertTrue([[C3MajorChord notesShortNames] isEqualToString:@"C3 E3 G3 "],@"Incorrect C Major chord");
-    STAssertTrue([[C3MajorChordInv2 notesShortNames] isEqualToString:@"G3 C4 E4 "],@"Incorrect C Major chord");
+    STAssertTrue([[C3MajorChord StringWithNoteShortNames] isEqualToString:@"C3 E3 G3 "],@"Incorrect C Major chord");
+    STAssertTrue([[C3MajorChordInv2 StringWithNoteShortNames] isEqualToString:@"G3 C4 E4 "],@"Incorrect C Major chord");
 
 }
 

@@ -1,3 +1,9 @@
+# You don't need to run this script
+# it's here only to show how all the WMNote where generated.
+# the output was copied and pasted into WMPool.m (only once)
+
+
+
 PITCHES =			{
     'C-1' => [8.176, 3.00, 0],'C#-1' => [8.662 , 3.01, 1],
     'D-1' => [9.177 , 3.02, 2], 'D#-1' => [9.723 , 3.03, 3],

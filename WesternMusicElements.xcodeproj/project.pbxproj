@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6A0271761509FAEA006231DF /* NotesArrayScripts.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A0271751509FAEA006231DF /* NotesArrayScripts.rb */; };
-		6A0271781509FAFA006231DF /* scales_and_chords_to_json.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A0271771509FAFA006231DF /* scales_and_chords_to_json.rb */; };
-		6A02717B150A0ECA006231DF /* chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A027179150A0ECA006231DF /* chords.json */; };
-		6A02717C150A0ECA006231DF /* scales.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A02717A150A0ECA006231DF /* scales.json */; };
 		6A0B6D7A1504A88100C865AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D791504A88100C865AE /* UIKit.framework */; };
 		6A0B6D7C1504A88100C865AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7B1504A88100C865AE /* Foundation.framework */; };
 		6A0B6D7E1504A88100C865AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7D1504A88100C865AE /* CoreGraphics.framework */; };
@@ -30,6 +27,15 @@
 		6A86F9921504E83B008EA537 /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WMScale.m */; };
 		6A86F9A215053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
 		6A86F9A315053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
+		6A8A8A6A1513556600E23464 /* WMRubyData.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A691513556600E23464 /* WMRubyData.rb */; };
+		6A8A8A731513745F00E23464 /* chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A6F1513745F00E23464 /* chords.json */; };
+		6A8A8A741513745F00E23464 /* chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A6F1513745F00E23464 /* chords.json */; };
+		6A8A8A751513745F00E23464 /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A701513745F00E23464 /* log.txt */; };
+		6A8A8A761513745F00E23464 /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A701513745F00E23464 /* log.txt */; };
+		6A8A8A771513745F00E23464 /* scales.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A711513745F00E23464 /* scales.json */; };
+		6A8A8A781513745F00E23464 /* scales.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A711513745F00E23464 /* scales.json */; };
+		6A8A8A7A15137A1300E23464 /* NoteCollectionParser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */; };
+		6A8A8A7B15137A1300E23464 /* NoteCollectionParser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */; };
 		6AB10B69150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
 		6AB10B6A150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
 		6AB10B77150F649F0047FF0E /* WMNoteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */; };
@@ -49,9 +55,6 @@
 
 /* Begin PBXFileReference section */
 		6A0271751509FAEA006231DF /* NotesArrayScripts.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NotesArrayScripts.rb; path = Ruby/NotesArrayScripts.rb; sourceTree = "<group>"; };
-		6A0271771509FAFA006231DF /* scales_and_chords_to_json.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = scales_and_chords_to_json.rb; path = Ruby/scales_and_chords_to_json.rb; sourceTree = "<group>"; };
-		6A027179150A0ECA006231DF /* chords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = chords.json; path = Ruby/chords.json; sourceTree = "<group>"; };
-		6A02717A150A0ECA006231DF /* scales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scales.json; path = Ruby/scales.json; sourceTree = "<group>"; };
 		6A0B6D751504A88100C865AE /* WesternMusicElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesternMusicElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0B6D791504A88100C865AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6A0B6D7B1504A88100C865AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +81,12 @@
 		6A86F9901504E83B008EA537 /* WMScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMScale.m; path = Model/WMScale.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A86F9A015053448008EA537 /* WMChord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMChord.h; path = Model/WMChord.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A86F9A115053448008EA537 /* WMChord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMChord.m; path = Model/WMChord.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6A8A8A691513556600E23464 /* WMRubyData.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = WMRubyData.rb; path = Ruby/WMRubyData.rb; sourceTree = "<group>"; };
+		6A8A8A6F1513745F00E23464 /* chords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = chords.json; path = Ruby/chords.json; sourceTree = "<group>"; };
+		6A8A8A701513745F00E23464 /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = log.txt; path = Ruby/log.txt; sourceTree = "<group>"; };
+		6A8A8A711513745F00E23464 /* scales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scales.json; path = Ruby/scales.json; sourceTree = "<group>"; };
+		6A8A8A721513745F00E23464 /* WMNoteCollectionKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollectionKeys.h; path = Ruby/WMNoteCollectionKeys.h; sourceTree = "<group>"; };
+		6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; lineEnding = 0; name = NoteCollectionParser.rb; path = Ruby/NoteCollectionParser.rb; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6AB10B67150F40DD0047FF0E /* WMNoteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollection.h; path = Model/WMNoteCollection.h; sourceTree = "<group>"; };
 		6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMNoteCollection.m; path = Model/WMNoteCollection.m; sourceTree = "<group>"; };
 		6AB10B74150F649F0047FF0E /* WMNoteCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollectionViewController.h; path = Controller/WMNoteCollectionViewController.h; sourceTree = "<group>"; };
@@ -113,10 +122,13 @@
 		6A0271741509F926006231DF /* Ruby */ = {
 			isa = PBXGroup;
 			children = (
-				6A027179150A0ECA006231DF /* chords.json */,
-				6A02717A150A0ECA006231DF /* scales.json */,
+				6A8A8A6F1513745F00E23464 /* chords.json */,
+				6A8A8A701513745F00E23464 /* log.txt */,
+				6A8A8A711513745F00E23464 /* scales.json */,
+				6A8A8A721513745F00E23464 /* WMNoteCollectionKeys.h */,
 				6A0271751509FAEA006231DF /* NotesArrayScripts.rb */,
-				6A0271771509FAFA006231DF /* scales_and_chords_to_json.rb */,
+				6A8A8A691513556600E23464 /* WMRubyData.rb */,
+				6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */,
 			);
 			name = Ruby;
 			sourceTree = "<group>";
@@ -305,11 +317,13 @@
 			files = (
 				6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */,
 				6A0271761509FAEA006231DF /* NotesArrayScripts.rb in Resources */,
-				6A0271781509FAFA006231DF /* scales_and_chords_to_json.rb in Resources */,
-				6A02717B150A0ECA006231DF /* chords.json in Resources */,
-				6A02717C150A0ECA006231DF /* scales.json in Resources */,
 				6AB10B78150F649F0047FF0E /* WMNoteCollectionViewController.xib in Resources */,
 				6AB10B7F150F7D250047FF0E /* green_button_off.png in Resources */,
+				6A8A8A6A1513556600E23464 /* WMRubyData.rb in Resources */,
+				6A8A8A731513745F00E23464 /* chords.json in Resources */,
+				6A8A8A751513745F00E23464 /* log.txt in Resources */,
+				6A8A8A771513745F00E23464 /* scales.json in Resources */,
+				6A8A8A7A15137A1300E23464 /* NoteCollectionParser.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +332,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D9C1504A88200C865AE /* InfoPlist.strings in Resources */,
+				6A8A8A741513745F00E23464 /* chords.json in Resources */,
+				6A8A8A761513745F00E23464 /* log.txt in Resources */,
+				6A8A8A781513745F00E23464 /* scales.json in Resources */,
+				6A8A8A7B15137A1300E23464 /* NoteCollectionParser.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

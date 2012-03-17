@@ -23,13 +23,12 @@
 		6A5D977E1505FDEB0053B13C /* WMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D977D1505FDEB0053B13C /* WMData.m */; };
 		6A5D977F1505FDEB0053B13C /* WMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D977D1505FDEB0053B13C /* WMData.m */; };
 		6A61BB7C1504B38E003CE524 /* WMPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61BB7B1504B38E003CE524 /* WMPool.m */; };
+		6A61CB1C1513B03100945A6E /* chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A61CB1B1513B03100945A6E /* chords.json */; };
 		6A86F9911504E83B008EA537 /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WMScale.m */; };
 		6A86F9921504E83B008EA537 /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WMScale.m */; };
 		6A86F9A215053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
 		6A86F9A315053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
 		6A8A8A6A1513556600E23464 /* WMRubyData.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A691513556600E23464 /* WMRubyData.rb */; };
-		6A8A8A731513745F00E23464 /* chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A6F1513745F00E23464 /* chords.json */; };
-		6A8A8A741513745F00E23464 /* chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A6F1513745F00E23464 /* chords.json */; };
 		6A8A8A751513745F00E23464 /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A701513745F00E23464 /* log.txt */; };
 		6A8A8A761513745F00E23464 /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A701513745F00E23464 /* log.txt */; };
 		6A8A8A771513745F00E23464 /* scales.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A711513745F00E23464 /* scales.json */; };
@@ -77,12 +76,12 @@
 		6A5D977D1505FDEB0053B13C /* WMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMData.m; path = Model/WMData.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A61BB7A1504B38E003CE524 /* WMPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMPool.h; path = Model/WMPool.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A61BB7B1504B38E003CE524 /* WMPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMPool.m; path = Model/WMPool.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6A61CB1B1513B03100945A6E /* chords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = chords.json; path = Ruby/chords.json; sourceTree = "<group>"; };
 		6A86F98F1504E83B008EA537 /* WMScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMScale.h; path = Model/WMScale.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A86F9901504E83B008EA537 /* WMScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMScale.m; path = Model/WMScale.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A86F9A015053448008EA537 /* WMChord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMChord.h; path = Model/WMChord.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A86F9A115053448008EA537 /* WMChord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMChord.m; path = Model/WMChord.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A8A8A691513556600E23464 /* WMRubyData.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = WMRubyData.rb; path = Ruby/WMRubyData.rb; sourceTree = "<group>"; };
-		6A8A8A6F1513745F00E23464 /* chords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = chords.json; path = Ruby/chords.json; sourceTree = "<group>"; };
 		6A8A8A701513745F00E23464 /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = log.txt; path = Ruby/log.txt; sourceTree = "<group>"; };
 		6A8A8A711513745F00E23464 /* scales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scales.json; path = Ruby/scales.json; sourceTree = "<group>"; };
 		6A8A8A721513745F00E23464 /* WMNoteCollectionKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollectionKeys.h; path = Ruby/WMNoteCollectionKeys.h; sourceTree = "<group>"; };
@@ -122,8 +121,8 @@
 		6A0271741509F926006231DF /* Ruby */ = {
 			isa = PBXGroup;
 			children = (
-				6A8A8A6F1513745F00E23464 /* chords.json */,
 				6A8A8A701513745F00E23464 /* log.txt */,
+				6A61CB1B1513B03100945A6E /* chords.json */,
 				6A8A8A711513745F00E23464 /* scales.json */,
 				6A8A8A721513745F00E23464 /* WMNoteCollectionKeys.h */,
 				6A0271751509FAEA006231DF /* NotesArrayScripts.rb */,
@@ -320,10 +319,10 @@
 				6AB10B78150F649F0047FF0E /* WMNoteCollectionViewController.xib in Resources */,
 				6AB10B7F150F7D250047FF0E /* green_button_off.png in Resources */,
 				6A8A8A6A1513556600E23464 /* WMRubyData.rb in Resources */,
-				6A8A8A731513745F00E23464 /* chords.json in Resources */,
 				6A8A8A751513745F00E23464 /* log.txt in Resources */,
 				6A8A8A771513745F00E23464 /* scales.json in Resources */,
 				6A8A8A7A15137A1300E23464 /* NoteCollectionParser.rb in Resources */,
+				6A61CB1C1513B03100945A6E /* chords.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +331,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D9C1504A88200C865AE /* InfoPlist.strings in Resources */,
-				6A8A8A741513745F00E23464 /* chords.json in Resources */,
 				6A8A8A761513745F00E23464 /* log.txt in Resources */,
 				6A8A8A781513745F00E23464 /* scales.json in Resources */,
 				6A8A8A7B15137A1300E23464 /* NoteCollectionParser.rb in Resources */,

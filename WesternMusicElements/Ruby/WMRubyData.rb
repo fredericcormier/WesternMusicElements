@@ -38,6 +38,7 @@ HEADER
     "Sus4" =>                [0,5,7],
     "Seventh sus4" =>        [0,5,7,10],
     "Minor major" =>         [0,3,7,11]
+   
   }
   SCALES = {
     "Chromatic" =>           [0,1,2,3,4,5,6,7,8,9,10,11,12],

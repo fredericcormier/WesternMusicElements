@@ -13,21 +13,29 @@
 		6A0B6D7E1504A88100C865AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7D1504A88100C865AE /* CoreGraphics.framework */; };
 		6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A0B6D821504A88100C865AE /* InfoPlist.strings */; };
 		6A0B6D861504A88100C865AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6D851504A88100C865AE /* main.m */; };
-		6A0B6D8A1504A88100C865AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6D891504A88100C865AE /* AppDelegate.m */; };
 		6A0B6D921504A88200C865AE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D911504A88100C865AE /* SenTestingKit.framework */; };
 		6A0B6D931504A88200C865AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D791504A88100C865AE /* UIKit.framework */; };
 		6A0B6D941504A88200C865AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B6D7B1504A88100C865AE /* Foundation.framework */; };
 		6A0B6D9C1504A88200C865AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A0B6D9A1504A88200C865AE /* InfoPlist.strings */; };
 		6A0B6D9F1504A88200C865AE /* WesternMusicElementsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6D9E1504A88200C865AE /* WesternMusicElementsTests.m */; };
-		6A0B6DAB1504AC1900C865AE /* WMNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B6DAA1504AC1900C865AE /* WMNote.m */; };
-		6A5D977E1505FDEB0053B13C /* WMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D977D1505FDEB0053B13C /* WMData.m */; };
-		6A5D977F1505FDEB0053B13C /* WMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D977D1505FDEB0053B13C /* WMData.m */; };
-		6A61BB7C1504B38E003CE524 /* WMPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61BB7B1504B38E003CE524 /* WMPool.m */; };
 		6A61CB1C1513B03100945A6E /* chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A61CB1B1513B03100945A6E /* chords.json */; };
-		6A86F9911504E83B008EA537 /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WMScale.m */; };
-		6A86F9921504E83B008EA537 /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9901504E83B008EA537 /* WMScale.m */; };
-		6A86F9A215053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
-		6A86F9A315053448008EA537 /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86F9A115053448008EA537 /* WMChord.m */; };
+		6A6A75391517215F0011E13D /* WMNoteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75371517215F0011E13D /* WMNoteCollectionViewController.m */; };
+		6A6A753A1517215F0011E13D /* WMNoteCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6A75381517215F0011E13D /* WMNoteCollectionViewController.xib */; };
+		6A6A75471517216F0011E13D /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A753C1517216F0011E13D /* WMChord.m */; };
+		6A6A75481517216F0011E13D /* WMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A753E1517216F0011E13D /* WMData.m */; };
+		6A6A75491517216F0011E13D /* WMNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75401517216F0011E13D /* WMNote.m */; };
+		6A6A754A1517216F0011E13D /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75421517216F0011E13D /* WMNoteCollection.m */; };
+		6A6A754B1517216F0011E13D /* WMPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75441517216F0011E13D /* WMPool.m */; };
+		6A6A754C1517216F0011E13D /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75461517216F0011E13D /* WMScale.m */; };
+		6A6A754D151721E20011E13D /* WMNoteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75371517215F0011E13D /* WMNoteCollectionViewController.m */; };
+		6A6A754E151722290011E13D /* WMChord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A753C1517216F0011E13D /* WMChord.m */; };
+		6A6A754F151722290011E13D /* WMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A753E1517216F0011E13D /* WMData.m */; };
+		6A6A7550151722290011E13D /* WMNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75401517216F0011E13D /* WMNote.m */; };
+		6A6A7551151722290011E13D /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75421517216F0011E13D /* WMNoteCollection.m */; };
+		6A6A7552151722290011E13D /* WMPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75441517216F0011E13D /* WMPool.m */; };
+		6A6A7553151722290011E13D /* WMScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A75461517216F0011E13D /* WMScale.m */; };
+		6A6A7556151722A90011E13D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A7555151722A90011E13D /* AppDelegate.m */; };
+		6A6A7557151722B00011E13D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A7555151722A90011E13D /* AppDelegate.m */; };
 		6A8A8A6A1513556600E23464 /* WMRubyData.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A691513556600E23464 /* WMRubyData.rb */; };
 		6A8A8A751513745F00E23464 /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A701513745F00E23464 /* log.txt */; };
 		6A8A8A761513745F00E23464 /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A701513745F00E23464 /* log.txt */; };
@@ -35,10 +43,6 @@
 		6A8A8A781513745F00E23464 /* scales.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A711513745F00E23464 /* scales.json */; };
 		6A8A8A7A15137A1300E23464 /* NoteCollectionParser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */; };
 		6A8A8A7B15137A1300E23464 /* NoteCollectionParser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */; };
-		6AB10B69150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
-		6AB10B6A150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
-		6AB10B77150F649F0047FF0E /* WMNoteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */; };
-		6AB10B78150F649F0047FF0E /* WMNoteCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB10B76150F649F0047FF0E /* WMNoteCollectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,35 +65,35 @@
 		6A0B6D831504A88100C865AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A0B6D851504A88100C865AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A0B6D871504A88100C865AE /* WesternMusicElements-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WesternMusicElements-Prefix.pch"; sourceTree = "<group>"; };
-		6A0B6D881504A88100C865AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6A0B6D891504A88100C865AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6A0B6D901504A88100C865AE /* WesternMusicElementsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WesternMusicElementsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0B6D911504A88100C865AE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6A0B6D991504A88200C865AE /* WesternMusicElementsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WesternMusicElementsTests-Info.plist"; sourceTree = "<group>"; };
 		6A0B6D9B1504A88200C865AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A0B6D9D1504A88200C865AE /* WesternMusicElementsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WesternMusicElementsTests.h; sourceTree = "<group>"; };
 		6A0B6D9E1504A88200C865AE /* WesternMusicElementsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WesternMusicElementsTests.m; sourceTree = "<group>"; };
-		6A0B6DA91504AC1900C865AE /* WMNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMNote.h; path = Model/WMNote.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		6A0B6DAA1504AC1900C865AE /* WMNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMNote.m; path = Model/WMNote.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6A5D977C1505FDEB0053B13C /* WMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMData.h; path = Model/WMData.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		6A5D977D1505FDEB0053B13C /* WMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMData.m; path = Model/WMData.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6A61BB7A1504B38E003CE524 /* WMPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMPool.h; path = Model/WMPool.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		6A61BB7B1504B38E003CE524 /* WMPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMPool.m; path = Model/WMPool.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A61CB1B1513B03100945A6E /* chords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = chords.json; path = Ruby/chords.json; sourceTree = "<group>"; };
-		6A86F98F1504E83B008EA537 /* WMScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMScale.h; path = Model/WMScale.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		6A86F9901504E83B008EA537 /* WMScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMScale.m; path = Model/WMScale.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6A86F9A015053448008EA537 /* WMChord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = WMChord.h; path = Model/WMChord.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		6A86F9A115053448008EA537 /* WMChord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMChord.m; path = Model/WMChord.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6A6A75361517215F0011E13D /* WMNoteCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollectionViewController.h; path = TestApp/WMNoteCollectionViewController.h; sourceTree = "<group>"; };
+		6A6A75371517215F0011E13D /* WMNoteCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMNoteCollectionViewController.m; path = TestApp/WMNoteCollectionViewController.m; sourceTree = "<group>"; };
+		6A6A75381517215F0011E13D /* WMNoteCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WMNoteCollectionViewController.xib; path = TestApp/WMNoteCollectionViewController.xib; sourceTree = "<group>"; };
+		6A6A753B1517216F0011E13D /* WMChord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMChord.h; path = WMLib/WMChord.h; sourceTree = "<group>"; };
+		6A6A753C1517216F0011E13D /* WMChord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMChord.m; path = WMLib/WMChord.m; sourceTree = "<group>"; };
+		6A6A753D1517216F0011E13D /* WMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMData.h; path = WMLib/WMData.h; sourceTree = "<group>"; };
+		6A6A753E1517216F0011E13D /* WMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMData.m; path = WMLib/WMData.m; sourceTree = "<group>"; };
+		6A6A753F1517216F0011E13D /* WMNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNote.h; path = WMLib/WMNote.h; sourceTree = "<group>"; };
+		6A6A75401517216F0011E13D /* WMNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMNote.m; path = WMLib/WMNote.m; sourceTree = "<group>"; };
+		6A6A75411517216F0011E13D /* WMNoteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollection.h; path = WMLib/WMNoteCollection.h; sourceTree = "<group>"; };
+		6A6A75421517216F0011E13D /* WMNoteCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMNoteCollection.m; path = WMLib/WMNoteCollection.m; sourceTree = "<group>"; };
+		6A6A75431517216F0011E13D /* WMPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMPool.h; path = WMLib/WMPool.h; sourceTree = "<group>"; };
+		6A6A75441517216F0011E13D /* WMPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMPool.m; path = WMLib/WMPool.m; sourceTree = "<group>"; };
+		6A6A75451517216F0011E13D /* WMScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMScale.h; path = WMLib/WMScale.h; sourceTree = "<group>"; };
+		6A6A75461517216F0011E13D /* WMScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMScale.m; path = WMLib/WMScale.m; sourceTree = "<group>"; };
+		6A6A7554151722A90011E13D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TestApp/AppDelegate.h; sourceTree = "<group>"; };
+		6A6A7555151722A90011E13D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TestApp/AppDelegate.m; sourceTree = "<group>"; };
 		6A8A8A691513556600E23464 /* WMRubyData.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = WMRubyData.rb; path = Ruby/WMRubyData.rb; sourceTree = "<group>"; };
 		6A8A8A701513745F00E23464 /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = log.txt; path = Ruby/log.txt; sourceTree = "<group>"; };
 		6A8A8A711513745F00E23464 /* scales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scales.json; path = Ruby/scales.json; sourceTree = "<group>"; };
 		6A8A8A721513745F00E23464 /* WMNoteCollectionKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollectionKeys.h; path = Ruby/WMNoteCollectionKeys.h; sourceTree = "<group>"; };
 		6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; lineEnding = 0; name = NoteCollectionParser.rb; path = Ruby/NoteCollectionParser.rb; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6AB10B67150F40DD0047FF0E /* WMNoteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollection.h; path = Model/WMNoteCollection.h; sourceTree = "<group>"; };
-		6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMNoteCollection.m; path = Model/WMNoteCollection.m; sourceTree = "<group>"; };
-		6AB10B74150F649F0047FF0E /* WMNoteCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollectionViewController.h; path = Controller/WMNoteCollectionViewController.h; sourceTree = "<group>"; };
-		6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMNoteCollectionViewController.m; path = Controller/WMNoteCollectionViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6AB10B76150F649F0047FF0E /* WMNoteCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WMNoteCollectionViewController.xib; path = Controller/WMNoteCollectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,18 +209,18 @@
 		6A0B6DA81504AB7D00C865AE /* WMLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				6A5D977C1505FDEB0053B13C /* WMData.h */,
-				6A5D977D1505FDEB0053B13C /* WMData.m */,
-				6A0B6DA91504AC1900C865AE /* WMNote.h */,
-				6A0B6DAA1504AC1900C865AE /* WMNote.m */,
-				6AB10B67150F40DD0047FF0E /* WMNoteCollection.h */,
-				6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */,
-				6A86F98F1504E83B008EA537 /* WMScale.h */,
-				6A86F9901504E83B008EA537 /* WMScale.m */,
-				6A86F9A015053448008EA537 /* WMChord.h */,
-				6A86F9A115053448008EA537 /* WMChord.m */,
-				6A61BB7A1504B38E003CE524 /* WMPool.h */,
-				6A61BB7B1504B38E003CE524 /* WMPool.m */,
+				6A6A753B1517216F0011E13D /* WMChord.h */,
+				6A6A753C1517216F0011E13D /* WMChord.m */,
+				6A6A753D1517216F0011E13D /* WMData.h */,
+				6A6A753E1517216F0011E13D /* WMData.m */,
+				6A6A753F1517216F0011E13D /* WMNote.h */,
+				6A6A75401517216F0011E13D /* WMNote.m */,
+				6A6A75411517216F0011E13D /* WMNoteCollection.h */,
+				6A6A75421517216F0011E13D /* WMNoteCollection.m */,
+				6A6A75431517216F0011E13D /* WMPool.h */,
+				6A6A75441517216F0011E13D /* WMPool.m */,
+				6A6A75451517216F0011E13D /* WMScale.h */,
+				6A6A75461517216F0011E13D /* WMScale.m */,
 			);
 			name = WMLibrary;
 			sourceTree = "<group>";
@@ -224,11 +228,11 @@
 		6A86F9981504FD46008EA537 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
-				6AB10B74150F649F0047FF0E /* WMNoteCollectionViewController.h */,
-				6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */,
-				6AB10B76150F649F0047FF0E /* WMNoteCollectionViewController.xib */,
-				6A0B6D881504A88100C865AE /* AppDelegate.h */,
-				6A0B6D891504A88100C865AE /* AppDelegate.m */,
+				6A6A7554151722A90011E13D /* AppDelegate.h */,
+				6A6A7555151722A90011E13D /* AppDelegate.m */,
+				6A6A75361517215F0011E13D /* WMNoteCollectionViewController.h */,
+				6A6A75371517215F0011E13D /* WMNoteCollectionViewController.m */,
+				6A6A75381517215F0011E13D /* WMNoteCollectionViewController.xib */,
 			);
 			name = TestApp;
 			sourceTree = "<group>";
@@ -313,7 +317,6 @@
 			files = (
 				6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */,
 				6A0271761509FAEA006231DF /* NotesArrayScripts.rb in Resources */,
-				6AB10B78150F649F0047FF0E /* WMNoteCollectionViewController.xib in Resources */,
 				6A8A8A6A1513556600E23464 /* WMRubyData.rb in Resources */,
 				6A8A8A751513745F00E23464 /* log.txt in Resources */,
 				6A8A8A771513745F00E23464 /* scales.json in Resources */,
@@ -330,6 +333,7 @@
 				6A8A8A761513745F00E23464 /* log.txt in Resources */,
 				6A8A8A781513745F00E23464 /* scales.json in Resources */,
 				6A8A8A7B15137A1300E23464 /* NoteCollectionParser.rb in Resources */,
+				6A6A753A1517215F0011E13D /* WMNoteCollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,14 +361,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D861504A88100C865AE /* main.m in Sources */,
-				6A0B6D8A1504A88100C865AE /* AppDelegate.m in Sources */,
-				6A0B6DAB1504AC1900C865AE /* WMNote.m in Sources */,
-				6A61BB7C1504B38E003CE524 /* WMPool.m in Sources */,
-				6A86F9911504E83B008EA537 /* WMScale.m in Sources */,
-				6A86F9A215053448008EA537 /* WMChord.m in Sources */,
-				6A5D977E1505FDEB0053B13C /* WMData.m in Sources */,
-				6AB10B69150F40DD0047FF0E /* WMNoteCollection.m in Sources */,
-				6AB10B77150F649F0047FF0E /* WMNoteCollectionViewController.m in Sources */,
+				6A6A7557151722B00011E13D /* AppDelegate.m in Sources */,
+				6A6A754D151721E20011E13D /* WMNoteCollectionViewController.m in Sources */,
+				6A6A754E151722290011E13D /* WMChord.m in Sources */,
+				6A6A754F151722290011E13D /* WMData.m in Sources */,
+				6A6A7550151722290011E13D /* WMNote.m in Sources */,
+				6A6A7551151722290011E13D /* WMNoteCollection.m in Sources */,
+				6A6A7552151722290011E13D /* WMPool.m in Sources */,
+				6A6A7553151722290011E13D /* WMScale.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,10 +377,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D9F1504A88200C865AE /* WesternMusicElementsTests.m in Sources */,
-				6A86F9921504E83B008EA537 /* WMScale.m in Sources */,
-				6A86F9A315053448008EA537 /* WMChord.m in Sources */,
-				6A5D977F1505FDEB0053B13C /* WMData.m in Sources */,
-				6AB10B6A150F40DD0047FF0E /* WMNoteCollection.m in Sources */,
+				6A6A75391517215F0011E13D /* WMNoteCollectionViewController.m in Sources */,
+				6A6A75471517216F0011E13D /* WMChord.m in Sources */,
+				6A6A75481517216F0011E13D /* WMData.m in Sources */,
+				6A6A75491517216F0011E13D /* WMNote.m in Sources */,
+				6A6A754A1517216F0011E13D /* WMNoteCollection.m in Sources */,
+				6A6A754B1517216F0011E13D /* WMPool.m in Sources */,
+				6A6A754C1517216F0011E13D /* WMScale.m in Sources */,
+				6A6A7556151722A90011E13D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

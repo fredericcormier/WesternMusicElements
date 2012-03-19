@@ -53,13 +53,17 @@ File.open(File.join(pathToWMRubyDirectory,"scales.json"),"w") do |f|
     SCALES.to_json.each { |l| f << l.to_s << "\n" }
 end
 
-#some feedback
 
+# if your using git or nay other source control system, you may not want 
+# to have the log file updated at every build.
+# To use the log file, just comment out  the next method.
+=begin
 File.open(File.join(pathToWMRubyDirectory,"log.txt"),"w") do |f|
     f << Time.now << "\n"
     f << "Project Directory: " << ENV['PROJECT_DIR']<<"\n"
     f << "WMRuby Directory: " << pathToWMRubyDirectory
 end  
+=end
 
 #Comment out next line to debug paths problems
 #system("open #{pathToWMRubyDirectory}/log.txt")

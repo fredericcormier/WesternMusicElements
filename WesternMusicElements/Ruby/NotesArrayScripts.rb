@@ -87,12 +87,12 @@ class Statement
             @accidental = "nil"
         end
         @midi = v[2]
-        @cpscph = v[1]
+        @cpspch = v[1]
         @freq = v[0]
     end
     
     def render
-        puts "[[WMNote alloc] initWithRoot:@\"#{@root}\" accidental:#{@accidental} atOctave:#{@octave} withMidiValue:#{@midi} andCpspch:#{@cpscph} atFrequency:#{@freq} forShortName:@\"#{@short_name}\"],"
+        puts "[[WMNote alloc] initWithRoot:@\"#{@root}\" accidental:#{@accidental} atOctave:#{@octave} withMidiValue:#{@midi} andCpspch:#{@cpspch} atFrequency:#{@freq} forShortName:@\"#{@short_name}\"],"
     end
 end
 

@@ -39,7 +39,6 @@
 		6AB10B6A150F40DD0047FF0E /* WMNoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B68150F40DD0047FF0E /* WMNoteCollection.m */; };
 		6AB10B77150F649F0047FF0E /* WMNoteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */; };
 		6AB10B78150F649F0047FF0E /* WMNoteCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB10B76150F649F0047FF0E /* WMNoteCollectionViewController.xib */; };
-		6AB10B7F150F7D250047FF0E /* green_button_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AB10B7E150F7D250047FF0E /* green_button_off.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +90,6 @@
 		6AB10B74150F649F0047FF0E /* WMNoteCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollectionViewController.h; path = Controller/WMNoteCollectionViewController.h; sourceTree = "<group>"; };
 		6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = WMNoteCollectionViewController.m; path = Controller/WMNoteCollectionViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6AB10B76150F649F0047FF0E /* WMNoteCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WMNoteCollectionViewController.xib; path = Controller/WMNoteCollectionViewController.xib; sourceTree = "<group>"; };
-		6AB10B7E150F7D250047FF0E /* green_button_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_button_off.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,10 +165,8 @@
 			children = (
 				6A0271741509F926006231DF /* Ruby */,
 				6A86F9A815055475008EA537 /* Helpers */,
-				6A86F9981504FD46008EA537 /* Controllers */,
-				6A0B6DA81504AB7D00C865AE /* Model */,
-				6A0B6D881504A88100C865AE /* AppDelegate.h */,
-				6A0B6D891504A88100C865AE /* AppDelegate.m */,
+				6A86F9981504FD46008EA537 /* TestApp */,
+				6A0B6DA81504AB7D00C865AE /* WMLibrary */,
 				6A0B6D801504A88100C865AE /* Supporting Files */,
 			);
 			path = WesternMusicElements;
@@ -206,7 +202,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6A0B6DA81504AB7D00C865AE /* Model */ = {
+		6A0B6DA81504AB7D00C865AE /* WMLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				6A5D977C1505FDEB0053B13C /* WMData.h */,
@@ -222,18 +218,19 @@
 				6A61BB7A1504B38E003CE524 /* WMPool.h */,
 				6A61BB7B1504B38E003CE524 /* WMPool.m */,
 			);
-			name = Model;
+			name = WMLibrary;
 			sourceTree = "<group>";
 		};
-		6A86F9981504FD46008EA537 /* Controllers */ = {
+		6A86F9981504FD46008EA537 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
 				6AB10B74150F649F0047FF0E /* WMNoteCollectionViewController.h */,
 				6AB10B75150F649F0047FF0E /* WMNoteCollectionViewController.m */,
 				6AB10B76150F649F0047FF0E /* WMNoteCollectionViewController.xib */,
-				6AB10B7E150F7D250047FF0E /* green_button_off.png */,
+				6A0B6D881504A88100C865AE /* AppDelegate.h */,
+				6A0B6D891504A88100C865AE /* AppDelegate.m */,
 			);
-			name = Controllers;
+			name = TestApp;
 			sourceTree = "<group>";
 		};
 		6A86F9A815055475008EA537 /* Helpers */ = {
@@ -317,7 +314,6 @@
 				6A0B6D841504A88100C865AE /* InfoPlist.strings in Resources */,
 				6A0271761509FAEA006231DF /* NotesArrayScripts.rb in Resources */,
 				6AB10B78150F649F0047FF0E /* WMNoteCollectionViewController.xib in Resources */,
-				6AB10B7F150F7D250047FF0E /* green_button_off.png in Resources */,
 				6A8A8A6A1513556600E23464 /* WMRubyData.rb in Resources */,
 				6A8A8A751513745F00E23464 /* log.txt in Resources */,
 				6A8A8A771513745F00E23464 /* scales.json in Resources */,

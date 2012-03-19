@@ -23,6 +23,7 @@
     WMNoteCollectionViewController *scaleTestViewController = [[WMNoteCollectionViewController alloc] initForCollectionType:WMCollectionTypeScale];
     [scaleTestViewController setTitle:NSLocalizedString(@"Scales", nil)];
     
+    
     WMNoteCollectionViewController *chordTestViewController = [[WMNoteCollectionViewController alloc] initForCollectionType:WMCollectionTypeChord];
     [chordTestViewController setTitle:NSLocalizedString(@"Chords", nil)];
     

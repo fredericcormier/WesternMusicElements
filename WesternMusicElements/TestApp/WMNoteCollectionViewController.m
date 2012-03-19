@@ -31,13 +31,20 @@
 - (id)initForCollectionType:(WMNoteCollectionType)collectionType;{
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        
+        UITabBarItem *tbi = [self tabBarItem];
         noteCollectionType_ = collectionType;
-
-        if ([self noteCollectionType] == WMCollectionTypeScale)
+        
+        if ([self noteCollectionType] == WMCollectionTypeScale){
+            [tbi setTitle:NSLocalizedString(@"Scales", nil)];
+            [tbi setImage:[UIImage imageNamed:@"scale_icon2.png"]];
             allModeKeys_ = [[[WMPool pool] scaleDefinitions] allKeys];
-        else
+        }
+        else {
             allTypeKeys_ = [[[WMPool pool] chordDefinitions] allKeys];
+            [tbi setTitle:NSLocalizedString(@"Chords", nil)];
+            [tbi setImage:[UIImage imageNamed:@"chord_icon2.png"]];
+
+        }
     }
     return self;
     

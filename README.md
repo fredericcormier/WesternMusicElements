@@ -11,7 +11,7 @@
 Copy all the files in the WMLib folder to your project and  `#import "WMPool.h"` where needed.
 
 The ***WMPool*** is a singleton instance that provides the most commonly used Western Chords and  Scales.  
-You can add your own scales and chords using the Ruby Script provided. (see the wiki for details)
+You can add your own scales and chords using the Ruby facilities provided. (see the wiki for details <https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts>)
 
 You can ask for notes:  
 `gSharp5 = [[WMPool pool]noteWithRoot:@"g" accidental:@"#" octave:5];`  
@@ -52,17 +52,17 @@ Example of ***valid Note short names***:
 
 ##Note Range
 
-WMPool will provide notes in the range of:
+**WMPool** will provide notes in the range of:
 
 - Notes: `C-1 to G9`
 - Hertz: `8.176 to 12543.85`
 - Midi Note Number: `0 to 127`
 
-Of course, each WMNote embed that information, as well as the `cpspch` value used by programs like CSound. 
+Of course, each **WMNote** embed that information, as well as the `cpspch` value used by programs like CSound. 
 
 =========================================================================================================
 
-Check the WMPool.h and WMData.h for more details 
+Check the **WMPool.h** and **WMData.h** for more details 
 
 #Western Musical Elements Test app screenshot:
 <center>

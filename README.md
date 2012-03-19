@@ -1,11 +1,16 @@
 # A set of Objective-C classes that helps manipulating Western Musical Scales and Chords.
 
+- Access the most commonly used chords and scales  
+- Easy to add your own scales and chords via Ruby 
+- Uses ARC
+
+
 
 # Quick Start:
 
-Copy all the files in the Model Group to your project and  `#import "WMPool.h"` where needed.
+Copy all the files in the WMLib folder to your project and  `#import "WMPool.h"` where needed.
 
-The `WMPool`is a singleton instance that provides the most commonly used Western Chords and  Scales.  
+The ***WMPool*** is a singleton instance that provides the most commonly used Western Chords and  Scales.  
 You can add your own scales and chords using the Ruby Script provided. (see the wiki for details)
 
 You can ask for notes:  

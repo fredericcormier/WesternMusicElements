@@ -76,7 +76,7 @@ HEADER
     "Arabian" =>            [0,2,4,5,6,8,10,12],
     "Balinese" =>           [0,1,3,7,8,12],
     "Byzantine" =>          [0,1,3,5,7,8,11,12],
-    "Hungarian Gypsy"= >    [0,2,4,6,7,8,10,12],
+    "Hungarian Gypsy"=>    [0,2,4,6,7,8,10,12],
     "Persian" =>            [0,1,4,5,6,8,11,12],
     "East Indian Purvi" =>  [0,1,4,6,7,8,11,12],
     "Oriental" =>           [0,1,4,5,6,9,10,12],

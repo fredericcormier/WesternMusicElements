@@ -36,7 +36,7 @@
         
         if ([self noteCollectionType] == WMCollectionTypeScale){
             [tbi setTitle:NSLocalizedString(@"Scales", nil)];
-            [tbi setImage:[UIImage imageNamed:@"scale_icon2.png"]];
+            [tbi setImage:[UIImage imageNamed:@"four_note_scale.png"]];
             allModeKeys_ = [[[WMPool pool] scaleDefinitions] allKeys];
         }
         else {

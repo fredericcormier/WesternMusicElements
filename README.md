@@ -1,17 +1,21 @@
-# A set of Objective-C classes that helps manipulating Western Musical Scales and Chords.
+
+
+
+#WesternMusicElements is a set of Objective-C classes that helps manipulating Western Musical Scales and Chords.
 
 - Access the most commonly used chords and scales  
-- Easy to add your own scales and chords via Ruby 
+- Easy to add your own [scales](https://github.com/fredericcormier/WesternMusicElements/wiki/Scales) and [chords](https://github.com/fredericcormier/WesternMusicElements/wiki/Chords) via [Ruby] (https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts)  
 - Uses ARC
 
 
 
-# Quick Start:
+## Quick Start:
 
 Copy all the files in the WMLib folder to your project and  `#import "WMPool.h"` where needed.
 
 The ***WMPool*** is a singleton instance that provides the most commonly used Western Chords and  Scales.  
-You can add your own scales and chords using the Ruby facilities provided. (see the wiki for details <https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts>)
+You can add your own scales and chords using the Ruby facilities provided. (see the [wiki](https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts) for details )
+
 
 You can ask for notes:  
 `gSharp5 = [[WMPool pool]noteWithRoot:@"g" accidental:@"#" octave:5];`  
@@ -69,7 +73,6 @@ Check the **WMPool.h** and **WMData.h** for more details
 ![screenshot]  
 (https://github.com/fredericcormier/WesternMusicElements/blob/master/Media/app_test_screenshot.png?raw=true)
 </center>
-
 
 
 

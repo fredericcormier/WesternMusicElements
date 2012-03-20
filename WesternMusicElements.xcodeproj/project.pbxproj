@@ -45,6 +45,8 @@
 		6A8A8A781513745F00E23464 /* scales.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A711513745F00E23464 /* scales.json */; };
 		6A8A8A7A15137A1300E23464 /* NoteCollectionParser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */; };
 		6A8A8A7B15137A1300E23464 /* NoteCollectionParser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */; };
+		6AA1860E1518C0C70098F8B9 /* WMNoteCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6A75381517215F0011E13D /* WMNoteCollectionViewController.xib */; };
+		6AA186151518C2900098F8B9 /* WMCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA186141518C2900098F8B9 /* WMCustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,9 @@
 		6A8A8A711513745F00E23464 /* scales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scales.json; path = Ruby/scales.json; sourceTree = "<group>"; };
 		6A8A8A721513745F00E23464 /* WMNoteCollectionKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMNoteCollectionKeys.h; path = Ruby/WMNoteCollectionKeys.h; sourceTree = "<group>"; };
 		6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; lineEnding = 0; name = NoteCollectionParser.rb; path = Ruby/NoteCollectionParser.rb; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6AA186131518C2900098F8B9 /* WMCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMCustomCell.h; path = TestApp/WMCustomCell.h; sourceTree = "<group>"; };
+		6AA186141518C2900098F8B9 /* WMCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMCustomCell.m; path = TestApp/WMCustomCell.m; sourceTree = "<group>"; };
+		6AA186161518C2D00098F8B9 /* UIColorAndRGBMACROS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorAndRGBMACROS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +247,8 @@
 		6A86F9981504FD46008EA537 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				6AA186131518C2900098F8B9 /* WMCustomCell.h */,
+				6AA186141518C2900098F8B9 /* WMCustomCell.m */,
 				6A6A7554151722A90011E13D /* AppDelegate.h */,
 				6A6A7555151722A90011E13D /* AppDelegate.m */,
 				6A6A75361517215F0011E13D /* WMNoteCollectionViewController.h */,
@@ -254,6 +261,7 @@
 		6A86F9A815055475008EA537 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6AA186161518C2D00098F8B9 /* UIColorAndRGBMACROS.h */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -338,6 +346,7 @@
 				6A61CB1C1513B03100945A6E /* chords.json in Resources */,
 				6A4E7B181517C4C400B14D09 /* chord_icon2.png in Resources */,
 				6A835122151875A6009BB33A /* four_note_scale.png in Resources */,
+				6AA1860E1518C0C70098F8B9 /* WMNoteCollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +394,7 @@
 				6A6A7551151722290011E13D /* WMNoteCollection.m in Sources */,
 				6A6A7552151722290011E13D /* WMPool.m in Sources */,
 				6A6A7553151722290011E13D /* WMScale.m in Sources */,
+				6AA186151518C2900098F8B9 /* WMCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

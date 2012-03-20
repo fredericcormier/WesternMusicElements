@@ -18,7 +18,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor yellowColor];
     
     WMNoteCollectionViewController *scaleTestViewController = [[WMNoteCollectionViewController alloc] initForCollectionType:WMCollectionTypeScale];
     [scaleTestViewController setTitle:NSLocalizedString(@"Scales", nil)];

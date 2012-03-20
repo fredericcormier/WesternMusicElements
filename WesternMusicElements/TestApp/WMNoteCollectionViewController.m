@@ -7,6 +7,7 @@
 //
 
 #import "WMNoteCollectionViewController.h"
+#import "WMCustomCell.h"
 
 @interface WMNoteCollectionViewController ()
 
@@ -56,6 +57,7 @@
     [super viewDidLoad];
     [[self tableView] setDelegate:self];
     [[self tableView] setDataSource:self];
+    [[self tableView] setBackgroundColor:[UIColor clearColor]];
     [[self noteCollectionPicker] setDelegate:self];
     [[self noteCollectionPicker] setDataSource:self];
 }
@@ -122,11 +124,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *basicCellName = @"basicCell";
-    UITableViewCell *cell;
+    WMCustomCell *cell;
     
     cell = [[self tableView] dequeueReusableCellWithIdentifier:basicCellName];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+        cell = [[WMCustomCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:basicCellName];
     }
     [[cell textLabel] setTextAlignment:UITextAlignmentCenter];

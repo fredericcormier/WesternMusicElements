@@ -70,7 +70,7 @@ end
 
 #generate  static NSStrings for chord and scale keys
 
-File.open("WMNoteCollectionKeys.h", "w") do |f|
+File.open(File.join(pathToWMRubyDirectory,"WMNoteCollectionKeys.h"), "w") do |f|
     f << WMRubyData::FILE_HEADER << "\n"
     f << "typedef NSString WMChordType;" <<"\n\n"
     WMRubyData::CHORDS.each do |k,v|  
@@ -82,6 +82,8 @@ File.open("WMNoteCollectionKeys.h", "w") do |f|
         f <<  OBJCKey::nsstring(k,ScaleCollection) << "\n"
     end   
 end
+
+
 
 
 

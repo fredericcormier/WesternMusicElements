@@ -38,6 +38,7 @@ static WMChordType *WMChordTypeMajor9 = @"Major 9";
 typedef NSString WMScaleMode;
 
 static WMScaleMode *WMScaleModeAeolian = @"Aeolian";
+static WMScaleMode *WMScaleModeAlteredScale = @"Altered Scale";
 static WMScaleMode *WMScaleModeHarmonicMinor = @"Harmonic Minor";
 static WMScaleMode *WMScaleModeMelodicMinor = @"Melodic Minor";
 static WMScaleMode *WMScaleModeChromatic = @"Chromatic";

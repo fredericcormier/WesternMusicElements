@@ -57,7 +57,8 @@ HEADER
     "Whole Tone" =>          [0,2,4,6,8,10,12],
     "Major Pentatonic" =>    [0,2,4,7,9,12],
     "Minor Pentatonic" =>    [0,3,5,7,10,12],
-    "Major Bebop" =>         [0,2,4,5,7,8,9,11,12]
+    "Major Bebop" =>         [0,2,4,5,7,8,9,11,12],
+    "Altered Scale" =>        [0,1,3,4,6,8,10,12]
   }
 
 end

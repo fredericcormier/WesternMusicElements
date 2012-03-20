@@ -127,11 +127,11 @@
 		6A0271741509F926006231DF /* Ruby */ = {
 			isa = PBXGroup;
 			children = (
+				6A0271751509FAEA006231DF /* NotesArrayScripts.rb */,
 				6A8A8A701513745F00E23464 /* log.txt */,
 				6A61CB1B1513B03100945A6E /* chords.json */,
 				6A8A8A711513745F00E23464 /* scales.json */,
 				6A8A8A721513745F00E23464 /* WMNoteCollectionKeys.h */,
-				6A0271751509FAEA006231DF /* NotesArrayScripts.rb */,
 				6A8A8A691513556600E23464 /* WMRubyData.rb */,
 				6A8A8A7915137A1300E23464 /* NoteCollectionParser.rb */,
 			);

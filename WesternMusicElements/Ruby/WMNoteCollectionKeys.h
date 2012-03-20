@@ -37,11 +37,14 @@ static WMChordType *WMChordTypeMajor9 = @"Major 9";
 
 typedef NSString WMScaleMode;
 
+static WMScaleMode *WMScaleModeDiminishedWholeHalf = @"Diminished Whole Half";
 static WMScaleMode *WMScaleModeAeolian = @"Aeolian";
 static WMScaleMode *WMScaleModeAlteredScale = @"Altered Scale";
 static WMScaleMode *WMScaleModeHarmonicMinor = @"Harmonic Minor";
+static WMScaleMode *WMScaleModeDorianBebop = @"Dorian Bebop";
 static WMScaleMode *WMScaleModeMelodicMinor = @"Melodic Minor";
 static WMScaleMode *WMScaleModeChromatic = @"Chromatic";
+static WMScaleMode *WMScaleModeBluesScale = @"Blues Scale";
 static WMScaleMode *WMScaleModeMajorBebop = @"Major Bebop";
 static WMScaleMode *WMScaleModeMajorPentatonic = @"Major Pentatonic";
 static WMScaleMode *WMScaleModeGypsyMinor = @"Gypsy Minor";
@@ -51,6 +54,7 @@ static WMScaleMode *WMScaleModeDorian = @"Dorian";
 static WMScaleMode *WMScaleModeMixolydian = @"Mixolydian";
 static WMScaleMode *WMScaleModePhrygian = @"Phrygian";
 static WMScaleMode *WMScaleModeIonian = @"Ionian";
+static WMScaleMode *WMScaleModeMixolydianBebop = @"Mixolydian Bebop";
 static WMScaleMode *WMScaleModeMinorPentatonic = @"Minor Pentatonic";
 static WMScaleMode *WMScaleModeWholeTone = @"Whole Tone";
 static WMScaleMode *WMScaleModeLydian = @"Lydian";

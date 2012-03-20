@@ -28,7 +28,7 @@ class OBJCKey
         end
         out_string << "static " << type << " "
         out_string << "*#{type}"<< camelcasify(s)
-        out_string << "\t\t\t\t = " << "@\"#{s}\";"
+        out_string << " = " << "@\"#{s}\";"
         out_string      
     end
     

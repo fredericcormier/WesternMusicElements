@@ -1,4 +1,3 @@
-
 #WesternMusicElements is a set of Objective-C classes that helps manipulating Western Musical Scales and Chords.
 
 - Access the most commonly used [chords](https://github.com/fredericcormier/WesternMusicElements/wiki/Chords)  and [scales](https://github.com/fredericcormier/WesternMusicElements/wiki/Scales)  
@@ -41,7 +40,9 @@ C3MajorChordInv2 = [[WMPool pool] chordWithRootShortName:@"C3"
 
 The easiest calls are the one using ***"root note short names"*** like:  
 ```objective-c
-[[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionRootPosition];
+[[WMPool pool] chordWithRootShortName:@"C3" 
+                                      chordType:WMChordTypeMajor
+                                      inversion:WMChordInversionRootPosition];
 ```
 (Check the `WMPool.h`for what's in store)
 

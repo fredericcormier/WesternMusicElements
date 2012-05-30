@@ -1,6 +1,5 @@
 
 
-
 #WesternMusicElements is a set of Objective-C classes that helps manipulating Western Musical Scales and Chords.
 
 - Access the most commonly used [chords](https://github.com/fredericcormier/WesternMusicElements/wiki/Chords)  and [scales](https://github.com/fredericcormier/WesternMusicElements/wiki/Scales)  
@@ -29,7 +28,10 @@ or more simply:
 
 You can also ask for *"Note Collections"*, that is , scales and chords, even inverted:   
 ```objective-c 
-fSharp2Mixolydian = [[WMPool pool] scaleWithRoot:@"f" accidental:@"#" octave:2 scaleMode:WMScaleModeMixolydian]; 
+fSharp2Mixolydian = [[WMPool pool] scaleWithRoot:@"f" 
+                                      accidental:@"#"
+                                          octave:2 
+                                        scaleMode:WMScaleModeMixolydian]; 
  
 C3MajorChordInv2 = [[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionSecond];
 ```

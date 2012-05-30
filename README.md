@@ -17,25 +17,29 @@ The ***WMPool*** is a singleton instance that provides the most commonly used We
 You can add your own scales and chords using the Ruby facilities provided. (see the [wiki](https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts) for details )
 
 
-You can ask for notes:  
-`gSharp5 = [[WMPool pool]noteWithRoot:@"g" accidental:@"#" octave:5];`  
-`c1 = [[WMPool pool]noteWithRoot:@"g" accidental:nil octave:1];`  
-
+You can ask for notes: 
+```objective-c 
+gSharp5 = [[WMPool pool]noteWithRoot:@"g" accidental:@"#" octave:5];  
+c1 = [[WMPool pool]noteWithRoot:@"g" accidental:nil octave:1];
+```
 or more simply:  
-`[[WMPool pool]noteWithShortName:@"c1"]`
+```objective-c
+[[WMPool pool]noteWithShortName:@"c1"];
+```
 
 You can also ask for *"Note Collections"*, that is , scales and chords, even inverted:   
+```objective-c 
+fSharp2Mixolydian = [[WMPool pool] scaleWithRoot:@"f" accidental:@"#" octave:2 scaleMode:WMScaleModeMixolydian]; 
  
-`fSharp2Mixolydian = [[WMPool pool] scaleWithRoot:@"f" accidental:@"#" octave:2 scaleMode:WMScaleModeMixolydian];` 
- 
-`C3MajorChordInv2 = [[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionSecond];`
-
+C3MajorChordInv2 = [[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionSecond];
+```
 
 
 
 The easiest calls are the one using ***"root note short names"*** like:  
-`[[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionRootPosition];`  
-
+```objective-c
+[[WMPool pool] chordWithRootShortName:@"C3" chordType:WMChordTypeMajor inversion:WMChordInversionRootPosition];
+```
 (Check the `WMPool.h`for what's in store)
 
 ##Note Short Name  
@@ -75,4 +79,12 @@ Check the **WMPool.h** and **WMData.h** for more details
 </center>
 
 
+#LICENSE 
+----
+Copyright (C) 2012 Frederic Cormier
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

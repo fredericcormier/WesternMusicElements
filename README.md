@@ -1,7 +1,7 @@
 #WesternMusicElements is a set of Objective-C classes that helps manipulating Western Musical Scales and Chords.
 
 - Access the most commonly used [chords](https://github.com/fredericcormier/WesternMusicElements/wiki/Chords)  and [scales](https://github.com/fredericcormier/WesternMusicElements/wiki/Scales)  
-- Easy to add your own scales and chords via [Ruby] (https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts)  
+- Easily add your own scales and chords via [a set of Ruby scripts] (https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts)  
 - Uses ARC
 
 

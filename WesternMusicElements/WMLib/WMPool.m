@@ -98,8 +98,7 @@ static WMPool *pool;
 
 
 - (NSArray *)prepareNotes {
-    return  [[NSArray alloc] initWithObjects:
-             [[WMNote alloc] initWithRoot:@"C" accidental:nil atOctave:-1 withMidiNoteNumber:0 andCpspch:3.0 atFrequency:8.176 forShortName:@"C-1"],
+    return  @[[[WMNote alloc] initWithRoot:@"C" accidental:nil atOctave:-1 withMidiNoteNumber:0 andCpspch:3.0 atFrequency:8.176 forShortName:@"C-1"],
              [[WMNote alloc] initWithRoot:@"C" accidental:@"#" atOctave:-1 withMidiNoteNumber:1 andCpspch:3.01 atFrequency:8.662 forShortName:@"C#-1"],
              [[WMNote alloc] initWithRoot:@"D" accidental:nil atOctave:-1 withMidiNoteNumber:2 andCpspch:3.02 atFrequency:9.177 forShortName:@"D-1"],
              [[WMNote alloc] initWithRoot:@"D" accidental:@"#" atOctave:-1 withMidiNoteNumber:3 andCpspch:3.03 atFrequency:9.723 forShortName:@"D#-1"],
@@ -226,8 +225,7 @@ static WMPool *pool;
              [[WMNote alloc] initWithRoot:@"E" accidental:nil atOctave:9 withMidiNoteNumber:124 andCpspch:13.04 atFrequency:10548.08 forShortName:@"E9"],
              [[WMNote alloc] initWithRoot:@"F" accidental:nil atOctave:9 withMidiNoteNumber:125 andCpspch:13.05 atFrequency:11175.3 forShortName:@"F9"],
              [[WMNote alloc] initWithRoot:@"F" accidental:@"#" atOctave:9 withMidiNoteNumber:126 andCpspch:13.06 atFrequency:11839.82 forShortName:@"F#9"],
-             [[WMNote alloc] initWithRoot:@"G" accidental:nil atOctave:9 withMidiNoteNumber:127 andCpspch:13.07 atFrequency:12543.85 forShortName:@"G9"],
-             nil ];     
+             [[WMNote alloc] initWithRoot:@"G" accidental:nil atOctave:9 withMidiNoteNumber:127 andCpspch:13.07 atFrequency:12543.85 forShortName:@"G9"]];     
 }
 
 #pragma mark - Notes
@@ -256,7 +254,7 @@ static WMPool *pool;
 
 - (WMNote *)noteWithMidiNoteNumber:(int)midiNoteNumber {
     if ((midiNoteNumber >= 0) && (midiNoteNumber < 128)) {        
-        return [[self allNotes] objectAtIndex:midiNoteNumber];
+        return [self allNotes][midiNoteNumber];
     }else {
         return nil;
     }

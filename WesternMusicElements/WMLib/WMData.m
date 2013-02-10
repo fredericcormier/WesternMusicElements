@@ -10,10 +10,10 @@
 
 
 NSArray *noteNames() {
- return [NSArray arrayWithObjects:@"A", @"A#", @"B", @"C", @"C#", @"D", @"D#", @"E", @"F", @"F#", @"G", @"G#",nil];
+ return @[@"A", @"A#", @"B", @"C", @"C#", @"D", @"D#", @"E", @"F", @"F#", @"G", @"G#"];
 }
 
 NSArray *accidentalNames() {
-    return [NSArray arrayWithObjects:@"Natural", @"Sharp", nil];
+    return @[@"Natural", @"Sharp"];
 
 }

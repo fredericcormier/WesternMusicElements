@@ -27,7 +27,7 @@
     WMNoteCollectionViewController *chordTestViewController = [[WMNoteCollectionViewController alloc] initForCollectionType:WMCollectionTypeChord];
     [chordTestViewController setTitle:NSLocalizedString(@"Chords", nil)];
     
-    NSArray *noteCollectionControllers = [NSArray arrayWithObjects:scaleTestViewController, chordTestViewController, nil];
+    NSArray *noteCollectionControllers = @[scaleTestViewController, chordTestViewController];
 
     UITabBarController *tabController = [[UITabBarController alloc] init];
     [tabController setViewControllers:noteCollectionControllers];

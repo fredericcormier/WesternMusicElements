@@ -18,7 +18,7 @@
 
 
 
-- (NSArray *)invertArray:(NSArray *) inArray:(WMChordInversion)inv;
+- (NSArray *)invertArray:(NSArray *)inArray inversion:(WMChordInversion)inv;
 
 @end
 
@@ -29,7 +29,7 @@
 
 
 - (id)initWithRootNote:(WMNote *)aNote forType:(WMChordType *)aType inversion:(WMChordInversion)inv {
-    NSArray *chordDef = [self invertArray:[[[WMPool pool] chordDefinitions] valueForKey:aType] :inv];
+    NSArray *chordDef = [self invertArray:[[[WMPool pool] chordDefinitions] valueForKey:aType] inversion:inv];
     if (!chordDef) {
         return nil;
     }else {
@@ -44,15 +44,15 @@
 //TODO: Make sure the inversion exist for the chord . throw exeption or something
 
 
-- (NSArray *)invertArray:(NSArray *) inArray:(WMChordInversion)inv{
+- (NSArray *)invertArray:(NSArray *) inArray inversion:(WMChordInversion)inv{
     if (inv == WMChordInversionRootPosition) {
         return inArray;
     }else {
         NSMutableArray *marray = [NSMutableArray arrayWithArray:inArray];
         for (WMChordInversion i = 0; i < inv; i++) {
-            NSNumber *head = [marray objectAtIndex:0];
+            NSNumber *head = marray[0];
             [marray removeObjectAtIndex:0];
-            [marray addObject:[NSNumber numberWithInt:[head intValue] + 12]];
+            [marray addObject:@([head intValue] + 12)];
         }
         return marray;
     }

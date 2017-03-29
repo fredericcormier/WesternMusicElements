@@ -1,4 +1,4 @@
-#WesternMusicElements is a set of Objective-C classes that helps manipulating Western Musical Scales and Chords.
+# WesternMusicElements is a set of Objective-C classes that helps manipulating Western Musical Scales and Chords.
 
 - Access the most commonly used [chords](https://github.com/fredericcormier/WesternMusicElements/wiki/Chords)  and [scales](https://github.com/fredericcormier/WesternMusicElements/wiki/Scales)  
 - Easily add your own scales and chords via [a set of Ruby scripts] (https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts)  
@@ -46,7 +46,7 @@ The easiest calls are the one using ***"root note short names"*** like:
 ```
 (Check the `WMPool.h`for what's in store)
 
-##Note Short Name  
+## Note Short Name  
 Root short names are formed of:
 
 1. The note name
@@ -62,7 +62,7 @@ Octaves are in the range of -1 to 9
 Example of ***valid Note short names***:
 `E-1` `F#-1` `C#8` `G5`
 
-##Note Range
+## Note Range
 
 **WMPool** will provide notes in the range of:
 
@@ -76,19 +76,19 @@ Of course, each **WMNote** embed that information, as well as the `cpspch` value
 
 Check the **WMPool.h** and **WMData.h** for more details 
 
-#Western Musical Elements Test app screenshot:
-<center>
-![screenshot]  
-(https://github.com/fredericcormier/WesternMusicElements/blob/master/Media/app_test_screenshot.png?raw=true)
-</center>
+# Western Musical Elements Test app screenshot:
+
+![screenshot](https://github.com/fredericcormier/WesternMusicElements/blob/master/Media/app_test_screenshot.png?raw=true)
 
 
-#LICENSE 
+
+# LICENSE 
 ----
-Copyright (C) 2012 Frederic Cormier
+Copyright (C) 2012 - 2017 Frederic Cormier
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-

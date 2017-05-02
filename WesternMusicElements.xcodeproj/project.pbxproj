@@ -50,6 +50,9 @@
 		6AA186151518C2900098F8B9 /* WMCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA186141518C2900098F8B9 /* WMCustomCell.m */; };
 		6AA186261518DDC90098F8B9 /* chord_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA186241518DDC90098F8B9 /* chord_icon2.png */; };
 		6AA186271518DDC90098F8B9 /* four_note_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA186251518DDC90098F8B9 /* four_note_scale.png */; };
+		F699E0501993ED5D00BC81C0 /* WMProgression.m in Sources */ = {isa = PBXBuildFile; fileRef = F699E04F1993ED5D00BC81C0 /* WMProgression.m */; };
+		F6BD3A831994DE9F00771A2B /* WMScale+NamedIntervals.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BD3A821994DE9F00771A2B /* WMScale+NamedIntervals.m */; };
+		F6BD3A861994E51B00771A2B /* WMChord+RomanNumerals.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BD3A851994E51B00771A2B /* WMChord+RomanNumerals.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,12 @@
 		6AA186161518C2D00098F8B9 /* UIColorAndRGBMACROS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorAndRGBMACROS.h; sourceTree = "<group>"; };
 		6AA186241518DDC90098F8B9 /* chord_icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chord_icon2.png; sourceTree = "<group>"; };
 		6AA186251518DDC90098F8B9 /* four_note_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = four_note_scale.png; sourceTree = "<group>"; };
+		F699E04E1993ED5D00BC81C0 /* WMProgression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMProgression.h; path = WMLib/WMProgression.h; sourceTree = "<group>"; };
+		F699E04F1993ED5D00BC81C0 /* WMProgression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMProgression.m; path = WMLib/WMProgression.m; sourceTree = "<group>"; };
+		F6BD3A811994DE9F00771A2B /* WMScale+NamedIntervals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WMScale+NamedIntervals.h"; path = "WMLib/WMScale+NamedIntervals.h"; sourceTree = "<group>"; };
+		F6BD3A821994DE9F00771A2B /* WMScale+NamedIntervals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WMScale+NamedIntervals.m"; path = "WMLib/WMScale+NamedIntervals.m"; sourceTree = "<group>"; };
+		F6BD3A841994E51B00771A2B /* WMChord+RomanNumerals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WMChord+RomanNumerals.h"; path = "WMLib/WMChord+RomanNumerals.h"; sourceTree = "<group>"; };
+		F6BD3A851994E51B00771A2B /* WMChord+RomanNumerals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WMChord+RomanNumerals.m"; path = "WMLib/WMChord+RomanNumerals.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +248,12 @@
 				6A6A75441517216F0011E13D /* WMPool.m */,
 				6A6A75451517216F0011E13D /* WMScale.h */,
 				6A6A75461517216F0011E13D /* WMScale.m */,
+				F699E04E1993ED5D00BC81C0 /* WMProgression.h */,
+				F699E04F1993ED5D00BC81C0 /* WMProgression.m */,
+				F6BD3A811994DE9F00771A2B /* WMScale+NamedIntervals.h */,
+				F6BD3A821994DE9F00771A2B /* WMScale+NamedIntervals.m */,
+				F6BD3A841994E51B00771A2B /* WMChord+RomanNumerals.h */,
+				F6BD3A851994E51B00771A2B /* WMChord+RomanNumerals.m */,
 			);
 			name = WMLibrary;
 			sourceTree = "<group>";
@@ -398,8 +413,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0B6D861504A88100C865AE /* main.m in Sources */,
+				F699E0501993ED5D00BC81C0 /* WMProgression.m in Sources */,
 				6A6A7557151722B00011E13D /* AppDelegate.m in Sources */,
+				F6BD3A831994DE9F00771A2B /* WMScale+NamedIntervals.m in Sources */,
 				6A6A754D151721E20011E13D /* WMNoteCollectionViewController.m in Sources */,
+				F6BD3A861994E51B00771A2B /* WMChord+RomanNumerals.m in Sources */,
 				6A6A754E151722290011E13D /* WMChord.m in Sources */,
 				6A6A754F151722290011E13D /* WMData.m in Sources */,
 				6A6A7550151722290011E13D /* WMNote.m in Sources */,

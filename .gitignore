@@ -17,3 +17,13 @@ build/*
 *.pbxuser
 *.xcworkspace
 xcuserdata
+
+# Cocoapods
+Podfile.lock
+Pods
+
+# AppCode
+.idea
+
+# Generated Docs
+docs

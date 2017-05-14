@@ -1,7 +1,7 @@
 # WesternMusicElements is a set of Objective-C classes that helps manipulating Western Musical Scales and Chords.
 
 - Access the most commonly used [chords](https://github.com/fredericcormier/WesternMusicElements/wiki/Chords)  and [scales](https://github.com/fredericcormier/WesternMusicElements/wiki/Scales)  
-- Easily add your own scales and chords via [a set of Ruby scripts] (https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts)  
+- Easily add your own scales and chords via  [a set of Ruby scripts](https://github.com/fredericcormier/WesternMusicElements/wiki/Ruby-Scripts)  
 - Uses ARC
 
 
@@ -17,7 +17,7 @@ You can add your own scales and chords using the Ruby facilities provided. (see 
 You can ask for notes: 
 ```objective-c 
 gSharp5 = [[WMPool pool]noteWithRoot:@"g" accidental:@"#" octave:5];  
-c1 = [[WMPool pool]noteWithRoot:@"g" accidental:nil octave:1];
+c1 = [[WMPool pool]noteWithRoot:@"c" accidental:nil octave:1];
 ```
 or more simply:  
 ```objective-c
@@ -38,7 +38,7 @@ C3MajorChordInv2 = [[WMPool pool] chordWithRootShortName:@"C3"
 
 
 
-The easiest calls are the one using ***"root note short names"*** like:  
+The easiest calls are the one using ***"root note short names"*** like this:  
 ```objective-c
 [[WMPool pool] chordWithRootShortName:@"C3" 
                                       chordType:WMChordTypeMajor
@@ -47,13 +47,13 @@ The easiest calls are the one using ***"root note short names"*** like:
 (Check the `WMPool.h`for what's in store)
 
 ## Note Short Name  
-Root short names are formed of:
+Root short names consists of:
 
 1. The note name
 2. The accidental
 3. The octave
  
-The note name is written in "Letter Notation" and is not case sensitive.
+The note name is written in "Letter Notation" and is **not** case sensitive.
 
 The accidental, if any, is a "Sharp" noted "#". "Flat" is not supported. No accidental == natural.
 
@@ -91,4 +91,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--
+--
